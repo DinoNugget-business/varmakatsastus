@@ -12,10 +12,10 @@ export default function Header() {
   const t = useTranslations();
 
   return (
-    <header className="sticky top-0 z-40 bg-brand-darker/90 backdrop-blur-xl border-b border-brand-border/50 shadow-lg shadow-black/20">
+    <header className="sticky top-0 z-40 bg-white/90 backdrop-blur-xl border-b border-border-light shadow-md shadow-black/5">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         {/* Top bar with phone and language */}
-        <div className="hidden lg:flex items-center justify-end gap-6 py-2 text-sm border-b border-brand-border/30">
+        <div className="hidden lg:flex items-center justify-end gap-6 py-2 text-sm border-b border-border-light/60">
           <span className="text-brand-gold font-semibold text-xs bg-brand-gold/10 px-2.5 py-0.5 rounded-full">
             {t("common.inspectionFrom")}
           </span>
@@ -36,7 +36,7 @@ export default function Header() {
         <div className="flex items-center justify-between h-20 lg:h-24">
           <Link href="/" className="flex-shrink-0 group">
             <Image
-              src="/images/varma-katsastus-dark.png"
+              src="/images/varma-katsastus-2023.png"
               alt="Varmakatsastus"
               width={200}
               height={60}

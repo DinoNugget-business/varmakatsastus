@@ -168,7 +168,7 @@ export default function ChatbotWindow() {
           aria-label={t("closeLabel")}
           className="p-1.5 rounded-lg hover:bg-brand-gray/50 transition-colors"
         >
-          <X className="w-4 h-4 text-text-muted" />
+          <X className="w-4 h-4 text-text-muted-dark" />
         </button>
       </div>
 

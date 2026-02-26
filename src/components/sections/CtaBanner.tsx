@@ -17,7 +17,7 @@ export default function CtaBanner() {
         <h2 className="font-display text-2xl sm:text-3xl lg:text-4xl font-bold text-brand-gold mb-3">
           {t("title")}
         </h2>
-        <p className="text-text-muted text-sm sm:text-base mb-8 max-w-xl mx-auto">
+        <p className="text-text-muted-dark text-sm sm:text-base mb-8 max-w-xl mx-auto">
           {t("subtitle")}
         </p>
         <a

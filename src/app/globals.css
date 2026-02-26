@@ -1,14 +1,17 @@
 @import "tailwindcss";
 
 @theme inline {
-  /* Brand accent colors — blue from logo */
+  /* Brand accent — blue from logo */
   --color-brand-gold: #3B9DE6;
   --color-brand-gold-dark: #2B7CC0;
   --color-brand-gold-light: #5BB5F0;
+  --color-brand-blue: #3B9DE6;
+  --color-brand-blue-dark: #2B7CC0;
+  --color-brand-blue-light: #5BB5F0;
 
-  /* Background hierarchy — cool blue-grey for dark sections */
-  --color-brand-dark: #0F1923;
-  --color-brand-darker: #0A1219;
+  /* Dark section backgrounds (footer, CTA, hero overlay, chatbot) */
+  --color-brand-dark: #1A2535;
+  --color-brand-darker: #111B27;
   --color-brand-gray: #1A2535;
   --color-brand-gray-light: #243040;
   --color-brand-surface: #1E2938;
@@ -19,12 +22,16 @@
   --color-bg-white: #FFFFFF;
   --color-border-light: #D8DEE6;
 
-  /* Text hierarchy */
-  --color-text-primary: #F5F5F5;
-  --color-text-muted: #9CA3B4;
-  --color-text-dim: #6B7280;
+  /* Text hierarchy — light theme (dark text on light backgrounds) */
+  --color-text-primary: #1A2535;
+  --color-text-muted: #5A6577;
+  --color-text-dim: #8494A7;
   --color-text-dark: #1A2535;
   --color-text-muted-light: #5A6577;
+
+  /* Text for dark sections (footer, CTA, chatbot) */
+  --color-text-light: #F5F5F5;
+  --color-text-muted-dark: #9CA3B4;
 
   /* Fonts */
   --font-display: "Rajdhani", sans-serif;
@@ -36,7 +43,7 @@ html {
 }
 
 body {
-  background-color: var(--color-brand-dark);
+  background-color: var(--color-bg-white);
   color: var(--color-text-primary);
   font-family: var(--font-body);
   overflow-wrap: break-word;
@@ -91,10 +98,10 @@ body.menu-open {
 
 @keyframes accentGlow {
   0%, 100% {
-    filter: drop-shadow(0 0 8px rgba(59, 157, 230, 0.3));
+    filter: drop-shadow(0 0 6px rgba(59, 157, 230, 0.25));
   }
   50% {
-    filter: drop-shadow(0 0 16px rgba(59, 157, 230, 0.5));
+    filter: drop-shadow(0 0 12px rgba(59, 157, 230, 0.4));
   }
 }
 
@@ -160,8 +167,8 @@ body.menu-open {
 .glass-card {
   background: linear-gradient(
     135deg,
-    rgba(26, 37, 53, 0.8) 0%,
-    rgba(36, 48, 64, 0.6) 100%
+    rgba(255, 255, 255, 0.9) 0%,
+    rgba(245, 247, 250, 0.8) 100%
   );
   backdrop-filter: blur(10px);
   border: 1px solid rgba(59, 157, 230, 0.08);
@@ -172,13 +179,12 @@ body.menu-open {
   border-color: rgba(59, 157, 230, 0.25);
   background: linear-gradient(
     135deg,
-    rgba(30, 41, 56, 0.9) 0%,
-    rgba(36, 48, 64, 0.8) 100%
+    rgba(255, 255, 255, 0.95) 0%,
+    rgba(245, 247, 250, 0.9) 100%
   );
   box-shadow:
-    0 8px 30px rgba(0, 0, 0, 0.3),
-    0 0 0 1px rgba(59, 157, 230, 0.1),
-    inset 0 1px 0 rgba(255, 255, 255, 0.05);
+    0 8px 30px rgba(0, 0, 0, 0.06),
+    0 0 0 1px rgba(59, 157, 230, 0.1);
 }
 
 .light-card {
@@ -188,10 +194,10 @@ body.menu-open {
 }
 
 .light-card:hover {
-  border-color: rgba(59, 157, 230, 0.3);
+  border-color: rgba(59, 157, 230, 0.25);
   box-shadow:
-    0 8px 30px rgba(0, 0, 0, 0.08),
-    0 0 0 1px rgba(59, 157, 230, 0.1);
+    0 8px 30px rgba(0, 0, 0, 0.06),
+    0 0 0 1px rgba(59, 157, 230, 0.08);
 }
 
 .section-divider {

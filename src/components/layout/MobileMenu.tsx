@@ -72,7 +72,7 @@ export default function MobileMenu() {
 
         {/* Dropdown panel */}
         <div
-          className={`absolute top-20 left-3 right-3 bg-brand-darker/95 backdrop-blur-xl border border-brand-gold/15 rounded-2xl shadow-2xl shadow-black/40 transition-all duration-200 ease-out origin-top ${
+          className={`absolute top-20 left-3 right-3 bg-white/95 backdrop-blur-xl border border-border-light rounded-2xl shadow-2xl shadow-black/10 transition-all duration-200 ease-out origin-top ${
             isOpen
               ? "scale-100 opacity-100"
               : "scale-95 opacity-0 pointer-events-none"
@@ -105,13 +105,13 @@ export default function MobileMenu() {
             </nav>
 
             {/* Divider */}
-            <div className="border-t border-brand-border/40 mb-3" />
+            <div className="border-t border-border-light mb-3" />
 
             {/* Bottom actions */}
             <div className="flex items-center gap-2 mb-2">
               <a
                 href={CONTACT.phoneHref}
-                className="flex items-center justify-center gap-2 flex-1 text-sm text-text-muted hover:text-text-primary transition-colors py-2.5 px-3 rounded-lg border border-brand-border/30 hover:border-brand-border/50"
+                className="flex items-center justify-center gap-2 flex-1 text-sm text-text-muted hover:text-text-primary transition-colors py-2.5 px-3 rounded-lg border border-border-light hover:border-brand-gold/30"
               >
                 <Phone className="w-4 h-4" />
                 {CONTACT.phone}

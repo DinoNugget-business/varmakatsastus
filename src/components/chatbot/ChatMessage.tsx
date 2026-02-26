@@ -20,8 +20,8 @@ export default function ChatMessage({ message }: Props) {
       <div
         className={`max-w-[80%] rounded-2xl px-4 py-2.5 text-sm leading-relaxed ${
           isBot
-            ? "bg-brand-gray/80 text-text-primary rounded-tl-sm"
-            : "bg-brand-blue/80 text-white rounded-tr-sm"
+            ? "bg-brand-gray/80 text-text-light rounded-tl-sm"
+            : "bg-brand-gold/80 text-white rounded-tr-sm"
         }`}
       >
         <div
@@ -44,8 +44,8 @@ export default function ChatMessage({ message }: Props) {
         )}
       </div>
       {!isBot && (
-        <div className="flex-shrink-0 w-7 h-7 rounded-full bg-brand-blue/20 flex items-center justify-center mt-1">
-          <User className="w-4 h-4 text-brand-blue" />
+        <div className="flex-shrink-0 w-7 h-7 rounded-full bg-brand-gold/20 flex items-center justify-center mt-1">
+          <User className="w-4 h-4 text-brand-gold" />
         </div>
       )}
     </div>

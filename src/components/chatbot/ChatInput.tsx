@@ -34,7 +34,7 @@ export default function ChatInput({ onSend }: Props) {
         onChange={(e) => setValue(e.target.value)}
         onKeyDown={handleKeyDown}
         placeholder={t("placeholder")}
-        className="flex-1 bg-brand-gray/60 border border-brand-border/40 rounded-full px-4 py-2.5 text-sm text-text-primary placeholder:text-text-dim focus:outline-none focus:ring-2 focus:ring-brand-gold/50 focus:border-brand-gold/50 transition-all"
+        className="flex-1 bg-brand-gray/60 border border-brand-border/40 rounded-full px-4 py-2.5 text-sm text-text-light placeholder:text-text-dim focus:outline-none focus:ring-2 focus:ring-brand-gold/50 focus:border-brand-gold/50 transition-all"
       />
       <button
         onClick={handleSend}

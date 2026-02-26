@@ -23,7 +23,7 @@ export default function Footer() {
               height={44}
               className="h-10 w-auto opacity-80 mb-4"
             />
-            <div className="flex flex-col gap-3 text-sm text-text-muted">
+            <div className="flex flex-col gap-3 text-sm text-text-muted-dark">
               <a
                 href={CONTACT.phoneHref}
                 className="flex items-center gap-2 hover:text-brand-gold transition-colors"
@@ -51,11 +51,11 @@ export default function Footer() {
 
           {/* Opening hours */}
           <div>
-            <h3 className="text-text-primary font-semibold mb-4 flex items-center gap-2">
+            <h3 className="text-text-light font-semibold mb-4 flex items-center gap-2">
               <Clock className="w-4 h-4" />
               {t("footer.openingHours")}
             </h3>
-            <div className="text-sm text-text-muted space-y-2">
+            <div className="text-sm text-text-muted-dark space-y-2">
               <p>{t("common.weekdays")}</p>
               <p>{t("common.saturday")}</p>
               <p>{t("common.sunday")}</p>
@@ -64,7 +64,7 @@ export default function Footer() {
 
           {/* Quick links */}
           <div>
-            <h3 className="text-text-primary font-semibold mb-4">
+            <h3 className="text-text-light font-semibold mb-4">
               {t("footer.quickLinks")}
             </h3>
             <nav className="flex flex-col gap-2 text-sm">
@@ -72,7 +72,7 @@ export default function Footer() {
                 <Link
                   key={link.href}
                   href={link.href}
-                  className="text-text-muted hover:text-brand-gold transition-colors"
+                  className="text-text-muted-dark hover:text-brand-gold transition-colors"
                 >
                   {t(link.labelKey)}
                 </Link>
@@ -82,7 +82,7 @@ export default function Footer() {
 
           {/* Certifications */}
           <div>
-            <h3 className="text-text-primary font-semibold mb-4">
+            <h3 className="text-text-light font-semibold mb-4">
               {t("footer.certifications")}
             </h3>
             <div className="flex flex-wrap gap-4 items-center">
@@ -115,7 +115,7 @@ export default function Footer() {
       {/* Copyright bar */}
       <div className="border-t border-brand-border/50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 py-4">
-          <p className="text-xs text-text-muted text-center">
+          <p className="text-xs text-text-muted-dark text-center">
             {t("footer.copyright")}
           </p>
         </div>

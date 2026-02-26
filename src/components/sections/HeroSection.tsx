@@ -30,7 +30,7 @@ export default function HeroSection() {
           <h1 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white mb-4 leading-tight drop-shadow-[0_2px_10px_rgba(0,0,0,0.3)]">
             {t("heroTitle")}
           </h1>
-          <p className="text-lg sm:text-xl text-text-primary mb-3 leading-relaxed drop-shadow-md">
+          <p className="text-lg sm:text-xl text-white/90 mb-3 leading-relaxed drop-shadow-md">
             {t("heroSubtitle")}
           </p>
           <p className="text-2xl sm:text-3xl font-bold text-brand-gold mb-8 drop-shadow-[0_2px_8px_rgba(59,157,230,0.2)]">
@@ -43,7 +43,7 @@ export default function HeroSection() {
             <Button href={BOOKING_URL} size="lg" external>
               {t("heroCta")}
             </Button>
-            <Button href="#services" variant="outline" size="lg">
+            <Button href="#services" variant="outline" size="lg" className="border-white text-white hover:bg-white/10 hover:text-white">
               {t("servicesTitle")}
             </Button>
           </div>
