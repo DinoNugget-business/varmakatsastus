@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useTranslations } from "next-intl";
 import {
   Menu, X, Phone, Calendar,
@@ -25,6 +25,25 @@ export default function MobileMenu() {
   const [isOpen, setIsOpen] = useState(false);
   const t = useTranslations();
 
+  // Body scroll lock
+  useEffect(() => {
+    if (isOpen) {
+      document.body.classList.add("menu-open");
+    } else {
+      document.body.classList.remove("menu-open");
+    }
+    return () => document.body.classList.remove("menu-open");
+  }, [isOpen]);
+
+  // Escape key handler
+  useEffect(() => {
+    const handleKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape" && isOpen) setIsOpen(false);
+    };
+    document.addEventListener("keydown", handleKey);
+    return () => document.removeEventListener("keydown", handleKey);
+  }, [isOpen]);
+
   return (
     <div className="lg:hidden">
       <button
@@ -35,15 +54,29 @@ export default function MobileMenu() {
         <Menu className="w-6 h-6" />
       </button>
 
+      {/* Overlay container */}
       <div
-        className={`fixed inset-0 z-50 transition-all duration-300 ${
-          isOpen
-            ? "opacity-100 pointer-events-auto"
-            : "opacity-0 pointer-events-none"
+        className={`fixed inset-0 z-50 ${
+          isOpen ? "pointer-events-auto" : "pointer-events-none"
         }`}
       >
-        <div className="bg-brand-darker/95 backdrop-blur-xl h-full">
-          <div className="flex flex-col h-full p-4 sm:p-6">
+        {/* Scrim — tap to close */}
+        <div
+          className={`absolute inset-0 bg-black/50 transition-opacity duration-300 ${
+            isOpen ? "opacity-100" : "opacity-0"
+          }`}
+          onClick={() => setIsOpen(false)}
+          aria-hidden="true"
+        />
+
+        {/* Drawer panel */}
+        <div
+          className={`absolute top-0 right-0 h-full w-[85%] max-w-[320px] bg-brand-darker border-l border-brand-gold/20 shadow-2xl shadow-black/50 transition-transform duration-300 ease-out ${
+            isOpen ? "translate-x-0" : "translate-x-full"
+          }`}
+        >
+          <div className="flex flex-col h-full p-4 sm:p-6 overflow-y-auto">
+            {/* Header: logo + close */}
             <div className="flex justify-between items-center mb-6">
               <span className="font-display text-brand-gold text-xl font-bold">
                 Varmakatsastus
@@ -64,6 +97,7 @@ export default function MobileMenu() {
               </p>
             </div>
 
+            {/* Navigation links */}
             <nav className="flex flex-col gap-1 flex-1">
               {NAV_LINKS.map((link) => {
                 const Icon = NAV_ICONS[link.href];
@@ -81,6 +115,7 @@ export default function MobileMenu() {
               })}
             </nav>
 
+            {/* Bottom actions */}
             <div className="flex flex-col gap-3 pt-5 border-t border-brand-border/50">
               <a
                 href={CONTACT.phoneHref}

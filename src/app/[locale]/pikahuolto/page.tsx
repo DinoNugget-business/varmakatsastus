@@ -8,14 +8,14 @@ export default function PikahuoltoPage() {
   const t = useTranslations("quickRepair");
 
   const services = [
-    { service: t("row1"), price: "89 €/h" },
-    { service: t("row2"), price: "95 €/h" },
-    { service: t("row3"), price: "89 €/h" },
-    { service: t("row4"), price: "90 €/h" },
-    { service: t("row5"), price: "35 €" },
-    { service: t("row6"), price: "25 €/kpl" },
-    { service: t("row7"), price: "65 €" },
-    { service: t("row8"), price: "49 €" },
+    { service: t("row1"), price: "89\u00A0€/h" },
+    { service: t("row2"), price: "95\u00A0€/h" },
+    { service: t("row3"), price: "89\u00A0€/h" },
+    { service: t("row4"), price: "90\u00A0€/h" },
+    { service: t("row5"), price: "35\u00A0€" },
+    { service: t("row6"), price: "25\u00A0€/kpl" },
+    { service: t("row7"), price: "65\u00A0€" },
+    { service: t("row8"), price: "49\u00A0€" },
   ];
 
   return (

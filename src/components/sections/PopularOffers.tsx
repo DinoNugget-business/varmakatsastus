@@ -20,20 +20,20 @@ const offers: Offer[] = [
   {
     nameKey: "offerBasicName",
     items: ["offerBasicItem1", "offerBasicItem2"],
-    price: "39 €",
+    price: "39\u00A0€",
     from: true,
   },
   {
     nameKey: "offerWashName",
     items: ["offerWashItem1", "offerWashItem2"],
-    price: "75 €",
+    price: "75\u00A0€",
     popular: true,
     promoCode: true,
   },
   {
     nameKey: "offerPremiumName",
     items: ["offerPremiumItem1", "offerPremiumItem2", "offerPremiumItem3"],
-    price: "99 €",
+    price: "99\u00A0€",
     promoCode: true,
   },
 ];
@@ -94,7 +94,7 @@ export default function PopularOffers() {
                       {t("offerBasicFrom")}
                     </span>
                   )}
-                  <span className="text-brand-gold text-3xl sm:text-4xl font-bold font-display">
+                  <span className="text-brand-gold text-3xl sm:text-4xl font-bold font-display whitespace-nowrap">
                     {offer.price}
                   </span>
                 </div>

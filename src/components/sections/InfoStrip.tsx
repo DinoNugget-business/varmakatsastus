@@ -44,7 +44,7 @@ export default function InfoStrip() {
                 </h3>
                 {item.highlight ? (
                   <>
-                    <p className="text-brand-gold text-3xl font-bold font-display leading-none">
+                    <p className="text-brand-gold text-3xl font-bold font-display leading-none whitespace-nowrap">
                       {item.highlight}
                     </p>
                     <p className="text-text-muted text-xs mt-1">{item.note}</p>

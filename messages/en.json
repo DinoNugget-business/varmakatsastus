@@ -12,7 +12,7 @@
     "weekdays": "Mon-Fri 8-18",
     "saturday": "Sat 9-15",
     "sunday": "Sun closed",
-    "inspectionFrom": "Inspection from 39 €",
+    "inspectionFrom": "Inspection from 39\u00A0€",
     "allServices": "All services under one roof",
     "readMore": "Read more",
     "send": "Send",
@@ -38,7 +38,7 @@
   "home": {
     "heroTitle": "Varmakatsastus Herttoniemi",
     "heroSubtitle": "Only in Finland! All vehicle services under one roof.",
-    "heroPrice": "Vehicle inspection from 39 €",
+    "heroPrice": "Vehicle inspection from 39\u00A0€",
     "heroCta": "Book now",
     "servicesTitle": "Our Services",
     "servicesSubtitle": "Inspection, tire services, spare parts, car wash, car repair, tire hotel, and cafe — all under one roof.",
@@ -46,7 +46,7 @@
     "certificationsTitle": "Certifications",
     "infoOpenTitle": "Opening Hours",
     "infoPriceTitle": "Inspection from",
-    "infoPriceValue": "39 €",
+    "infoPriceValue": "39\u00A0€",
     "infoPriceNote": "incl. VAT 25.5%",
     "infoLocationTitle": "Location",
     "offersTitle": "Most Popular Packages",
@@ -185,7 +185,7 @@
       "row3": "Modification inspection (large change)"
     },
     "note1": "Prices include VAT 25.5%.",
-    "note2": "Inspection fees also include the Trafi supervision fee of 3.60 € (incl. VAT 25.5%).",
+    "note2": "Inspection fees also include the Trafi supervision fee of 3.60\u00A0€ (incl. VAT 25.5\u00A0%).",
     "note3": "Accepted payment methods: debit card, Visa Electron, Visa, Mastercard, and cash.",
     "cta": "Book inspection"
   },
@@ -279,7 +279,7 @@
   },
   "ctaBanner": {
     "title": "Book your inspection now",
-    "subtitle": "Periodic inspection from 39 € — fast and reliable service in Herttoniemi.",
+    "subtitle": "Periodic inspection from 39\u00A0€ — fast and reliable service in Herttoniemi.",
     "cta": "Book online"
   }
 }

@@ -12,7 +12,7 @@
     "weekdays": "Ark. 8-18",
     "saturday": "La 9-15",
     "sunday": "Su suljettu",
-    "inspectionFrom": "Katsastus alk. 39 €",
+    "inspectionFrom": "Katsastus alk. 39\u00A0€",
     "allServices": "Kaikki palvelut saman katon alla",
     "readMore": "Lue lisää",
     "send": "Lähetä",
@@ -38,7 +38,7 @@
   "home": {
     "heroTitle": "Varmakatsastus Herttoniemi",
     "heroSubtitle": "Ainoana Suomessa! Kaikki auton oheispalvelut saman katon alla.",
-    "heroPrice": "Määräaikaiskatsastus alkaen 39 €",
+    "heroPrice": "Määräaikaiskatsastus alkaen 39\u00A0€",
     "heroCta": "Varaa aika nyt",
     "servicesTitle": "Palvelumme",
     "servicesSubtitle": "Katsastus, rengaspalvelut, varaosat, autopesu, autohuolto, rengashotelli ja kahvila — kaikki saman katon alla.",
@@ -46,7 +46,7 @@
     "certificationsTitle": "Sertifikaatit",
     "infoOpenTitle": "Aukioloajat",
     "infoPriceTitle": "Katsastus alkaen",
-    "infoPriceValue": "39 €",
+    "infoPriceValue": "39\u00A0€",
     "infoPriceNote": "sis. ALV 25,5 %",
     "infoLocationTitle": "Sijainti",
     "offersTitle": "Suosituimmat paketit",
@@ -185,7 +185,7 @@
       "row3": "Muutoskatsastus (iso muutos)"
     },
     "note1": "Hinnat sisältävät ALV:n 25,5 %.",
-    "note2": "Katsastusmaksut sisältävät lisäksi Trafin valvontamaksun 3,60 € (sis. ALV 25,5 %).",
+    "note2": "Katsastusmaksut sisältävät lisäksi Trafin valvontamaksun 3,60\u00A0€ (sis. ALV 25,5\u00A0%).",
     "note3": "Maksuvälineenä käy pankkikortti, Visa Electron, Visa, Mastercard ja käteinen.",
     "cta": "Varaa katsastusaika"
   },
@@ -279,7 +279,7 @@
   },
   "ctaBanner": {
     "title": "Varaa katsastusaika nyt",
-    "subtitle": "Määräaikaiskatsastus alkaen 39 € — nopea ja luotettava palvelu Herttoniemessä.",
+    "subtitle": "Määräaikaiskatsastus alkaen 39\u00A0€ — nopea ja luotettava palvelu Herttoniemessä.",
     "cta": "Varaa aika verkossa"
   }
 }

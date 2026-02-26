@@ -35,6 +35,12 @@ body {
   background-color: var(--color-brand-dark);
   color: var(--color-text-primary);
   font-family: var(--font-body);
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+
+body.menu-open {
+  overflow: hidden;
 }
 
 /* ============================

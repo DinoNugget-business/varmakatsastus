@@ -8,38 +8,38 @@ export default function HinnastoPage() {
   const t = useTranslations("pricing");
 
   const periodic = [
-    { service: t("periodic.row1"), price: "39,00 €" },
-    { service: t("periodic.row2"), price: "60,00 €" },
-    { service: t("periodic.row3"), price: "60,00 €" },
-    { service: t("periodic.row4"), price: "55,00 €" },
-    { service: t("periodic.row5"), price: "78,00 €" },
-    { service: t("periodic.row6"), price: "98,00 €" },
-    { service: t("periodic.row7"), price: "50,00 €" },
-    { service: t("periodic.row8"), price: "68,00 €" },
+    { service: t("periodic.row1"), price: "39,00\u00A0€" },
+    { service: t("periodic.row2"), price: "60,00\u00A0€" },
+    { service: t("periodic.row3"), price: "60,00\u00A0€" },
+    { service: t("periodic.row4"), price: "55,00\u00A0€" },
+    { service: t("periodic.row5"), price: "78,00\u00A0€" },
+    { service: t("periodic.row6"), price: "98,00\u00A0€" },
+    { service: t("periodic.row7"), price: "50,00\u00A0€" },
+    { service: t("periodic.row8"), price: "68,00\u00A0€" },
   ];
 
   const additional = [
-    { service: t("additional.row1"), price: "10,00 €" },
-    { service: t("additional.row2"), price: "21,00 €" },
-    { service: t("additional.row3"), price: "30,00 €" },
-    { service: t("additional.row4"), price: "33,00 €" },
-    { service: t("additional.row5"), price: "37,00 €" },
-    { service: t("additional.row6"), price: "33,00 €" },
-    { service: t("additional.row7"), price: "78,00 €" },
-    { service: t("additional.row8"), price: "49,00 €" },
-    { service: t("additional.row9"), price: "90,00 €" },
+    { service: t("additional.row1"), price: "10,00\u00A0€" },
+    { service: t("additional.row2"), price: "21,00\u00A0€" },
+    { service: t("additional.row3"), price: "30,00\u00A0€" },
+    { service: t("additional.row4"), price: "33,00\u00A0€" },
+    { service: t("additional.row5"), price: "37,00\u00A0€" },
+    { service: t("additional.row6"), price: "33,00\u00A0€" },
+    { service: t("additional.row7"), price: "78,00\u00A0€" },
+    { service: t("additional.row8"), price: "49,00\u00A0€" },
+    { service: t("additional.row9"), price: "90,00\u00A0€" },
   ];
 
   const registration = [
-    { service: t("registration.row1"), price: "150,00 €" },
-    { service: t("registration.row2"), price: "180,00 €" },
-    { service: t("registration.row3"), price: "440,00 €" },
+    { service: t("registration.row1"), price: "150,00\u00A0€" },
+    { service: t("registration.row2"), price: "180,00\u00A0€" },
+    { service: t("registration.row3"), price: "440,00\u00A0€" },
   ];
 
   const modification = [
-    { service: t("modification.row1"), price: "60,00 €" },
-    { service: t("modification.row2"), price: "90,00 €" },
-    { service: t("modification.row3"), price: "150,00 €" },
+    { service: t("modification.row1"), price: "60,00\u00A0€" },
+    { service: t("modification.row2"), price: "90,00\u00A0€" },
+    { service: t("modification.row3"), price: "150,00\u00A0€" },
   ];
 
   return (
