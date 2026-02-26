@@ -12,7 +12,7 @@ export default function VaraosatPage() {
       <PageHeader title={t("title")} subtitle={t("subtitle")} />
 
       <div className="max-w-4xl mx-auto px-4 sm:px-6 py-12 lg:py-16">
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
           <Card
             icon={<Package className="w-8 h-8" />}
             title={t("cat1Title")}

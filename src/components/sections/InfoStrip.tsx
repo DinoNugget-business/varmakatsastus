@@ -35,8 +35,8 @@ export default function InfoStrip() {
               key={item.title}
               className="flex items-start gap-4 justify-center md:justify-start"
             >
-              <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-brand-gold/10 flex items-center justify-center">
-                <item.icon className="w-6 h-6 text-brand-gold" />
+              <div className="flex-shrink-0 w-10 h-10 md:w-12 md:h-12 rounded-xl bg-brand-gold/10 flex items-center justify-center">
+                <item.icon className="w-5 h-5 md:w-6 md:h-6 text-brand-gold" />
               </div>
               <div>
                 <h3 className="text-text-primary font-semibold text-sm uppercase tracking-wider mb-1">
@@ -62,8 +62,8 @@ export default function InfoStrip() {
 
           {/* Booking CTA - 4th column */}
           <div className="flex items-start gap-4 justify-center md:justify-start">
-            <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-brand-gold/20 flex items-center justify-center">
-              <Calendar className="w-6 h-6 text-brand-gold" />
+            <div className="flex-shrink-0 w-10 h-10 md:w-12 md:h-12 rounded-xl bg-brand-gold/20 flex items-center justify-center">
+              <Calendar className="w-5 h-5 md:w-6 md:h-6 text-brand-gold" />
             </div>
             <div>
               <h3 className="text-text-primary font-semibold text-sm uppercase tracking-wider mb-2">

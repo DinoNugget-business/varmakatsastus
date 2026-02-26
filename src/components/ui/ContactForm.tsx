@@ -16,7 +16,7 @@ export default function ContactForm({
 
   if (submitted) {
     return (
-      <div className="glass-card rounded-xl p-8 text-center">
+      <div className="glass-card rounded-xl p-5 sm:p-8 text-center">
         <CheckCircle className="w-12 h-12 text-brand-gold mx-auto mb-4" />
         <h3 className="text-xl font-bold text-brand-gold mb-2">
           {t("thankYou")}
@@ -32,7 +32,7 @@ export default function ContactForm({
         e.preventDefault();
         setSubmitted(true);
       }}
-      className="glass-card rounded-xl p-8 space-y-5"
+      className="glass-card rounded-xl p-5 sm:p-8 space-y-5"
     >
       {fields.includes("name") && (
         <div>
@@ -87,7 +87,7 @@ export default function ContactForm({
           </label>
           <textarea
             required
-            rows={5}
+            rows={4}
             className="w-full bg-brand-dark border border-brand-border rounded-lg px-4 py-2.5 text-text-primary placeholder-text-muted/50 focus:outline-none focus:ring-2 focus:ring-brand-gold/40 focus:border-brand-gold focus:shadow-[0_0_0_3px_rgba(255,191,0,0.1)] transition-all duration-200 resize-none"
           />
         </div>

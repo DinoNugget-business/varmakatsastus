@@ -24,8 +24,8 @@ export default function PriceTable({ title, rows }: PriceTableProps) {
                   i % 2 === 0 ? "bg-brand-gray/40" : "bg-brand-gray/20"
                 }`}
               >
-                <td className="py-3.5 px-5 text-text-primary">{row.service}</td>
-                <td className="py-3.5 px-5 text-brand-gold font-semibold text-right whitespace-nowrap">
+                <td className="py-3 px-3 sm:px-5 text-sm sm:text-base text-text-primary">{row.service}</td>
+                <td className="py-3 px-3 sm:px-5 text-sm sm:text-base text-brand-gold font-semibold text-right whitespace-nowrap">
                   {row.price}
                 </td>
               </tr>

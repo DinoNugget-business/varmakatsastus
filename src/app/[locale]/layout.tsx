@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import type { ReactNode } from "react";
 import { hasLocale } from "next-intl";
 import { notFound } from "next/navigation";
@@ -27,6 +27,13 @@ const rajdhani = Rajdhani({
   variable: "--font-rajdhani",
   display: "swap",
 });
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 5,
+  userScalable: true,
+};
 
 export async function generateMetadata({
   params,

@@ -28,7 +28,7 @@ export default function CertificationsBar() {
                     alt={cert.alt}
                     width={cert.w}
                     height={cert.h}
-                    className="h-20 lg:h-24 w-auto brightness-90 contrast-90 grayscale-[20%] transition-all duration-300 group-hover:brightness-100 group-hover:contrast-100 group-hover:grayscale-0"
+                    className="h-16 sm:h-20 lg:h-24 w-auto brightness-90 contrast-90 grayscale-[20%] transition-all duration-300 group-hover:brightness-100 group-hover:contrast-100 group-hover:grayscale-0"
                   />
                 </div>
                 <span className="text-xs text-text-dim font-medium tracking-wider uppercase transition-colors duration-300 group-hover:text-text-muted">

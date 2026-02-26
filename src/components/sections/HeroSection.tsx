@@ -7,7 +7,7 @@ export default function HeroSection() {
   const t = useTranslations("home");
 
   return (
-    <section className="relative min-h-[500px] lg:min-h-[600px] flex items-center overflow-hidden">
+    <section className="relative min-h-[400px] sm:min-h-[500px] lg:min-h-[600px] flex items-center overflow-hidden">
       <Image
         src="/images/varmakatsastus-herttoniemi.jpg"
         alt="Varmakatsastus Herttoniemi"
@@ -27,7 +27,7 @@ export default function HeroSection() {
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 w-full py-20">
         <div className="max-w-xl" style={{ animation: "fadeInLeft 0.8s ease-out" }}>
-          <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-brand-gold mb-4 leading-tight drop-shadow-[0_2px_10px_rgba(255,191,0,0.3)]">
+          <h1 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-brand-gold mb-4 leading-tight drop-shadow-[0_2px_10px_rgba(255,191,0,0.3)]">
             {t("heroTitle")}
           </h1>
           <p className="text-lg sm:text-xl text-text-primary mb-3 leading-relaxed drop-shadow-md">

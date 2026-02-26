@@ -14,7 +14,7 @@ export default function YhteystiedotPage() {
       />
 
       <div className="max-w-5xl mx-auto px-4 sm:px-6 py-12 lg:py-16">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-10">
           {/* Contact info */}
           <div className="space-y-8">
             <div>
@@ -98,7 +98,7 @@ export default function YhteystiedotPage() {
           </div>
 
           {/* Map */}
-          <div className="rounded-xl overflow-hidden h-[400px] lg:h-full min-h-[400px]">
+          <div className="rounded-xl overflow-hidden h-[250px] sm:h-[300px] md:h-[400px] lg:h-full">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1984.5!2d25.0271!3d60.2039!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469209e8e8e8e8e8%3A0x0!2sMekaanikonkatu+23%2C+00880+Helsinki!5e0!3m2!1sfi!2sfi!4v1234567890"
               width="100%"

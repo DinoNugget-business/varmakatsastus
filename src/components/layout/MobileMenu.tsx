@@ -43,7 +43,7 @@ export default function MobileMenu() {
         }`}
       >
         <div className="bg-brand-darker/95 backdrop-blur-xl h-full">
-          <div className="flex flex-col h-full p-6">
+          <div className="flex flex-col h-full p-4 sm:p-6">
             <div className="flex justify-between items-center mb-6">
               <span className="font-display text-brand-gold text-xl font-bold">
                 Varmakatsastus

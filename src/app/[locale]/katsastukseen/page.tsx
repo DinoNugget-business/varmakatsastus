@@ -12,7 +12,7 @@ export default function KatsastukseenPage() {
       <PageHeader title={t("title")} subtitle={t("subtitle")} />
 
       <div className="max-w-4xl mx-auto px-4 sm:px-6 py-12 lg:py-16">
-        <div className="flex flex-col lg:flex-row gap-10 mb-12">
+        <div className="flex flex-col lg:flex-row gap-6 lg:gap-10 mb-12">
           <div className="flex-1">
             <h2 className="font-display text-2xl font-bold text-brand-gold mb-4 tracking-tight">
               {t("whenTitle")}

@@ -60,7 +60,7 @@ export default function PopularOffers() {
               <div
                 className={`relative rounded-2xl p-6 lg:p-8 transition-all duration-300 ${
                   offer.popular
-                    ? "bg-brand-darker border-2 border-brand-gold shadow-xl shadow-brand-gold/10 md:scale-105 md:-my-4 z-10"
+                    ? "bg-brand-darker border-2 border-brand-gold shadow-xl shadow-brand-gold/10 lg:scale-105 lg:-my-4 z-10"
                     : "bg-brand-darker/60 border border-brand-border/50 hover:border-brand-gold/30"
                 }`}
               >
@@ -94,7 +94,7 @@ export default function PopularOffers() {
                       {t("offerBasicFrom")}
                     </span>
                   )}
-                  <span className="text-brand-gold text-4xl font-bold font-display">
+                  <span className="text-brand-gold text-3xl sm:text-4xl font-bold font-display">
                     {offer.price}
                   </span>
                 </div>
