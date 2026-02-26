@@ -12,10 +12,10 @@ export default function ToihinPage() {
 
       <div className="max-w-4xl mx-auto px-4 sm:px-6 py-12 lg:py-16">
         <div className="mb-10">
-          <p className="text-text-muted leading-relaxed mb-4">
+          <p className="text-text-muted-light leading-relaxed mb-4">
             {t("intro")}
           </p>
-          <p className="text-text-muted leading-relaxed">
+          <p className="text-text-muted-light leading-relaxed">
             {t("apply")}
           </p>
         </div>
@@ -24,7 +24,7 @@ export default function ToihinPage() {
           <h2 className="font-display text-xl font-bold text-brand-gold tracking-tight mb-4">
             {t("formTitle")}
           </h2>
-          <p className="text-text-muted text-sm mb-2">
+          <p className="text-text-muted-light text-sm mb-2">
             {t("orEmail")}{" "}
             <a
               href={`mailto:${CONTACT.email}`}

@@ -30,29 +30,29 @@ export default function VaraosatPage() {
           />
         </div>
 
-        <div className="glass-card rounded-xl p-8 mb-10">
+        <div className="light-card rounded-xl p-8 mb-10">
           <h2 className="font-display text-xl font-bold text-brand-gold tracking-tight mb-4">
             {t("deliveryTitle")}
           </h2>
-          <p className="text-text-muted leading-relaxed">
+          <p className="text-text-muted-light leading-relaxed">
             {t("deliveryP1")}
           </p>
         </div>
 
-        <div className="glass-card rounded-xl p-8 mb-10">
+        <div className="light-card rounded-xl p-8 mb-10">
           <h2 className="font-display text-xl font-bold text-brand-gold tracking-tight mb-4">
             {t("savingsTitle")}
           </h2>
-          <p className="text-text-muted leading-relaxed">
+          <p className="text-text-muted-light leading-relaxed">
             {t("savingsP1")}
           </p>
         </div>
 
-        <div className="glass-card rounded-xl p-8">
+        <div className="light-card rounded-xl p-8">
           <h2 className="font-display text-xl font-bold text-brand-gold tracking-tight mb-4">
             {t("contactTitle")}
           </h2>
-          <div className="flex flex-col sm:flex-row gap-6 text-text-muted">
+          <div className="flex flex-col sm:flex-row gap-6 text-text-muted-light">
             <a
               href={CONTACT.partsPhoneHref}
               className="flex items-center gap-2 hover:text-brand-gold transition-colors"

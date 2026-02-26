@@ -64,7 +64,7 @@ export default function Header() {
             href={BOOKING_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="hidden lg:inline-flex bg-brand-gold text-brand-darker font-bold px-6 py-2.5 rounded-lg hover:bg-brand-gold-dark transition-all duration-200 text-sm shadow-md shadow-brand-gold/20 hover:shadow-lg hover:shadow-brand-gold/30 hover:-translate-y-0.5 btn-shimmer"
+            className="hidden lg:inline-flex bg-brand-gold text-white font-bold px-6 py-2.5 rounded-lg hover:bg-brand-gold-dark transition-all duration-200 text-sm shadow-md shadow-brand-gold/20 hover:shadow-lg hover:shadow-brand-gold/30 hover:-translate-y-0.5 btn-shimmer"
           >
             {t("common.bookTime")}
           </a>

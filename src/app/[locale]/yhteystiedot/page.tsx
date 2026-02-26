@@ -22,7 +22,7 @@ export default function YhteystiedotPage() {
                 <Phone className="w-5 h-5" />
                 {t("contact.phoneTitle")}
               </h2>
-              <div className="space-y-3 text-text-muted">
+              <div className="space-y-3 text-text-muted-light">
                 <a
                   href={CONTACT.phoneHref}
                   className="block hover:text-brand-gold transition-colors"
@@ -49,7 +49,7 @@ export default function YhteystiedotPage() {
                 <Mail className="w-5 h-5" />
                 {t("contact.emailTitle")}
               </h2>
-              <div className="space-y-3 text-text-muted">
+              <div className="space-y-3 text-text-muted-light">
                 <a
                   href={`mailto:${CONTACT.email}`}
                   className="block hover:text-brand-gold transition-colors"
@@ -76,7 +76,7 @@ export default function YhteystiedotPage() {
                 <MapPin className="w-5 h-5" />
                 {t("contact.addressTitle")}
               </h2>
-              <p className="text-text-muted">
+              <p className="text-text-muted-light">
                 {CONTACT.address}
                 <br />
                 {CONTACT.city}
@@ -88,7 +88,7 @@ export default function YhteystiedotPage() {
                 <Clock className="w-5 h-5" />
                 {t("footer.openingHours")}
               </h2>
-              <div className="text-text-muted space-y-1">
+              <div className="text-text-muted-light space-y-1">
                 <p>{t("common.weekdays")}</p>
                 <p>{t("common.saturday")}</p>
                 <p>{t("common.sunday")}</p>

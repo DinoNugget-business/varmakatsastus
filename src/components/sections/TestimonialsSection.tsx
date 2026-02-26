@@ -16,7 +16,7 @@ export default function TestimonialsSection() {
   ];
 
   return (
-    <section className="py-16 lg:py-24 bg-brand-surface relative section-divider">
+    <section className="py-16 lg:py-24 bg-bg-white relative section-divider">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <AnimateOnScroll>
           <SectionHeading title={t("home.testimonialsTitle")} />

@@ -52,7 +52,7 @@ export default function HinnastoPage() {
         <PriceTable title={t("registrationTitle")} rows={registration} />
         <PriceTable title={t("modificationTitle")} rows={modification} />
 
-        <div className="glass-card rounded-xl p-6 mb-10 text-sm text-text-muted space-y-2">
+        <div className="light-card rounded-xl p-6 mb-10 text-sm text-text-muted-light space-y-2">
           <p>{t("note1")}</p>
           <p>{t("note2")}</p>
           <p>{t("note3")}</p>

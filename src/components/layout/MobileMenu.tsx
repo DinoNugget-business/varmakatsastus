@@ -120,7 +120,7 @@ export default function MobileMenu() {
                 href={BOOKING_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center justify-center gap-2 flex-1 bg-brand-gold text-brand-darker font-bold text-sm py-2.5 px-3 rounded-lg hover:bg-brand-gold-dark transition-all duration-200 shadow-md shadow-brand-gold/20"
+                className="flex items-center justify-center gap-2 flex-1 bg-brand-gold text-white font-bold text-sm py-2.5 px-3 rounded-lg hover:bg-brand-gold-dark transition-all duration-200 shadow-md shadow-brand-gold/20"
               >
                 <Calendar className="w-4 h-4" />
                 {t("common.bookTime")}

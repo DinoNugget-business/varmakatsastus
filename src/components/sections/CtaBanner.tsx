@@ -24,7 +24,7 @@ export default function CtaBanner() {
           href={BOOKING_URL}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center gap-2.5 bg-brand-gold text-brand-darker font-bold px-8 py-3.5 rounded-lg text-base hover:bg-brand-gold-dark transition-all duration-200 shadow-lg shadow-brand-gold/25 hover:shadow-xl hover:shadow-brand-gold/35 hover:-translate-y-0.5 btn-shimmer"
+          className="inline-flex items-center gap-2.5 bg-brand-gold text-white font-bold px-8 py-3.5 rounded-lg text-base hover:bg-brand-gold-dark transition-all duration-200 shadow-lg shadow-brand-gold/25 hover:shadow-xl hover:shadow-brand-gold/35 hover:-translate-y-0.5 btn-shimmer"
         >
           <Calendar className="w-5 h-5" />
           {t("cta")}

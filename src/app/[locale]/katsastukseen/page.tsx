@@ -17,7 +17,7 @@ export default function KatsastukseenPage() {
             <h2 className="font-display text-2xl font-bold text-brand-gold mb-4 tracking-tight">
               {t("whenTitle")}
             </h2>
-            <div className="text-text-muted space-y-4 leading-relaxed">
+            <div className="text-text-muted-light space-y-4 leading-relaxed">
               <p>{t("whenP1")}</p>
               <p>{t("whenP2")}</p>
               <p>{t("whenP3")}</p>
@@ -39,19 +39,19 @@ export default function KatsastukseenPage() {
           <h2 className="font-display text-2xl font-bold text-brand-gold mb-4 tracking-tight">
             {t("whatTitle")}
           </h2>
-          <p className="text-text-muted mb-4 leading-relaxed">
+          <p className="text-text-muted-light mb-4 leading-relaxed">
             {t("whatP1")}
           </p>
-          <h3 className="text-lg font-semibold text-text-primary mb-3">
+          <h3 className="text-lg font-semibold text-text-dark mb-3">
             {t("checksTitle")}
           </h3>
-          <ul className="list-disc list-inside text-text-muted space-y-2">
+          <ul className="list-disc list-inside text-text-muted-light space-y-2">
             <li>{t("check1")}</li>
             <li>{t("check2")}</li>
             <li>{t("check3")}</li>
             <li>{t("check4")}</li>
           </ul>
-          <p className="text-text-muted mt-4 leading-relaxed">
+          <p className="text-text-muted-light mt-4 leading-relaxed">
             {t("checksExtra")}
           </p>
         </div>
@@ -60,7 +60,7 @@ export default function KatsastukseenPage() {
           <h2 className="font-display text-2xl font-bold text-brand-gold mb-4 tracking-tight">
             {t("failTitle")}
           </h2>
-          <div className="text-text-muted space-y-4 leading-relaxed">
+          <div className="text-text-muted-light space-y-4 leading-relaxed">
             <p>{t("failP1")}</p>
             <p>{t("failP2")}</p>
             <p>{t("failP3")}</p>
@@ -71,7 +71,7 @@ export default function KatsastukseenPage() {
           <h2 className="font-display text-2xl font-bold text-brand-gold mb-4 tracking-tight">
             {t("deregisteredTitle")}
           </h2>
-          <p className="text-text-muted leading-relaxed">
+          <p className="text-text-muted-light leading-relaxed">
             {t("deregisteredP1")}
           </p>
         </div>

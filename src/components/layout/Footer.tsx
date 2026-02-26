@@ -51,7 +51,7 @@ export default function Footer() {
 
           {/* Opening hours */}
           <div>
-            <h3 className="text-brand-gold font-semibold mb-4 flex items-center gap-2">
+            <h3 className="text-text-primary font-semibold mb-4 flex items-center gap-2">
               <Clock className="w-4 h-4" />
               {t("footer.openingHours")}
             </h3>
@@ -64,7 +64,7 @@ export default function Footer() {
 
           {/* Quick links */}
           <div>
-            <h3 className="text-brand-gold font-semibold mb-4">
+            <h3 className="text-text-primary font-semibold mb-4">
               {t("footer.quickLinks")}
             </h3>
             <nav className="flex flex-col gap-2 text-sm">
@@ -82,7 +82,7 @@ export default function Footer() {
 
           {/* Certifications */}
           <div>
-            <h3 className="text-brand-gold font-semibold mb-4">
+            <h3 className="text-text-primary font-semibold mb-4">
               {t("footer.certifications")}
             </h3>
             <div className="flex flex-wrap gap-4 items-center">

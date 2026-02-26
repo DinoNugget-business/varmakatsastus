@@ -40,7 +40,7 @@ export default function ChatInput({ onSend }: Props) {
         onClick={handleSend}
         disabled={!value.trim()}
         aria-label="Send"
-        className="flex-shrink-0 w-10 h-10 rounded-full bg-brand-gold text-brand-darker flex items-center justify-center hover:bg-brand-gold-dark transition-colors disabled:opacity-40 disabled:cursor-not-allowed"
+        className="flex-shrink-0 w-10 h-10 rounded-full bg-brand-gold text-white flex items-center justify-center hover:bg-brand-gold-dark transition-colors disabled:opacity-40 disabled:cursor-not-allowed"
       >
         <Send className="w-4 h-4" />
       </button>

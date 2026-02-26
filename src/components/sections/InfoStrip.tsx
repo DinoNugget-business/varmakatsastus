@@ -27,7 +27,7 @@ export default function InfoStrip() {
   ];
 
   return (
-    <section className="relative bg-brand-darker border-t-2 border-brand-gold/60">
+    <section className="relative bg-bg-light border-t-2 border-brand-gold/40">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 py-8 lg:py-10">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-6">
           {items.map((item) => (
@@ -39,7 +39,7 @@ export default function InfoStrip() {
                 <item.icon className="w-5 h-5 md:w-6 md:h-6 text-brand-gold" />
               </div>
               <div>
-                <h3 className="text-text-primary font-semibold text-sm uppercase tracking-wider mb-1">
+                <h3 className="text-text-dark font-semibold text-sm uppercase tracking-wider mb-1">
                   {item.title}
                 </h3>
                 {item.highlight ? (
@@ -47,11 +47,11 @@ export default function InfoStrip() {
                     <p className="text-brand-gold text-3xl font-bold font-display leading-none whitespace-nowrap">
                       {item.highlight}
                     </p>
-                    <p className="text-text-muted text-xs mt-1">{item.note}</p>
+                    <p className="text-text-muted-light text-xs mt-1">{item.note}</p>
                   </>
                 ) : (
                   item.lines?.map((line) => (
-                    <p key={line} className="text-text-muted text-sm">
+                    <p key={line} className="text-text-muted-light text-sm">
                       {line}
                     </p>
                   ))
@@ -62,18 +62,18 @@ export default function InfoStrip() {
 
           {/* Booking CTA - 4th column */}
           <div className="flex items-start gap-4 justify-center md:justify-start">
-            <div className="flex-shrink-0 w-10 h-10 md:w-12 md:h-12 rounded-xl bg-brand-gold/20 flex items-center justify-center">
+            <div className="flex-shrink-0 w-10 h-10 md:w-12 md:h-12 rounded-xl bg-brand-gold/15 flex items-center justify-center">
               <Calendar className="w-5 h-5 md:w-6 md:h-6 text-brand-gold" />
             </div>
             <div>
-              <h3 className="text-text-primary font-semibold text-sm uppercase tracking-wider mb-2">
+              <h3 className="text-text-dark font-semibold text-sm uppercase tracking-wider mb-2">
                 {t("infoStrip.bookingTitle")}
               </h3>
               <a
                 href={BOOKING_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-1.5 bg-brand-gold text-brand-darker font-bold px-5 py-2 rounded-lg text-sm hover:bg-brand-gold-dark transition-all duration-200 shadow-md shadow-brand-gold/20 hover:shadow-lg hover:shadow-brand-gold/30 hover:-translate-y-0.5 btn-shimmer"
+                className="inline-flex items-center gap-1.5 bg-brand-gold text-white font-bold px-5 py-2 rounded-lg text-sm hover:bg-brand-gold-dark transition-all duration-200 shadow-md shadow-brand-gold/20 hover:shadow-lg hover:shadow-brand-gold/30 hover:-translate-y-0.5 btn-shimmer"
               >
                 {t("infoStrip.bookingCta")}
               </a>

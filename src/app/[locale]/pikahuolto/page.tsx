@@ -25,16 +25,16 @@ export default function PikahuoltoPage() {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 py-12 lg:py-16">
         <PriceTable title={t("pricesTitle")} rows={services} />
 
-        <div className="glass-card rounded-xl p-6 mb-10 text-sm text-text-muted space-y-2">
+        <div className="light-card rounded-xl p-6 mb-10 text-sm text-text-muted-light space-y-2">
           <p>{t("note1")}</p>
           <p>{t("note2")}</p>
         </div>
 
-        <div className="glass-card rounded-xl p-8">
+        <div className="light-card rounded-xl p-8">
           <h2 className="font-display text-xl font-bold text-brand-gold tracking-tight mb-4">
             {t("contactTitle")}
           </h2>
-          <div className="flex flex-col sm:flex-row gap-6 text-text-muted">
+          <div className="flex flex-col sm:flex-row gap-6 text-text-muted-light">
             <a
               href={CONTACT.servicePhoneHref}
               className="flex items-center gap-2 hover:text-brand-gold transition-colors"

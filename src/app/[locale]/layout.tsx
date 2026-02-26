@@ -65,7 +65,7 @@ export default async function LocaleLayout({ children, params }: Props) {
 
   return (
     <html lang={locale} className={`${inter.variable} ${rajdhani.variable}`}>
-      <body className="bg-brand-dark text-text-primary font-body antialiased">
+      <body className="bg-bg-light text-text-dark font-body antialiased">
         <LocalBusinessSchema />
         <NextIntlClientProvider messages={messages}>
           <ChatbotProvider>

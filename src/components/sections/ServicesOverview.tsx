@@ -37,7 +37,7 @@ export default function ServicesOverview() {
   ];
 
   return (
-    <section id="services" className="py-16 lg:py-24 relative section-divider bg-gradient-to-b from-brand-dark to-brand-surface/30">
+    <section id="services" className="py-16 lg:py-24 relative section-divider bg-bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <AnimateOnScroll>
           <SectionHeading

@@ -1,26 +1,30 @@
 @import "tailwindcss";
 
 @theme inline {
-  /* Brand accent colors - refined, warmer gold */
-  --color-brand-gold: #FFBF00;
-  --color-brand-gold-dark: #D4A000;
-  --color-brand-gold-light: #FFD54F;
-  --color-brand-blue: #2E8BC0;
-  --color-brand-blue-dark: #1C6E9F;
-  --color-brand-blue-light: #4FA8D6;
+  /* Brand accent colors — blue from logo */
+  --color-brand-gold: #3B9DE6;
+  --color-brand-gold-dark: #2B7CC0;
+  --color-brand-gold-light: #5BB5F0;
 
-  /* Background hierarchy - navy-blue tinted for depth */
-  --color-brand-dark: #171C28;
-  --color-brand-darker: #121620;
-  --color-brand-gray: #1F2536;
-  --color-brand-gray-light: #2A3144;
-  --color-brand-surface: #232A3C;
-  --color-brand-border: #354058;
+  /* Background hierarchy — cool blue-grey for dark sections */
+  --color-brand-dark: #0F1923;
+  --color-brand-darker: #0A1219;
+  --color-brand-gray: #1A2535;
+  --color-brand-gray-light: #243040;
+  --color-brand-surface: #1E2938;
+  --color-brand-border: #2E3D52;
+
+  /* Light section backgrounds */
+  --color-bg-light: #F5F7FA;
+  --color-bg-white: #FFFFFF;
+  --color-border-light: #D8DEE6;
 
   /* Text hierarchy */
   --color-text-primary: #F5F5F5;
   --color-text-muted: #9CA3B4;
   --color-text-dim: #6B7280;
+  --color-text-dark: #1A2535;
+  --color-text-muted-light: #5A6577;
 
   /* Fonts */
   --font-display: "Rajdhani", sans-serif;
@@ -85,12 +89,12 @@ body.menu-open {
   }
 }
 
-@keyframes goldGlow {
+@keyframes accentGlow {
   0%, 100% {
-    filter: drop-shadow(0 0 8px rgba(255, 191, 0, 0.3));
+    filter: drop-shadow(0 0 8px rgba(59, 157, 230, 0.3));
   }
   50% {
-    filter: drop-shadow(0 0 16px rgba(255, 191, 0, 0.5));
+    filter: drop-shadow(0 0 16px rgba(59, 157, 230, 0.5));
   }
 }
 
@@ -135,8 +139,8 @@ body.menu-open {
 .stagger-children .animate-on-scroll:nth-child(6) { transition-delay: 400ms; }
 .stagger-children .animate-on-scroll:nth-child(7) { transition-delay: 480ms; }
 
-.gold-glow {
-  animation: goldGlow 3s ease-in-out infinite;
+.accent-glow {
+  animation: accentGlow 3s ease-in-out infinite;
 }
 
 .btn-shimmer {
@@ -156,25 +160,38 @@ body.menu-open {
 .glass-card {
   background: linear-gradient(
     135deg,
-    rgba(31, 37, 54, 0.8) 0%,
-    rgba(42, 49, 68, 0.6) 100%
+    rgba(26, 37, 53, 0.8) 0%,
+    rgba(36, 48, 64, 0.6) 100%
   );
   backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 191, 0, 0.08);
+  border: 1px solid rgba(59, 157, 230, 0.08);
   transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .glass-card:hover {
-  border-color: rgba(255, 191, 0, 0.25);
+  border-color: rgba(59, 157, 230, 0.25);
   background: linear-gradient(
     135deg,
-    rgba(35, 42, 60, 0.9) 0%,
-    rgba(42, 49, 68, 0.8) 100%
+    rgba(30, 41, 56, 0.9) 0%,
+    rgba(36, 48, 64, 0.8) 100%
   );
   box-shadow:
     0 8px 30px rgba(0, 0, 0, 0.3),
-    0 0 0 1px rgba(255, 191, 0, 0.1),
+    0 0 0 1px rgba(59, 157, 230, 0.1),
     inset 0 1px 0 rgba(255, 255, 255, 0.05);
+}
+
+.light-card {
+  background: var(--color-bg-white);
+  border: 1px solid var(--color-border-light);
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.light-card:hover {
+  border-color: rgba(59, 157, 230, 0.3);
+  box-shadow:
+    0 8px 30px rgba(0, 0, 0, 0.08),
+    0 0 0 1px rgba(59, 157, 230, 0.1);
 }
 
 .section-divider {

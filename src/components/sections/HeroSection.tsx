@@ -19,21 +19,21 @@ export default function HeroSection() {
       {/* Gradient overlay - lets more image through */}
       <div className="absolute inset-0 bg-gradient-to-r from-brand-darker/70 via-brand-dark/40 to-transparent" />
 
-      {/* Fade-to-dark at bottom for smooth section transition */}
-      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-brand-dark to-transparent" />
+      {/* Fade to light at bottom for smooth section transition */}
+      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-[#F5F7FA] to-transparent" />
 
       {/* Decorative gold accent line at top */}
       <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-brand-gold/30 to-transparent" />
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 w-full py-20">
         <div className="max-w-xl" style={{ animation: "fadeInLeft 0.8s ease-out" }}>
-          <h1 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-brand-gold mb-4 leading-tight drop-shadow-[0_2px_10px_rgba(255,191,0,0.3)]">
+          <h1 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white mb-4 leading-tight drop-shadow-[0_2px_10px_rgba(0,0,0,0.3)]">
             {t("heroTitle")}
           </h1>
           <p className="text-lg sm:text-xl text-text-primary mb-3 leading-relaxed drop-shadow-md">
             {t("heroSubtitle")}
           </p>
-          <p className="text-2xl sm:text-3xl font-bold text-brand-gold mb-8 drop-shadow-[0_2px_8px_rgba(255,191,0,0.2)]">
+          <p className="text-2xl sm:text-3xl font-bold text-brand-gold mb-8 drop-shadow-[0_2px_8px_rgba(59,157,230,0.2)]">
             {t("heroPrice")}
           </p>
           <div
