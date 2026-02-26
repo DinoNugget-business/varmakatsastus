@@ -37,12 +37,17 @@ export default function ServicesOverview() {
   ];
 
   return (
-    <section id="services" className="py-16 lg:py-24 relative section-divider bg-bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6">
+    <section id="services" className="py-16 lg:py-24 relative dark-section-divider bg-brand-darker overflow-hidden">
+      {/* Subtle accent gradient */}
+      <div className="absolute inset-0 bg-gradient-to-r from-brand-gold/5 via-transparent to-brand-gold/5 pointer-events-none" />
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-64 h-px bg-gradient-to-r from-transparent via-brand-gold/60 to-transparent" />
+
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6">
         <AnimateOnScroll>
           <SectionHeading
             title={t("home.servicesTitle")}
             subtitle={t("home.servicesSubtitle")}
+            dark
           />
         </AnimateOnScroll>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
@@ -54,6 +59,7 @@ export default function ServicesOverview() {
                 description={t(`services.${key}.description`)}
                 href={SERVICE_LINKS[key] ?? undefined}
                 linkLabel={SERVICE_LINKS[key] ? t("common.readMore") : undefined}
+                dark
               />
             </AnimateOnScroll>
           ))}

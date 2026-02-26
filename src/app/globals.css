@@ -216,3 +216,59 @@ body.menu-open {
   border-radius: 2px;
   opacity: 0.6;
 }
+
+/* ============================
+   DARK SECTION UTILITIES
+   ============================ */
+
+.dark-card {
+  background: var(--color-brand-surface);
+  border: 1px solid var(--color-brand-border);
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.dark-card:hover {
+  border-color: rgba(59, 157, 230, 0.4);
+  box-shadow:
+    0 8px 30px rgba(0, 0, 0, 0.3),
+    0 0 0 1px rgba(59, 157, 230, 0.15);
+  transform: translateY(-2px);
+}
+
+.dark-section-divider {
+  position: relative;
+}
+
+.dark-section-divider::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--color-brand-gold), transparent);
+  border-radius: 2px;
+  opacity: 0.8;
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    box-shadow: 0 0 15px rgba(59, 157, 230, 0.2), 0 0 30px rgba(59, 157, 230, 0.1);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(59, 157, 230, 0.35), 0 0 40px rgba(59, 157, 230, 0.15);
+  }
+}
+
+.pulse-glow {
+  animation: pulseGlow 3s ease-in-out infinite;
+}
+
+.icon-hover-lift {
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.group:hover .icon-hover-lift {
+  transform: scale(1.15) rotate(-5deg);
+}

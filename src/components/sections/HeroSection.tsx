@@ -19,8 +19,8 @@ export default function HeroSection() {
       {/* Gradient overlay - lets more image through */}
       <div className="absolute inset-0 bg-gradient-to-r from-brand-darker/70 via-brand-dark/40 to-transparent" />
 
-      {/* Fade to light at bottom for smooth section transition */}
-      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-[#F5F7FA] to-transparent" />
+      {/* Fade to dark at bottom for seamless InfoStrip transition */}
+      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-brand-darker to-transparent" />
 
       {/* Decorative gold accent line at top */}
       <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-brand-gold/30 to-transparent" />

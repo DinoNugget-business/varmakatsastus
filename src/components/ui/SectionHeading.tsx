@@ -2,12 +2,14 @@ type SectionHeadingProps = {
   title: string;
   subtitle?: string;
   centered?: boolean;
+  dark?: boolean;
 };
 
 export default function SectionHeading({
   title,
   subtitle,
   centered = true,
+  dark = false,
 }: SectionHeadingProps) {
   return (
     <div className={`mb-10 lg:mb-14 ${centered ? "text-center" : ""}`}>
@@ -20,7 +22,7 @@ export default function SectionHeading({
         }`}
       />
       {subtitle && (
-        <p className="text-text-muted-light text-lg max-w-2xl mx-auto">
+        <p className={`${dark ? "text-text-muted-dark" : "text-text-muted-light"} text-lg max-w-2xl mx-auto`}>
           {subtitle}
         </p>
       )}
