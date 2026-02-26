@@ -1,0 +1,285 @@
+{
+  "metadata": {
+    "title": "Varmakatsastus — Autokatsastus Herttoniemi, Helsinki",
+    "description": "Varma Autokatsastus Oy — katsastus, rengaspalvelut, varaosat, autopesu ja autohuolto saman katon alla. Mekaanikonkatu 23, Helsinki."
+  },
+  "common": {
+    "bookTime": "Varaa aika",
+    "callUs": "Soita meille",
+    "phone": "040 4153017",
+    "address": "Mekaanikonkatu 23, 00880 Helsinki",
+    "email": "asiakaspalvelu@varmakatsastus.fi",
+    "weekdays": "Ark. 8-18",
+    "saturday": "La 9-15",
+    "sunday": "Su suljettu",
+    "inspectionFrom": "Katsastus alk. 39 €",
+    "allServices": "Kaikki palvelut saman katon alla",
+    "readMore": "Lue lisää",
+    "send": "Lähetä",
+    "name": "Nimi",
+    "emailField": "Sähköposti",
+    "phoneField": "Puhelin",
+    "message": "Viesti",
+    "company": "Yritys",
+    "thankYou": "Kiitos viestistäsi!",
+    "thankYouDesc": "Otamme sinuun yhteyttä mahdollisimman pian."
+  },
+  "nav": {
+    "home": "Etusivu",
+    "inspection": "Katsastukseen",
+    "pricing": "Hinnasto",
+    "corporate": "Yrityksille",
+    "quickRepair": "Pikahuolto",
+    "spareParts": "Varaosat",
+    "careers": "Töihin",
+    "contact": "Yhteystiedot",
+    "feedback": "Palaute"
+  },
+  "home": {
+    "heroTitle": "Varmakatsastus Herttoniemi",
+    "heroSubtitle": "Ainoana Suomessa! Kaikki auton oheispalvelut saman katon alla.",
+    "heroPrice": "Määräaikaiskatsastus alkaen 39 €",
+    "heroCta": "Varaa aika nyt",
+    "servicesTitle": "Palvelumme",
+    "servicesSubtitle": "Katsastus, rengaspalvelut, varaosat, autopesu, autohuolto, rengashotelli ja kahvila — kaikki saman katon alla.",
+    "testimonialsTitle": "Asiakkaiden kokemuksia",
+    "certificationsTitle": "Sertifikaatit",
+    "infoOpenTitle": "Aukioloajat",
+    "infoPriceTitle": "Katsastus alkaen",
+    "infoPriceValue": "39 €",
+    "infoPriceNote": "sis. ALV 25,5 %",
+    "infoLocationTitle": "Sijainti",
+    "offersTitle": "Suosituimmat paketit",
+    "offersSubtitle": "Valitse sinulle sopivin paketti ja varaa aika.",
+    "offerBasicName": "Katsastus",
+    "offerBasicItem1": "Määräaikaiskatsastus",
+    "offerBasicItem2": "Ilman pakokaasumittausta",
+    "offerBasicFrom": "alkaen",
+    "offerWashName": "Katsastus + Käsinpesu",
+    "offerWashItem1": "Määräaikaiskatsastus",
+    "offerWashItem2": "Käsinpesu",
+    "offerWashBadge": "Suosituin",
+    "offerPremiumName": "Katsastus + Täyspesu",
+    "offerPremiumItem1": "Määräaikaiskatsastus",
+    "offerPremiumItem2": "Käsinpesu",
+    "offerPremiumItem3": "Sisäpuhdistus",
+    "offerPromoCode": "Koodi",
+    "offerBookNow": "Varaa aika"
+  },
+  "services": {
+    "inspection": {
+      "title": "Katsastus",
+      "description": "Määräaikais-, muutos- ja rekisteröintikatsastukset ammattitaidolla ja nopeasti."
+    },
+    "tires": {
+      "title": "Rengaspalvelut",
+      "description": "Renkaanvaihto, tasapainotus ja rengasmyynti — kaikki rengaspalvelut yhdestä paikasta."
+    },
+    "repair": {
+      "title": "Autohuolto",
+      "description": "VA Autohuolto tarjoaa pikahuoltopalvelut, öljynvaihdot ja pienet korjaukset."
+    },
+    "carwash": {
+      "title": "Autopesu",
+      "description": "Pidä autosi puhtaana — autopesupalvelumme saatavilla katsastuksen yhteydessä."
+    },
+    "tirehotel": {
+      "title": "Rengashotelli",
+      "description": "Säilytä renkaat meillä — turvallisesti ja kätevästi kausivaihtojen välillä."
+    },
+    "parts": {
+      "title": "Varaosat",
+      "description": "Varma-Osat myy varaosia kaikkiin automerkkeihin kilpailukykyiseen hintaan."
+    },
+    "cafe": {
+      "title": "Kahvila",
+      "description": "Nauti kupillinen kahvia odottaessasi — kahvilamme palvelee katsastusasiakkaita."
+    }
+  },
+  "testimonials": {
+    "1": {
+      "quote": "Nopea ja ystävällinen palvelu! Katsastus hoitui puolessa tunnissa.",
+      "author": "Matti T."
+    },
+    "2": {
+      "quote": "Kaikki palvelut saman katon alla, todella kätevää. Suosittelen!",
+      "author": "Anna K."
+    },
+    "3": {
+      "quote": "Hinnat kohdillaan ja palvelu ammattimaista. Tulen uudelleen.",
+      "author": "Jukka P."
+    },
+    "4": {
+      "quote": "Hyvä sijainti Herttoniemessä, helppo tulla autolla. Kahvilassa sai odotella mukavasti.",
+      "author": "Maria L."
+    },
+    "5": {
+      "quote": "Rengasvaihto ja katsastus samalla käynnillä — säästin aikaa ja vaivaa.",
+      "author": "Petri S."
+    },
+    "6": {
+      "quote": "Asiakaspalvelu pelasi hyvin, selitettiin kaikki selkeästi.",
+      "author": "Laura H."
+    }
+  },
+  "inspection": {
+    "title": "Katsastukseen",
+    "subtitle": "Tietoa auton katsastuksesta — milloin, miten ja mitä tapahtuu.",
+    "whenTitle": "Milloin auto pitää katsastaa?",
+    "whenP1": "Henkilö- ja pakettiautojen ensimmäinen katsastus on suoritettava viimeistään sinä päivänä, kun käyttöönottopäivästä on kulunut neljä vuotta.",
+    "whenP2": "Sen jälkeen katsastus tehdään kahden vuoden välein siihen asti, kunnes käyttöönottopäivästä on kulunut kymmenen vuotta. Kymmenvuotiaat ja sitä vanhemmat autot katsastetaan vuoden välein.",
+    "whenP3": "Matkailuautojen katsastusaika noudattaa samaa linjaa kuin henkilöautoilla. Matkailuvaunua, jonka kokonaismassa on 750 kg tai vähemmän, ei tarvitse katsastaa lainkaan.",
+    "whenP4": "Katsastuspäivän voit selvittää helposti Trafin sähköisestä palvelusta tai ajoneuvosi rekisteröintitodistuksesta.",
+    "whatTitle": "Mitä katsastuksessa tapahtuu?",
+    "whatP1": "Voit olla katsastuksessa itse mukana tai jäädä odottamaan toimiston puolelle. Voit myös jättää auton aamulla katsastusasemalle ja hakea sen illalla.",
+    "checksTitle": "Katsastuksen yhteydessä tarkastetaan:",
+    "check1": "Auton kunto",
+    "check2": "Rekisteriin merkityt tiedot",
+    "check3": "Auton liikenneturvallisuus",
+    "check4": "Auton pakokaasupäästöt",
+    "checksExtra": "Lisäksi katsastuksen yhteydessä valvotaan autoon kohdistuvien verojen ja maksujen suorittamista.",
+    "failTitle": "Jos auto ei mene katsastuksesta läpi?",
+    "failP1": "Katsastuksessa havaitun vian perusteella auto voidaan määrätä jälkitarkastukseen. Jälkitarkastus on tehtävä kuukauden kuluessa määräaikaistarkastuksesta.",
+    "failP2": "Lievemmistä vioista voidaan määrätä pelkkä korjauskehotus, jolloin autoa ei tarvitse hyväksyttää uudelleen.",
+    "failP3": "Autoa ei saa käyttää liikenteessä, jos sitä ei ole katsastettu tai auto on katsastuksessa määrätty ajokieltoon.",
+    "deregisteredTitle": "Jos auto on poistettu liikennekäytöstä?",
+    "deregisteredP1": "Auto voidaan silti katsastaa, kunhan sillä on liikennevakuutus ja aika varattuna. Autossa tulee olla kiinnitetyt rekisterikilvet tai siirtolupa ja siirtomerkit.",
+    "cta": "Varaa katsastusaika"
+  },
+  "pricing": {
+    "title": "Hinnasto",
+    "subtitle": "Katsastuspalveluiden hinnat — kaikki hinnat sisältävät ALV:n 25,5 %.",
+    "periodicTitle": "Määräaikaiskatsastus",
+    "periodic": {
+      "row1": "Määräaikaiskatsastus arkisin, ilman pakokaasumittausta",
+      "row2": "Määräaikaiskatsastuspaketti 1 (katsastus, bensa, OBD)",
+      "row3": "Määräaikaiskatsastuspaketti 2 (katsastus, dieselmittaus)",
+      "row4": "Määräaikaiskatsastus lauantaisin, ilman pakokaasumittausta",
+      "row5": "Määräaikaiskatsastuspaketti lauantaisin (sis. lakisääteiset mittaukset)",
+      "row6": "Määräaikaiskatsastus lauantaisin (Drive-In)",
+      "row7": "Määräaikaiskatsastus sähköauto, arkisin",
+      "row8": "Määräaikaiskatsastus sähköauto, lauantaisin"
+    },
+    "additionalTitle": "Lisäpalvelut",
+    "additional": {
+      "row1": "Kaasuvuotomittaus (kaasuautoille)",
+      "row2": "Päästömittaukset/OBD (varattu etukäteen)",
+      "row3": "Päästömittaukset/OBD (ei varattu etukäteen)",
+      "row4": "Jälkitarkastus, arkisin",
+      "row5": "Jälkitarkastus, lauantaisin",
+      "row6": "Jälkitarkastusmaksu päästömittauksella",
+      "row7": "Kuntotarkastus (sis. päästömittaukset ja vikamuistiluku)",
+      "row8": "Valvontakatsastus (ilman pakokaasumittausta)",
+      "row9": "Matkailuauton määräaikaiskatsastus"
+    },
+    "registrationTitle": "Rekisteröintikatsastus",
+    "registration": {
+      "row1": "Rekisteröintikatsastus — tyyppihyväksytyt, ETA-maat, ilman kuntotarkastusta",
+      "row2": "Rekisteröintikatsastus — tyyppihyväksytyt, ETA-maat, kuntotarkastettavat",
+      "row3": "Rekisteröintikatsastus — ETA-maiden ulkopuolelta (esim. USA, Japani)"
+    },
+    "modificationTitle": "Muutoskatsastus",
+    "modification": {
+      "row1": "Muutoskatsastus (pieni muutos)",
+      "row2": "Muutoskatsastus (keskikokoinen muutos)",
+      "row3": "Muutoskatsastus (iso muutos)"
+    },
+    "note1": "Hinnat sisältävät ALV:n 25,5 %.",
+    "note2": "Katsastusmaksut sisältävät lisäksi Trafin valvontamaksun 3,60 € (sis. ALV 25,5 %).",
+    "note3": "Maksuvälineenä käy pankkikortti, Visa Electron, Visa, Mastercard ja käteinen.",
+    "cta": "Varaa katsastusaika"
+  },
+  "contact": {
+    "title": "Yhteystiedot",
+    "subtitle": "Ota yhteyttä — palvelemme arkisin ja lauantaisin.",
+    "phoneTitle": "Puhelinnumerot",
+    "mainPhone": "Katsastus",
+    "servicePhone": "Autohuolto",
+    "partsPhone": "Varaosat",
+    "emailTitle": "Sähköpostit",
+    "mainEmail": "Katsastus",
+    "serviceEmail": "Autohuolto",
+    "partsEmail": "Varaosat",
+    "addressTitle": "Osoite",
+    "holidays": "Pyhäpäivinä suljettu."
+  },
+  "corporate": {
+    "title": "Yrityksille",
+    "subtitle": "Räätälöidyt katsastus- ja huoltopalvelut yrityksille.",
+    "servicesTitle": "Yrityspalvelut",
+    "servicesP1": "Teemme yhteistyötä autokorjaamoiden, taksi- ja kuljetusyritysten kanssa ja räätälöimme katsastus- ja korjauspalvelut jokaisen asiakkaan tarpeiden mukaan.",
+    "servicesP2": "Yrityksille tarjoamme mahdollisuuden määritellä palvelutarpeet ja koostaa niistä sopivat paketit.",
+    "flexTitle": "Joustavat hinnat ja aikataulut",
+    "flexP1": "Olemme valmiita tarvittaessa joustamaan hinnoistamme ja aukioloistamme yritysten tarpeisiin.",
+    "contactTitle": "Ota yhteyttä",
+    "cta": "Varaa aika yritykselle"
+  },
+  "quickRepair": {
+    "title": "Pikahuolto — VA Autohuolto",
+    "subtitle": "Pikahuoltopalvelut kaikille autoille.",
+    "pricesTitle": "Hinnasto",
+    "row1": "Peruskorjaus",
+    "row2": "Sähkötyöt",
+    "row3": "Laitteiden asennus",
+    "row4": "Hitsaustyöt",
+    "row5": "Kausirenkaanvaihto",
+    "row6": "Pyörätyöt ja tasapainotus",
+    "row7": "Kausirenkaiden säilytys / kausi",
+    "row8": "Vikamuistiluku",
+    "note1": "Kaikki hinnat sisältävät ALV:n 25,5 %.",
+    "note2": "Maksuvälineenä käy Visa, Mastercard, Visa Electron ja käteinen.",
+    "contactTitle": "Ota yhteyttä"
+  },
+  "spareParts": {
+    "title": "Varaosat — Varma-Osat",
+    "subtitle": "Edulliset varaosat nopealla toimituksella.",
+    "cat1Title": "Auton varaosat",
+    "cat1Desc": "Varaosia kaikkiin automerkkeihin kilpailukykyiseen hintaan.",
+    "cat2Title": "Korjaamotarvikkeet",
+    "cat2Desc": "Korjaamotarvikkeet ja kemikaalit ammattilaiskäyttöön.",
+    "cat3Title": "Renkaat ja tarvikkeet",
+    "cat3Desc": "Renkaat ja rengastarvikkeet kaikkiin automerkkeihin.",
+    "deliveryTitle": "Nopea toimitus",
+    "deliveryP1": "Tilaa ennen klo 15, nouda seuraavana päivänä. Saman päivän toimitukset myös mahdollisia.",
+    "savingsTitle": "Jopa 30 % edullisemmat hinnat",
+    "savingsP1": "Tarjoamme varaosat jopa 30 % edullisemmin kuin kilpailijat — nopealla toimituksella.",
+    "contactTitle": "Ota yhteyttä"
+  },
+  "careers": {
+    "title": "Töihin meille",
+    "subtitle": "Haemme osaavia ja motivoituneita tekijöitä tiimiimme.",
+    "intro": "Varma Autokatsastus Oy etsii jatkuvasti ammattitaitoista henkilökuntaa katsastusasemilleen. Haemme erityisesti katsastajia ja mekaniikkoja.",
+    "apply": "Jos olet kiinnostunut työskentelemään kanssamme, lähetä meille hakemuksesi alla olevalla lomakkeella tai sähköpostitse.",
+    "formTitle": "Lähetä hakemus",
+    "orEmail": "Tai lähetä sähköpostilla:"
+  },
+  "feedback": {
+    "title": "Palaute",
+    "subtitle": "Kerro meille kokemuksestasi — palautteesi auttaa meitä kehittymään.",
+    "formTitle": "Lähetä palautetta"
+  },
+  "footer": {
+    "openingHours": "Aukioloajat",
+    "quickLinks": "Pikalinkit",
+    "certifications": "Sertifikaatit",
+    "copyright": "© 2025 Varma Autokatsastus Oy | Y-tunnus: 3490695-1"
+  },
+  "chatbot": {
+    "title": "Asiakaspalvelu",
+    "placeholder": "Kirjoita kysymyksesi...",
+    "welcome": "Hei! Miten voin auttaa? Valitse aihe alta tai kirjoita kysymyksesi.",
+    "fallback": "Valitettavasti en löytänyt vastausta kysymykseesi. Voit soittaa meille numeroon 040 4153017 tai valita aiheen alta.",
+    "bookingSuggestion": "Haluatko varata katsastusajan?",
+    "openLabel": "Avaa chat",
+    "closeLabel": "Sulje chat"
+  },
+  "infoStrip": {
+    "bookingTitle": "Online ajanvaraus",
+    "bookingCta": "Varaa aika"
+  },
+  "ctaBanner": {
+    "title": "Varaa katsastusaika nyt",
+    "subtitle": "Määräaikaiskatsastus alkaen 39 € — nopea ja luotettava palvelu Herttoniemessä.",
+    "cta": "Varaa aika verkossa"
+  }
+}

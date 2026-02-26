@@ -1,0 +1,189 @@
+@import "tailwindcss";
+
+@theme inline {
+  /* Brand accent colors - refined, warmer gold */
+  --color-brand-gold: #FFBF00;
+  --color-brand-gold-dark: #D4A000;
+  --color-brand-gold-light: #FFD54F;
+  --color-brand-blue: #2E8BC0;
+  --color-brand-blue-dark: #1C6E9F;
+  --color-brand-blue-light: #4FA8D6;
+
+  /* Background hierarchy - navy-blue tinted for depth */
+  --color-brand-dark: #171C28;
+  --color-brand-darker: #121620;
+  --color-brand-gray: #1F2536;
+  --color-brand-gray-light: #2A3144;
+  --color-brand-surface: #232A3C;
+  --color-brand-border: #354058;
+
+  /* Text hierarchy */
+  --color-text-primary: #F5F5F5;
+  --color-text-muted: #9CA3B4;
+  --color-text-dim: #6B7280;
+
+  /* Fonts */
+  --font-display: "Rajdhani", sans-serif;
+  --font-body: "Inter", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-brand-dark);
+  color: var(--color-text-primary);
+  font-family: var(--font-body);
+}
+
+/* ============================
+   ANIMATION KEYFRAMES
+   ============================ */
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes goldGlow {
+  0%, 100% {
+    filter: drop-shadow(0 0 8px rgba(255, 191, 0, 0.3));
+  }
+  50% {
+    filter: drop-shadow(0 0 16px rgba(255, 191, 0, 0.5));
+  }
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% center; }
+  100% { background-position: 200% center; }
+}
+
+/* ============================
+   UTILITY ANIMATION CLASSES
+   ============================ */
+
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(30px) scale(0.97);
+  transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.animate-on-scroll.anim-fadeLeft {
+  transform: translateX(-30px) scale(0.97);
+}
+
+.animate-on-scroll.anim-fadeRight {
+  transform: translateX(30px) scale(0.97);
+}
+
+.animate-on-scroll.anim-scaleIn {
+  transform: scale(0.9);
+}
+
+.animate-on-scroll.is-visible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+.stagger-children .animate-on-scroll:nth-child(1) { transition-delay: 0ms; }
+.stagger-children .animate-on-scroll:nth-child(2) { transition-delay: 80ms; }
+.stagger-children .animate-on-scroll:nth-child(3) { transition-delay: 160ms; }
+.stagger-children .animate-on-scroll:nth-child(4) { transition-delay: 240ms; }
+.stagger-children .animate-on-scroll:nth-child(5) { transition-delay: 320ms; }
+.stagger-children .animate-on-scroll:nth-child(6) { transition-delay: 400ms; }
+.stagger-children .animate-on-scroll:nth-child(7) { transition-delay: 480ms; }
+
+.gold-glow {
+  animation: goldGlow 3s ease-in-out infinite;
+}
+
+.btn-shimmer {
+  background-image: linear-gradient(
+    110deg,
+    transparent 25%,
+    rgba(255, 255, 255, 0.15) 50%,
+    transparent 75%
+  );
+  background-size: 200% 100%;
+}
+
+.btn-shimmer:hover {
+  animation: shimmer 1.5s ease-in-out;
+}
+
+.glass-card {
+  background: linear-gradient(
+    135deg,
+    rgba(31, 37, 54, 0.8) 0%,
+    rgba(42, 49, 68, 0.6) 100%
+  );
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 191, 0, 0.08);
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glass-card:hover {
+  border-color: rgba(255, 191, 0, 0.25);
+  background: linear-gradient(
+    135deg,
+    rgba(35, 42, 60, 0.9) 0%,
+    rgba(42, 49, 68, 0.8) 100%
+  );
+  box-shadow:
+    0 8px 30px rgba(0, 0, 0, 0.3),
+    0 0 0 1px rgba(255, 191, 0, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.05);
+}
+
+.section-divider {
+  position: relative;
+}
+
+.section-divider::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--color-brand-gold), transparent);
+  border-radius: 2px;
+  opacity: 0.6;
+}
