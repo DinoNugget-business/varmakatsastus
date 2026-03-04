@@ -1,7 +1,6 @@
 "use client";
 
 import { useState, type KeyboardEvent } from "react";
-import { useTranslations } from "next-intl";
 import { Send } from "lucide-react";
 
 type Props = {
@@ -10,7 +9,6 @@ type Props = {
 
 export default function ChatInput({ onSend }: Props) {
   const [value, setValue] = useState("");
-  const t = useTranslations("chatbot");
 
   const handleSend = () => {
     const trimmed = value.trim();
@@ -27,20 +25,38 @@ export default function ChatInput({ onSend }: Props) {
   };
 
   return (
-    <div className="flex items-center gap-2 p-3 border-t border-brand-border/50">
+    <div
+      className="flex items-center gap-2 p-3"
+      style={{ borderTop: "1px solid #3A3A3A" }}
+    >
       <input
         type="text"
         value={value}
         onChange={(e) => setValue(e.target.value)}
         onKeyDown={handleKeyDown}
-        placeholder={t("placeholder")}
-        className="flex-1 bg-brand-gray/60 border border-brand-border/40 rounded-full px-4 py-2.5 text-sm text-text-light placeholder:text-text-dim focus:outline-none focus:ring-2 focus:ring-brand-gold/50 focus:border-brand-gold/50 transition-all"
+        placeholder="Kirjoita kysymyksesi..."
+        className="flex-1 rounded-full px-4 py-2.5 text-sm transition-all"
+        style={{
+          backgroundColor: "#2A2A2A",
+          border: "1px solid #3A3A3A",
+          color: "#F5F5F5",
+          outline: "none",
+        }}
+        onFocus={(e) => {
+          e.currentTarget.style.borderColor = "rgba(232,117,26,0.5)";
+          e.currentTarget.style.boxShadow = "0 0 0 2px rgba(232,117,26,0.2)";
+        }}
+        onBlur={(e) => {
+          e.currentTarget.style.borderColor = "#3A3A3A";
+          e.currentTarget.style.boxShadow = "none";
+        }}
       />
       <button
         onClick={handleSend}
         disabled={!value.trim()}
-        aria-label="Send"
-        className="flex-shrink-0 w-10 h-10 rounded-full bg-brand-gold text-white flex items-center justify-center hover:bg-brand-gold-dark transition-colors disabled:opacity-40 disabled:cursor-not-allowed"
+        aria-label="Lähetä"
+        className="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center transition-colors disabled:opacity-40 disabled:cursor-not-allowed"
+        style={{ backgroundColor: "#E8751A", color: "#FFFFFF" }}
       >
         <Send className="w-4 h-4" />
       </button>

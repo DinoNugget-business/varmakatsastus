@@ -3,16 +3,12 @@ import type { ReactNode } from "react";
 import { hasLocale } from "next-intl";
 import { notFound } from "next/navigation";
 import { NextIntlClientProvider } from "next-intl";
-import { getMessages, getTranslations } from "next-intl/server";
+import { getMessages } from "next-intl/server";
 import { Inter, Rajdhani } from "next/font/google";
 import { routing } from "@/i18n/routing";
-import Header from "@/components/layout/Header";
-import Footer from "@/components/layout/Footer";
-import LocalBusinessSchema from "@/components/LocalBusinessSchema";
 import ChatbotProvider from "@/components/chatbot/ChatbotProvider";
 import ChatbotTrigger from "@/components/chatbot/ChatbotTrigger";
 import ChatbotWindow from "@/components/chatbot/ChatbotWindow";
-import CtaBanner from "@/components/sections/CtaBanner";
 import "../globals.css";
 
 const inter = Inter({
@@ -35,19 +31,10 @@ export const viewport: Viewport = {
   userScalable: true,
 };
 
-export async function generateMetadata({
-  params,
-}: {
-  params: Promise<{ locale: string }>;
-}): Promise<Metadata> {
-  const { locale } = await params;
-  const t = await getTranslations({ locale, namespace: "metadata" });
-
-  return {
-    title: t("title"),
-    description: t("description"),
-  };
-}
+export const metadata: Metadata = {
+  title: "Tekno-Rengas — Chatbot Demo",
+  description: "BestDrive Tekno-Rengas chatbot-demo",
+};
 
 type Props = {
   children: ReactNode;
@@ -65,14 +52,10 @@ export default async function LocaleLayout({ children, params }: Props) {
 
   return (
     <html lang={locale} className={`${inter.variable} ${rajdhani.variable}`}>
-      <body className="bg-white text-text-dark font-body antialiased">
-        <LocalBusinessSchema />
+      <body className="bg-white font-body antialiased" style={{ color: "#1A1A1A" }}>
         <NextIntlClientProvider messages={messages}>
           <ChatbotProvider>
-            <Header />
             <main className="min-h-screen">{children}</main>
-            <CtaBanner />
-            <Footer />
             <ChatbotWindow />
             <ChatbotTrigger />
           </ChatbotProvider>

@@ -1,305 +1,398 @@
-import { BOOKING_URL, CONTACT } from "./constants";
+import { CONTACT, WEBSITE_URL } from "./constants";
 
 export type ChatFAQ = {
   id: string;
   category: string;
-  keywords: { fi: string[]; en: string[] };
-  question: { fi: string; en: string };
-  answer: { fi: string; en: string };
+  keywords: string[];
+  question: string;
+  answer: string;
   quickReplies?: string[];
-  link?: { url: string; label: { fi: string; en: string } };
+  link?: { url: string; label: string };
 };
 
 export type ChatCategory = {
   id: string;
-  label: { fi: string; en: string };
+  label: string;
   icon: string;
   faqId: string;
 };
 
 export const CHAT_CATEGORIES: ChatCategory[] = [
-  { id: "pricing", label: { fi: "Hinnat", en: "Pricing" }, icon: "Tag", faqId: "price-basic" },
-  { id: "hours", label: { fi: "Aukioloajat", en: "Hours" }, icon: "Clock", faqId: "hours" },
-  { id: "location", label: { fi: "Sijainti", en: "Location" }, icon: "MapPin", faqId: "location" },
-  { id: "booking", label: { fi: "Ajanvaraus", en: "Booking" }, icon: "Calendar", faqId: "booking" },
-  { id: "process", label: { fi: "Katsastus", en: "Inspection" }, icon: "ClipboardCheck", faqId: "process-when" },
-  { id: "services", label: { fi: "Palvelut", en: "Services" }, icon: "Wrench", faqId: "services" },
-  { id: "contact", label: { fi: "Yhteystiedot", en: "Contact" }, icon: "Phone", faqId: "contact-phone" },
+  { id: "pricing", label: "Hinnat", icon: "Tag", faqId: "price-tire-change" },
+  { id: "hours", label: "Aukioloajat", icon: "Clock", faqId: "hours" },
+  { id: "location", label: "Sijainti", icon: "MapPin", faqId: "location" },
+  { id: "tires", label: "Renkaat", icon: "Circle", faqId: "tires-types" },
+  { id: "maintenance", label: "Autohuolto", icon: "Wrench", faqId: "maintenance-packages" },
+  { id: "rims", label: "Vanteet", icon: "CircleDot", faqId: "rims" },
+  { id: "contact", label: "Yhteystiedot", icon: "Phone", faqId: "contact" },
 ];
 
 export const FAQ_DATA: ChatFAQ[] = [
-  // --- PRICING ---
+  // --- PRICING: TIRE CHANGE ---
   {
-    id: "price-basic",
+    id: "price-tire-change",
     category: "pricing",
-    keywords: {
-      fi: ["hinta", "maksaa", "paljonko", "euro", "katsastus hinta", "halpa", "edullinen", "39"],
-      en: ["price", "cost", "much", "euro", "cheap", "affordable", "39"],
-    },
-    question: { fi: "Paljonko katsastus maksaa?", en: "How much does inspection cost?" },
-    answer: {
-      fi: `Määräaikaiskatsastus arkisin alkaen **39 €** (ilman pakokaasumittausta). Suosituimmat paketit:\n\n• Katsastus: 39 €\n• Katsastus + Käsinpesu: 75 € (koodi VARMAPESU)\n• Katsastus + Täyspesu: 99 €\n\nKaikki hinnat sisältävät ALV 25,5 %.`,
-      en: `Periodic inspection weekdays from **39 €** (without emission measurement). Most popular packages:\n\n• Inspection: 39 €\n• Inspection + Hand Wash: 75 € (code VARMAPESU)\n• Inspection + Full Wash: 99 €\n\nAll prices include VAT 25.5%.`,
-    },
-    quickReplies: ["price-saturday", "price-electric", "booking"],
-    link: { url: "/hinnasto", label: { fi: "Katso koko hinnasto", en: "View full pricing" } },
+    keywords: [
+      "hinta", "maksaa", "paljonko", "renkaanvaihto", "allevaihto",
+      "vaihto", "asennus", "rengas hinta", "halpa", "edullinen",
+    ],
+    question: "Paljonko renkaanvaihto maksaa?",
+    answer: `Renkaiden allevaihto (4 rengasta):\n\n• **Henkilöauto:** 45 €\n• **Sähköauto (täysakku):** 50 €\n• **SUV tai pakettiauto:** 55 €\n• **Erikoisajoneuvot (matkailuauto yms.):** 65 €\n\nTPMS-ohjelmointi ilman renkaanvaihtoa alk. 20 €.\n\nHinnat sis. ALV.`,
+    quickReplies: ["price-balancing", "price-alignment", "contact"],
+    link: { url: `${WEBSITE_URL}/tyohinnasto`, label: "Katso koko työhinnasto" },
   },
+
+  // --- PRICING: BALANCING ---
   {
-    id: "price-saturday",
+    id: "price-balancing",
     category: "pricing",
-    keywords: {
-      fi: ["lauantai", "viikonloppu", "la"],
-      en: ["saturday", "weekend"],
-    },
-    question: { fi: "Paljonko katsastus maksaa lauantaisin?", en: "How much on Saturdays?" },
-    answer: {
-      fi: "Lauantain hinnat:\n\n• Katsastus (ilman pakokaasumittausta): **55 €**\n• Katsastuspaketti (sis. lakisääteiset mittaukset): **78 €**\n• Drive-In katsastus: **98 €**\n\nLauantaisin palvelemme klo 9-15.",
-      en: "Saturday prices:\n\n• Inspection (without emission): **55 €**\n• Inspection package (incl. statutory measurements): **78 €**\n• Drive-In inspection: **98 €**\n\nSaturdays we serve 9 AM - 3 PM.",
-    },
-    quickReplies: ["price-basic", "booking"],
+    keywords: [
+      "tasapainotus", "tasapainottaa", "valinainen", "irtorengas",
+      "balanssi", "tarina", "roadforce",
+    ],
+    question: "Paljonko tasapainotus maksaa?",
+    answer: `Irtorenkaiden tasapainotus (4 kpl):\n\n• **13"-16":** 30 €\n• **17"-19":** 35 €\n• **20"-21":** 40 €\n• **22"+ SUV/4x4:** 50 €\n\nAuton alla tasapainotus (sis. asennus + konepesu):\n\n• **12"-18":** 75 €\n• **19"-21":** 80 € (+10 € SUV/pakettiauto)\n• **22" 4x4/SUV:** 100 €`,
+    quickReplies: ["price-roadforce", "price-tire-change", "contact"],
+    link: { url: `${WEBSITE_URL}/tyohinnasto`, label: "Katso koko työhinnasto" },
   },
+
+  // --- PRICING: ROADFORCE ---
   {
-    id: "price-electric",
+    id: "price-roadforce",
     category: "pricing",
-    keywords: {
-      fi: ["sahkoauto", "sahko", "ev", "tesla", "hybridi"],
-      en: ["electric", "ev", "tesla", "hybrid"],
-    },
-    question: { fi: "Paljonko sähköauton katsastus maksaa?", en: "Electric vehicle inspection cost?" },
-    answer: {
-      fi: "Sähköauton katsastus:\n\n• Arkisin: **50 €**\n• Lauantaisin: **68 €**",
-      en: "Electric vehicle inspection:\n\n• Weekdays: **50 €**\n• Saturdays: **68 €**",
-    },
-    quickReplies: ["price-basic", "booking"],
+    keywords: [
+      "roadforce", "road force", "tarina", "erikoistasapainotus",
+    ],
+    question: "Paljonko RoadForce-tasapainotus maksaa?",
+    answer: `RoadForce-tasapainotus:\n\n**Ilman suuntausta:**\n• 13"-18": **90 €** (19" +10 €, 20"+ +20 €)\n\n**Suuntauksen kanssa:**\n• 13"-18": **140 €** (19" +20 €, 20" +35 €, 21"-23" +50 €)\n• Run-Flat lisä: +50 €`,
+    quickReplies: ["price-alignment", "price-balancing", "contact"],
   },
+
+  // --- PRICING: ALIGNMENT ---
   {
-    id: "price-reinspection",
+    id: "price-alignment",
     category: "pricing",
-    keywords: {
-      fi: ["jalkitarkastus", "uusintatarkastus", "uusinta", "hylky"],
-      en: ["reinspection", "re-inspection", "recheck", "failed"],
-    },
-    question: { fi: "Paljonko jälkitarkastus maksaa?", en: "Re-inspection cost?" },
-    answer: {
-      fi: "Jälkitarkastus:\n\n• Arkisin: **33 €**\n• Lauantaisin: **37 €**\n• Päästömittauksella: **48 €**\n\nJälkitarkastus on tehtävä kuukauden kuluessa alkuperäisestä katsastuksesta.",
-      en: "Re-inspection:\n\n• Weekdays: **33 €**\n• Saturdays: **37 €**\n• With emission measurement: **48 €**\n\nRe-inspection must be done within one month of the original inspection.",
-    },
-    quickReplies: ["process-fail", "booking"],
+    keywords: [
+      "suuntaus", "nelipyorasuuntaus", "nelipyora", "ohjauskulma",
+      "kulmat", "suuntaukset", "alignment",
+    ],
+    question: "Paljonko nelipyöräsuuntaus maksaa?",
+    answer: `Nelipyöräsuuntaus (Suomalaistentie 5):\n\n• **Etuakselin säätö:** alk. 40 €\n• **Diagnostiikka + etuakselin säätö:** 80 €\n• **Taka-akselin säätö:** alk. 40 €\n• **Koko auto (etu + taka):** 120 €\n• **Muutoskatsastuslausunto:** 10 €\n• **Ylityö (jumittuneet pultit yms.):** 65 €/h\n\nOhjauskulmat kannattaa tarkistaa vähintään kerran vuodessa!`,
+    quickReplies: ["price-tire-change", "tires-depth", "contact"],
   },
+
+  // --- PRICING: RIM INSTALLATION ---
   {
-    id: "price-registration",
+    id: "price-rim-install",
     category: "pricing",
-    keywords: {
-      fi: ["rekisterointikatsastus", "rekisterointi", "tuonti", "tuontiauto", "maahantuonti"],
-      en: ["registration", "import", "imported"],
-    },
-    question: { fi: "Rekisteröintikatsastuksen hinta?", en: "Registration inspection cost?" },
-    answer: {
-      fi: "Rekisteröintikatsastus:\n\n• ETA-maat, tyyppihyväksytyt (ilman kuntotarkastusta): **150 €**\n• ETA-maat, kuntotarkastettavat: **210 €**\n• ETA-maiden ulkopuolelta (esim. USA, Japani): **440 €**",
-      en: "Registration inspection:\n\n• EEA countries, type-approved (without condition check): **150 €**\n• EEA countries, with condition check: **210 €**\n• Outside EEA (e.g., USA, Japan): **440 €**",
-    },
-    quickReplies: ["booking", "contact-phone"],
+    keywords: [
+      "vanteen asennus", "vanne asennus", "vannetyot", "vannetyö",
+      "uudet vanteet", "vanteiden asennus",
+    ],
+    question: "Paljonko vanteen asennus maksaa?",
+    answer: `Vanteen asennus + tasapainotus (4 kpl):\n\n| Koko | Kokoonpano | + Asennus autoon |\n|---|---|---|\n| 13"-16" | 70 € | 100 € |\n| 17"-18" | 80 € | 110 € |\n| 19" | 90 € | 120 € |\n| 20"-21" | 110 € | 140 € |\n| 22"-24" | 160 € | 190 € |\n\nLisät: ulkoa ostetut renkaat +20 €, raskaat/SUV +15 €, sähköauto +10 €.`,
+    quickReplies: ["rims", "price-balancing", "contact"],
+  },
+
+  // --- PRICING: TIRE REPAIR ---
+  {
+    id: "price-repair",
+    category: "pricing",
+    keywords: [
+      "paikkaus", "renkaan korjaus", "puhjennut", "renga rikki",
+      "paikka", "minicombi", "korjaus rengas",
+    ],
+    question: "Paljonko renkaan paikkaus maksaa?",
+    answer: `Renkaan paikkaus:\n\n• **Pikapaikkaus (tubeless):** 37,50 €/rengas\n• **Minicombi-paikkaus:** 50 €/rengas (sis. irrotus, asennus, tasapainotus)\n• **Paikkausmassan puhdistus:** 20 €/rengas`,
+    quickReplies: ["price-tire-change", "tires-types", "contact"],
+  },
+
+  // --- PRICING: MAINTENANCE ---
+  {
+    id: "price-maintenance",
+    category: "pricing",
+    keywords: [
+      "huolto hinta", "vuosihuolto", "huoltopaketti", "premium",
+      "huollon hinta", "autohuolto hinta",
+    ],
+    question: "Mitä huoltopaketit maksavat?",
+    answer: `BestDrive-huoltopaketit (Martinsillantie 10):\n\n• **BestDrive Vuosihuolto:** 199 €\n• **BestDrive Premium:** 249 €\n• **BestDrive Van (pakettiauto):** 229 €\n• **Sähköautohuolto:** 49 €\n\nMuut huoltotoimet:\n• Öljynvaihtohuolto: alk. 99 €\n• Jarrunesteen vaihto: 75 €`,
+    quickReplies: ["price-oil", "price-ac", "maintenance-ev"],
+    link: { url: `${WEBSITE_URL}/shop/category/autohuolto-huolto-ohjelmat-47`, label: "Katso huoltopaketit" },
+  },
+
+  // --- PRICING: OIL ---
+  {
+    id: "price-oil",
+    category: "pricing",
+    keywords: [
+      "oljynvaihto", "oljy", "oljynvaihtohuolto", "moottorioljy",
+    ],
+    question: "Paljonko öljynvaihto maksaa?",
+    answer: `Öljynvaihtohuolto alk. **99 €**.\n\nHuolto suoritetaan osoitteessa Martinsillantie 10, Espoo.\n\nVaraa aika soittamalla ${CONTACT.phone} (valitse 2).`,
+    quickReplies: ["price-maintenance", "price-ac", "contact"],
+  },
+
+  // --- PRICING: AC ---
+  {
+    id: "price-ac",
+    category: "pricing",
+    keywords: [
+      "ilmastointi", "ilmastoinnin taytto", "ac", "kylma", "r134",
+      "r1234", "ilmastointihuolto",
+    ],
+    question: "Paljonko ilmastointihuolto maksaa?",
+    answer: `Ilmastoinnin täyttöhuolto:\n\n• **R134A (100g):** 79 €\n• **R1234YF (100g):** 149 €\n\nHuolto suoritetaan Martinsillantie 10:ssä.`,
+    quickReplies: ["price-maintenance", "price-diagnostics", "contact"],
+  },
+
+  // --- PRICING: DIAGNOSTICS ---
+  {
+    id: "price-diagnostics",
+    category: "pricing",
+    keywords: [
+      "diagnostiikka", "vikakoodi", "vikakoodit", "obd", "vianmaaritys",
+      "vikadiagnoosi", "vikavalot",
+    ],
+    question: "Paljonko diagnostiikka/vikakoodien luku maksaa?",
+    answer: `Diagnostiikkapalvelut:\n\n• **Vikakoodien luku (OBD):** 39 €\n• **Vikadiagnoosi-paketti:** 99 €\n\nVaraa aika soittamalla ${CONTACT.phone} (valitse 2).`,
+    quickReplies: ["price-maintenance", "maintenance-carcheck", "contact"],
   },
 
   // --- HOURS ---
   {
     id: "hours",
     category: "hours",
-    keywords: {
-      fi: ["aukiolo", "auki", "avoinna", "milloin", "kellonaika", "aika"],
-      en: ["open", "hours", "when", "time", "schedule"],
-    },
-    question: { fi: "Milloin olette auki?", en: "When are you open?" },
-    answer: {
-      fi: "Aukioloajat:\n\n• **Ark. (ma-pe):** 8:00 - 18:00\n• **Lauantai:** 9:00 - 15:00\n• **Sunnuntai:** Suljettu\n• **Pyhäpäivät:** Suljettu",
-      en: "Opening hours:\n\n• **Mon-Fri:** 8:00 AM - 6:00 PM\n• **Saturday:** 9:00 AM - 3:00 PM\n• **Sunday:** Closed\n• **Public holidays:** Closed",
-    },
-    quickReplies: ["location", "booking"],
+    keywords: [
+      "aukiolo", "auki", "avoinna", "milloin", "kellonaika", "aika",
+      "aukioloaika", "suljettu", "kiinni",
+    ],
+    question: "Milloin olette auki?",
+    answer: `Aukioloajat:\n\n• **Ma-Pe:** 08:30 - 17:00\n• **Lauantai:** Suljettu\n• **Sunnuntai:** Suljettu\n\nMolemmat toimipisteet (Suomalaistentie 5 ja Martinsillantie 10) noudattavat samoja aukioloaikoja.`,
+    quickReplies: ["location", "contact"],
   },
 
   // --- LOCATION ---
   {
     id: "location",
     category: "location",
-    keywords: {
-      fi: ["sijainti", "osoite", "missa", "paikka", "herttoniemi", "mekaanikonkatu", "kartta"],
-      en: ["location", "address", "where", "place", "herttoniemi", "map", "directions"],
-    },
-    question: { fi: "Missä olette?", en: "Where are you located?" },
-    answer: {
-      fi: `Olemme Herttoniemessä, Helsingissä:\n\n📍 **${CONTACT.address}**\n**${CONTACT.city}**\n\nHelppo tulla autolla — löydät meidät Mekaanikonkadulta.`,
-      en: `We are in Herttoniemi, Helsinki:\n\n📍 **${CONTACT.address}**\n**${CONTACT.city}**\n\nEasy to reach by car — find us on Mekaanikonkatu.`,
-    },
-    quickReplies: ["hours", "booking"],
+    keywords: [
+      "sijainti", "osoite", "missa", "paikka", "espoo", "kartta",
+      "toimipiste", "liike", "tulla",
+    ],
+    question: "Missä olette?",
+    answer: `Meillä on **kaksi toimipistettä** Espoossa:\n\n**Rengas- ja vannemyynti:**\n📍 Suomalaistentie 5, 02270 Espoo\n\n**Rengashotelli ja autohuolto:**\n📍 Martinsillantie 10, 02270 Espoo`,
+    quickReplies: ["hours", "contact"],
   },
 
-  // --- BOOKING ---
+  // --- LOCATION DETAILS ---
   {
-    id: "booking",
-    category: "booking",
-    keywords: {
-      fi: ["varaa", "ajanvaraus", "varata", "varaan", "netti", "verkko", "online"],
-      en: ["book", "appointment", "reserve", "online", "schedule"],
-    },
-    question: { fi: "Miten varaan ajan?", en: "How do I book an appointment?" },
-    answer: {
-      fi: `Voit varata katsastusajan helposti verkossa 24/7 ajanvarausjärjestelmästämme. Voit myös soittaa meille numeroon **${CONTACT.phone}**.`,
-      en: `You can book an inspection appointment easily online 24/7 through our booking system. You can also call us at **${CONTACT.phone}**.`,
-    },
-    quickReplies: ["price-basic", "hours"],
-    link: { url: BOOKING_URL, label: { fi: "Varaa aika nyt", en: "Book now" } },
+    id: "location-details",
+    category: "location",
+    keywords: [
+      "suomalaistentie", "martinsillantie", "myymala", "huolto sijainti",
+      "minne tuoda", "kumpi",
+    ],
+    question: "Mitä palveluja kummassakin toimipisteessä?",
+    answer: `**Suomalaistentie 5** — Rengas- ja vannemyynti:\n• Rengasmyynti, vannemyynti, tarvikkeet\n• Nelipyöräsuuntaus\n• Renkaanvaihto ja tasapainotus\n\n**Martinsillantie 10** — Huolto ja säilytys:\n• Rengashotelli (kausirenkaiden säilytys)\n• Autohuoltopalvelut\n• Öljynvaihto, ilmastointihuolto, diagnostiikka`,
+    quickReplies: ["hours", "price-tire-change", "contact"],
   },
 
-  // --- INSPECTION PROCESS ---
+  // --- TIRES: TYPES ---
   {
-    id: "process-when",
-    category: "process",
-    keywords: {
-      fi: ["milloin katsastaa", "katsastusvali", "ensimmainen", "kuinka usein", "maaraaika"],
-      en: ["when inspect", "interval", "first", "how often", "frequency", "periodic"],
-    },
-    question: { fi: "Milloin auto pitää katsastaa?", en: "When does my car need inspection?" },
-    answer: {
-      fi: "Katsastusvälit:\n\n• **Uusi auto:** Ensimmäinen katsastus 4 vuoden iässä\n• **4-10 vuotta:** Katsastus 2 vuoden välein\n• **Yli 10 vuotta:** Katsastus vuosittain\n\nKatsastuspäivän voit tarkistaa Trafin palvelusta tai rekisteröintitodistuksesta.",
-      en: "Inspection intervals:\n\n• **New car:** First inspection at 4 years\n• **4-10 years:** Every 2 years\n• **Over 10 years:** Annually\n\nYou can check your inspection date through Trafi's service or your registration certificate.",
-    },
-    quickReplies: ["process-what", "booking"],
-  },
-  {
-    id: "process-what",
-    category: "process",
-    keywords: {
-      fi: ["mita tapahtuu", "katsastuksessa", "tarkastetaan", "miten katsastus"],
-      en: ["what happens", "during", "checked", "how inspection"],
-    },
-    question: { fi: "Mitä katsastuksessa tapahtuu?", en: "What happens during inspection?" },
-    answer: {
-      fi: "Katsastuksessa tarkastetaan:\n\n1. **Auton kunto**\n2. **Rekisteriin merkityt tiedot**\n3. **Liikenneturvallisuus**\n4. **Pakokaasupäästöt**\n\nVoit olla mukana tai odottaa toimistossa. Voit myös jättää auton aamulla ja hakea illalla. Katsastus kestää noin 30 minuuttia.",
-      en: "During inspection, the following are checked:\n\n1. **Vehicle condition**\n2. **Registry information**\n3. **Traffic safety**\n4. **Exhaust emissions**\n\nYou can be present or wait in the office. You can also drop off your car in the morning and pick it up in the evening. Inspection takes about 30 minutes.",
-    },
-    quickReplies: ["process-fail", "booking"],
-  },
-  {
-    id: "process-fail",
-    category: "process",
-    keywords: {
-      fi: ["hylky", "ei mene lapi", "hylatty", "korjaus", "vika", "ajokielto"],
-      en: ["fail", "failed", "rejected", "defect", "repair", "ban"],
-    },
-    question: { fi: "Entä jos auto ei mene läpi?", en: "What if my car fails inspection?" },
-    answer: {
-      fi: "Jos auto ei mene läpi:\n\n• **Jälkitarkastus** on tehtävä kuukauden kuluessa (33 € ark., 37 € la)\n• **Lievät viat:** Vain korjauskehotus, ei tarvitse hyväksyttää uudelleen\n• **Vakavat viat:** Auto voidaan määrätä ajokieltoon\n\nAutoa ei saa käyttää liikenteessä ilman voimassa olevaa katsastusta.",
-      en: "If the car fails:\n\n• **Re-inspection** must be done within one month (33 € weekdays, 37 € Sat)\n• **Minor defects:** Only repair recommendation, no re-approval needed\n• **Serious defects:** Driving ban may be imposed\n\nThe vehicle may not be used in traffic without a valid inspection.",
-    },
-    quickReplies: ["price-reinspection", "booking"],
+    id: "tires-types",
+    category: "tires",
+    keywords: [
+      "rengas", "renkaat", "kesarengas", "talvirengas", "nastarengas",
+      "kitkarengas", "moottoripyora", "monkija", "merkki",
+      "continental", "gislaved", "matador",
+    ],
+    question: "Mitä renkaita myytte?",
+    answer: `Myymme laajan valikoiman renkaita:\n\n• **Kesärenkaat**\n• **Nastarenkaat** (talvi)\n• **Kitkarenkaat** (talvi)\n• **Moottoripyörärenkaat**\n• **Mönkijärenkaat**\n\nPäämerkit: **Continental**, **Gislaved**, **Matador** ja muut.\n\nVoit selata valikoimaa verkkokaupastamme tai tulla myymälään!`,
+    quickReplies: ["tires-depth", "tires-seasonal", "price-tire-change"],
+    link: { url: `${WEBSITE_URL}/shop`, label: "Selaa renkaita verkkokaupassa" },
   },
 
-  // --- SERVICES ---
+  // --- TIRES: TREAD DEPTH ---
   {
-    id: "services",
-    category: "services",
-    keywords: {
-      fi: ["palvelu", "tarjoat", "mita teette", "kaikki palvelut"],
-      en: ["service", "offer", "what do you", "all services"],
-    },
-    question: { fi: "Mitä palveluja tarjoatte?", en: "What services do you offer?" },
-    answer: {
-      fi: "Kaikki palvelumme saman katon alla:\n\n• **Katsastus** — määräaikais-, muutos- ja rekisteröintikatsastukset\n• **Rengaspalvelut** — vaihto, tasapainotus, myynti\n• **Autohuolto** — pikahuolto, öljynvaihto, pienet korjaukset\n• **Autopesu** — käsinpesu ja sisäpuhdistus\n• **Rengashotelli** — kausirenkaiden säilytys\n• **Varaosat** — kaikki merkit, nopea toimitus\n• **Kahvila** — odottaessa",
-      en: "All services under one roof:\n\n• **Inspection** — periodic, modification, and registration\n• **Tire Services** — changes, balancing, sales\n• **Car Repair** — quick service, oil changes, minor repairs\n• **Car Wash** — hand wash and interior cleaning\n• **Tire Hotel** — seasonal tire storage\n• **Spare Parts** — all brands, fast delivery\n• **Cafe** — while you wait",
-    },
-    quickReplies: ["price-basic", "booking"],
-    link: { url: "/katsastukseen", label: { fi: "Lue lisää palveluista", en: "Read more about services" } },
+    id: "tires-depth",
+    category: "tires",
+    keywords: [
+      "urasyvyys", "kuluminen", "kulunut", "minimi", "laillinen",
+      "millimetri", "mm", "katsastus rengas",
+    ],
+    question: "Mikä on renkaan minimiurasyvyys?",
+    answer: `Renkaan urasyvyyden lakisääteiset minimit:\n\n• **Kesärenkaat:** 1,6 mm\n• **Talvirenkaat:** 3,0 mm\n\n**Suositus:** Vaihda kesärenkaat viimeistään 4 mm:n urasyvyydellä turvallisuuden vuoksi. Talvirenkaissa 4-5 mm on hyvä raja.\n\nTutustu aiheeseen tarkemmin blogissamme!`,
+    quickReplies: ["tires-seasonal", "tires-types", "price-tire-change"],
   },
+
+  // --- TIRES: SEASONAL ---
   {
-    id: "services-tires",
-    category: "services",
-    keywords: {
-      fi: ["rengas", "renkaanvaihto", "tasapainotus", "rengashotelli", "sailytys", "kausirengas"],
-      en: ["tire", "tyre", "change", "balance", "storage", "seasonal", "hotel"],
-    },
-    question: { fi: "Rengaspalvelut ja hinnat?", en: "Tire services and prices?" },
-    answer: {
-      fi: "Rengaspalvelumme:\n\n• **Kausirenkaanvaihto:** 35 €\n• **Pyörätyöt ja tasapainotus:** 25 €/kpl\n• **Rengashotelli (kausirenkaiden säilytys):** 65 €/kausi\n\nRenkaanvaihdon voit yhdistää katsastukseen samalla käynnillä!",
-      en: "Our tire services:\n\n• **Seasonal tire change:** 35 €\n• **Wheel work and balancing:** 25 €/pc\n• **Tire hotel (seasonal storage):** 65 €/season\n\nYou can combine a tire change with inspection in one visit!",
-    },
-    quickReplies: ["price-basic", "booking"],
+    id: "tires-seasonal",
+    category: "tires",
+    keywords: [
+      "milloin vaihtaa", "kausi", "kausirenkaat", "kevat", "syksy",
+      "talvirenkaat paalle", "kesarenkaat paalle",
+    ],
+    question: "Milloin renkaat pitää vaihtaa?",
+    answer: `Renkaiden kausivaihto:\n\n**Talvirenkaat päälle:**\n• Lokakuun loppu – marraskuun alku\n• Kun yölämpötilat laskevat alle +5°C\n\n**Kesärenkaat päälle:**\n• Huhtikuun loppu – toukokuun alku (pääsiäisen jälkeen)\n• Nastarenkaat saa pitää 31.3. asti (poikkeuksia keliolosuhteiden mukaan)\n\nVaraa renkaanvaihto ajoissa — sesonkiaikoina on ruuhkaa!`,
+    quickReplies: ["price-tire-change", "tire-hotel", "contact"],
   },
+
+  // --- RIMS ---
   {
-    id: "services-parts",
-    category: "services",
-    keywords: {
-      fi: ["varaosa", "osat", "varma-osat", "tilaa", "toimitus"],
-      en: ["spare", "parts", "order", "delivery"],
-    },
-    question: { fi: "Varaosien tilaus ja toimitus?", en: "Spare parts ordering and delivery?" },
-    answer: {
-      fi: `Varma-Osat — varaosia kaikkiin merkkeihin:\n\n• **Jopa 30 % edullisemmat hinnat**\n• Tilaa ennen klo 15, nouda seuraavana päivänä\n• Saman päivän toimitukset myös mahdollisia\n\nTilaukset: **${CONTACT.partsPhone}** tai ${CONTACT.partsEmail}`,
-      en: `Varma-Osat — spare parts for all brands:\n\n• **Up to 30% lower prices**\n• Order before 3 PM, pick up next day\n• Same-day delivery also available\n\nOrders: **${CONTACT.partsPhone}** or ${CONTACT.partsEmail}`,
-    },
-    quickReplies: ["contact-phone", "location"],
+    id: "rims",
+    category: "rims",
+    keywords: [
+      "vanne", "vanteet", "alumiini", "teras", "peltivanne",
+      "alumiinivanne", "tilausvanne", "oz", "japan racing", "jr",
+    ],
+    question: "Myytkö vanteita?",
+    answer: `Kyllä! Valikoimassamme:\n\n• **Alumiinivanteet** — laaja mallisto\n• **Teräsvanteet** — kaikki koot\n• **Tilausvanteet** — OZ Racing, Sparco, MSW, JR Wheels (Japan Racing)\n\nTilausvanteiden toimitusaika noin 1 viikko – 1 kuukausi.\n\nMyymälä: Suomalaistentie 5, Espoo.`,
+    quickReplies: ["rims-repair", "price-rim-install", "contact"],
+    link: { url: `${WEBSITE_URL}/shop/category/vanteet-14`, label: "Selaa vanteita" },
+  },
+
+  // --- RIMS: REPAIR ---
+  {
+    id: "rims-repair",
+    category: "rims",
+    keywords: [
+      "vanteen korjaus", "suoristus", "maalaus", "timanttileikkaus",
+      "vannevelho", "kolhu", "vaurioitunut",
+    ],
+    question: "Korjaatteko vanteita?",
+    answer: `Teemme yhteistyötä **Vannevelhon** kanssa vannekorjauksissa:\n\n• Vanteen suoristus (tärinä, ilmanpaineen lasku)\n• Kolhuvaurioiden korjaus\n• Jauhemaalaus\n• Timanttileikkaus\n• Hapettumisen poisto\n\nMe hoidamme rengastyöt, Vannevelho korjaa vanteen.\nPakkaus/käsittelymaksu 10 €.\n\nKysy lisää myymälästä!`,
+    quickReplies: ["rims", "price-rim-install", "contact"],
+  },
+
+  // --- TIRE HOTEL ---
+  {
+    id: "tire-hotel",
+    category: "tires",
+    keywords: [
+      "rengashotelli", "sailytys", "kausisailytys", "hotelli",
+      "rengassailytys", "varasto",
+    ],
+    question: "Onko teillä rengashotellipalvelua?",
+    answer: `Rengashotellimme sijaitsee Martinsillantie 10:ssä.\n\n**Palvelu sisältää:**\n• Renkaiden pesu\n• Kunnon tarkastus\n• Ilmanpaineiden tarkistus\n• Säilytys kuivassa ja valvotussa tilassa\n• Vakuutus\n\n⚠️ **Huom:** Rengashotellipalvelu on toistaiseksi **loppuunmyyty**. Kysy vapautuvista paikoista soittamalla ${CONTACT.phone}.`,
+    quickReplies: ["price-tire-change", "tires-seasonal", "contact"],
+  },
+
+  // --- MAINTENANCE: PACKAGES ---
+  {
+    id: "maintenance-packages",
+    category: "maintenance",
+    keywords: [
+      "huolto", "autohuolto", "vuosihuolto", "huoltopalvelu",
+      "huoltotoimet", "jarruneste",
+    ],
+    question: "Mitä autohuoltopalveluja tarjoatte?",
+    answer: `Autohuolto (Martinsillantie 10):\n\n**Huoltopaketit:**\n• BestDrive Vuosihuolto: **199 €**\n• BestDrive Premium: **249 €**\n• BestDrive Van: **229 €**\n• Sähköautohuolto: **49 €**\n\n**Yksittäiset palvelut:**\n• Öljynvaihto: alk. 99 €\n• Jarrunesteen vaihto: 75 €\n• Ilmastoinnin täyttö: 79-149 €\n• Vikakoodien luku: 39 €\n\nVaraa aika: ${CONTACT.phone} (valitse 2).`,
+    quickReplies: ["maintenance-ev", "maintenance-carcheck", "price-diagnostics"],
+  },
+
+  // --- MAINTENANCE: EV ---
+  {
+    id: "maintenance-ev",
+    category: "maintenance",
+    keywords: [
+      "sahkoauto", "sahko", "hybridi", "ev", "tesla", "sahkoautohuolto",
+    ],
+    question: "Huollatteko sähkö- ja hybridiautoja?",
+    answer: `Kyllä! Tarjoamme erikoistuneita huoltopalveluja sähkö- ja hybridiautoille.\n\n• **BestDrive Sähköautohuolto:** 49 €\n• Sähkötyöturvallisuuden erityisosaaminen\n• Hybridiautot: molempien voimanlähteiden huolto\n\nSähköautojen huoltotarve on usein vähäisempi, mutta säännöllinen tarkastus on silti tärkeää.\n\nVaraa aika: ${CONTACT.phone} (valitse 2).`,
+    quickReplies: ["maintenance-packages", "price-tire-change", "contact"],
+  },
+
+  // --- MAINTENANCE: CAR CHECK ---
+  {
+    id: "maintenance-carcheck",
+    category: "maintenance",
+    keywords: [
+      "car check", "tarkastus", "ilmainen tarkastus", "ilmainen",
+      "kuntotarkastus", "12 kohtaa",
+    ],
+    question: "Mikä on ilmainen Car Check?",
+    answer: `**Ilmainen Car Check** — 12 kohdan ajoneuvon tarkistus huollon yhteydessä.\n\n• Tarkistaa turvallisuus- ja mukavuuskomponenttien kulumisen\n• Saat halutessasi kirjallisen raportin\n• Sesonkiaikana tarjolla kevennetty 5 kohdan Car Check Light\n\nCar Check on maksuton kaikkien huoltotoimenpiteiden yhteydessä!`,
+    quickReplies: ["maintenance-packages", "price-diagnostics", "contact"],
+  },
+
+  // --- FINANCING ---
+  {
+    id: "financing",
+    category: "pricing",
+    keywords: [
+      "rahoitus", "bestdrive tili", "maksuaika", "osamaksu",
+      "leasing", "luotto", "maksaa myohemmin",
+    ],
+    question: "Onko teillä rahoitusvaihtoehtoja?",
+    answer: `**BestDrive Tili** — osta nyt, maksa myöhemmin:\n\n• **30-60 päivää:** 0 % korko\n• **12 kuukautta:** 0 % korko (kuukausimaksu 5,60 €)\n• **24 kuukautta:** 12,9 % korko\n• Ei avausmaksua, ei korttia, ei piilokuluja\n\n**BestDrive Leasing** — leasing-autoille:\n• Yhteistyö: Secto, Ayvens, Wurth, JärviLeasing\n• Hoidamme kaiken yhteydenpidon leasing-yhtiöön\n\nHae BestDrive Tiliä verkossa, tekstiviestillä tai myymälässä!`,
+    quickReplies: ["price-tire-change", "rims", "contact"],
+    link: { url: `${WEBSITE_URL}/rahoitus`, label: "Lue lisää rahoituksesta" },
   },
 
   // --- CONTACT ---
   {
-    id: "contact-phone",
+    id: "contact",
     category: "contact",
-    keywords: {
-      fi: ["puhelin", "numero", "soittaa", "yhteystieto"],
-      en: ["phone", "number", "call", "contact"],
-    },
-    question: { fi: "Puhelinnumerot?", en: "Phone numbers?" },
-    answer: {
-      fi: `Puhelinnumeromme:\n\n• **Katsastus:** ${CONTACT.phone}\n• **Autohuolto:** ${CONTACT.servicePhone}\n• **Varaosat:** ${CONTACT.partsPhone}`,
-      en: `Our phone numbers:\n\n• **Inspection:** ${CONTACT.phone}\n• **Car repair:** ${CONTACT.servicePhone}\n• **Spare parts:** ${CONTACT.partsPhone}`,
-    },
-    quickReplies: ["contact-email", "hours"],
+    keywords: [
+      "puhelin", "numero", "soittaa", "yhteystieto", "sahkoposti",
+      "email", "ota yhteytta",
+    ],
+    question: "Miten otan yhteyttä?",
+    answer: `Yhteystietomme:\n\n📞 **Puhelin:** ${CONTACT.phone}\n✉️ **Sähköposti:** ${CONTACT.email}\n\n**Huoltovaraukset:** Soita ${CONTACT.phone} ja valitse 2.\n\n**Toimipisteet:**\n• Suomalaistentie 5 (myynti)\n• Martinsillantie 10 (huolto)`,
+    quickReplies: ["hours", "location"],
   },
+
+  // --- COMPANY ---
   {
-    id: "contact-email",
+    id: "company",
     category: "contact",
-    keywords: {
-      fi: ["sahkoposti", "email", "meili", "viesti"],
-      en: ["email", "mail", "write"],
-    },
-    question: { fi: "Sähköpostiosoitteet?", en: "Email addresses?" },
-    answer: {
-      fi: `Sähköpostimme:\n\n• **Katsastus:** ${CONTACT.email}\n• **Autohuolto:** ${CONTACT.serviceEmail}\n• **Varaosat:** ${CONTACT.partsEmail}`,
-      en: `Our email addresses:\n\n• **Inspection:** ${CONTACT.email}\n• **Car repair:** ${CONTACT.serviceEmail}\n• **Spare parts:** ${CONTACT.partsEmail}`,
-    },
-    quickReplies: ["contact-phone", "booking"],
+    keywords: [
+      "yritys", "tekno-rengas", "bestdrive", "historia", "perustettu",
+      "kuka", "mika", "continental",
+    ],
+    question: "Kerro Tekno-Renkaasta",
+    answer: `**Tekno-Rengas Oy** — rengasalan asiantuntija vuodesta 1989.\n\n• Y-tunnus: 0772814-1\n• Osa kansainvälistä **BestDrive**-ketjua (Continental)\n• Noin 25-30 itsenäistä BestDrive-yritystä Suomessa\n• Palvelemme sekä yksityis- että yritysasiakkaita\n• Kaksi toimipistettä Espoossa\n\nAiemmin Rengasmarket — nyt BestDrive Tekno-Rengas.`,
+    quickReplies: ["contact", "location", "hours"],
   },
 
   // --- PAYMENT ---
   {
     id: "payment",
-    category: "payment",
-    keywords: {
-      fi: ["maksu", "maksutapa", "kortti", "kateinen", "visa", "mastercard"],
-      en: ["payment", "pay", "card", "cash", "visa", "mastercard"],
-    },
-    question: { fi: "Mitä maksutapoja hyväksytte?", en: "What payment methods do you accept?" },
-    answer: {
-      fi: "Hyväksymme seuraavat maksutavat:\n\n• Pankkikortti\n• Visa Electron\n• Visa\n• Mastercard\n• Käteinen",
-      en: "We accept the following payment methods:\n\n• Debit card\n• Visa Electron\n• Visa\n• Mastercard\n• Cash",
-    },
-    quickReplies: ["price-basic", "booking"],
+    category: "pricing",
+    keywords: [
+      "maksu", "maksutapa", "kortti", "kateinen", "maksaminen",
+    ],
+    question: "Mitä maksutapoja hyväksytte?",
+    answer: `Hyväksymme yleiset maksutavat:\n\n• Pankkikortit (debit/credit)\n• Visa, Mastercard\n• Käteinen\n• **BestDrive Tili** (rahoitus)\n• **BestDrive Leasing** (leasing-asiakkaat)`,
+    quickReplies: ["financing", "price-tire-change", "contact"],
   },
 
-  // --- CORPORATE ---
+  // --- DELIVERY ---
   {
-    id: "corporate",
-    category: "corporate",
-    keywords: {
-      fi: ["yritys", "yritysasiakas", "korjaamo", "taksi", "kuljetus", "sopimus"],
-      en: ["business", "corporate", "company", "fleet", "taxi", "transport", "contract"],
-    },
-    question: { fi: "Tarjoatteko yrityspalveluja?", en: "Do you offer business services?" },
-    answer: {
-      fi: "Kyllä! Tarjoamme räätälöityjä palveluja yrityksille:\n\n• Autokorjaamot, taksi- ja kuljetusyritykset\n• Joustavat hinnat ja aikataulut\n• Mahdollisuus koostaa sopivat paketit\n\nOta yhteyttä niin kerromme lisää!",
-      en: "Yes! We offer tailored services for businesses:\n\n• Auto repair shops, taxi and transport companies\n• Flexible pricing and schedules\n• Customizable service packages\n\nGet in touch and we'll tell you more!",
-    },
-    quickReplies: ["contact-phone", "contact-email"],
-    link: { url: "/yrityksille", label: { fi: "Lue lisää", en: "Read more" } },
+    id: "delivery",
+    category: "contact",
+    keywords: [
+      "toimitus", "nouto", "tilaus", "verkkokauppa", "tilata",
+      "toimitusaika",
+    ],
+    question: "Miten tilaus ja toimitus toimii?",
+    answer: `Tuotteet voi tilata verkkokaupassamme ja noutaa toimipisteestä:\n\n• **Toimitusaika:** noin 3 arkipäivää\n• **Noutopisteet:** Suomalaistentie 5 tai Martinsillantie 10\n• Tilausvanteiden toimitusaika 1 vko – 1 kk\n\nTuotteet voi myös ostaa suoraan myymälästä.`,
+    quickReplies: ["rims", "tires-types", "contact"],
+    link: { url: `${WEBSITE_URL}/shop`, label: "Verkkokauppaan" },
+  },
+
+  // --- MOTORCYCLE ---
+  {
+    id: "motorcycle",
+    category: "tires",
+    keywords: [
+      "moottoripyora", "mp", "mopo", "motocross", "mp rengas",
+    ],
+    question: "Teettekö moottoripyörärengastöitä?",
+    answer: `Kyllä! Moottoripyörärengaspalvelut:\n\n• **Tubeless-renkaan asennus:** 20 €\n• **Tube-renkaan asennus:** 30 €\n• **Tasapainotus:** +10 €\n\nMyymme myös moottoripyörä- ja mönkijärenkaita.`,
+    quickReplies: ["tires-types", "price-tire-change", "contact"],
   },
 ];
 
@@ -331,11 +424,7 @@ function normalize(text: string): string {
     .trim();
 }
 
-export function findBestMatch(
-  input: string,
-  locale: string
-): ChatFAQ | null {
-  const lang = locale === "fi" ? "fi" : "en";
+export function findBestMatch(input: string): ChatFAQ | null {
   const normalizedInput = normalize(input);
   const inputWords = normalizedInput.split(/\s+/).filter(Boolean);
   const stemmedInput = inputWords.map(stemFinnish);
@@ -345,7 +434,7 @@ export function findBestMatch(
 
   for (const faq of FAQ_DATA) {
     let score = 0;
-    const keywords = faq.keywords[lang];
+    const keywords = faq.keywords;
 
     for (const keyword of keywords) {
       const normalizedKeyword = normalize(keyword);
@@ -376,6 +465,5 @@ export function findBestMatch(
     }
   }
 
-  // Require a minimum score threshold
   return bestScore >= 2 ? bestMatch : null;
 }

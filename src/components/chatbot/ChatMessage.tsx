@@ -13,22 +13,38 @@ export default function ChatMessage({ message }: Props) {
   return (
     <div className={`flex gap-2.5 ${isBot ? "justify-start" : "justify-end"}`}>
       {isBot && (
-        <div className="flex-shrink-0 w-7 h-7 rounded-full bg-brand-gold/15 flex items-center justify-center mt-1">
-          <Bot className="w-4 h-4 text-brand-gold" />
+        <div
+          className="flex-shrink-0 w-7 h-7 rounded-full flex items-center justify-center mt-1"
+          style={{ backgroundColor: "rgba(232,117,26,0.15)" }}
+        >
+          <Bot className="w-4 h-4" style={{ color: "#E8751A" }} />
         </div>
       )}
       <div
-        className={`max-w-[80%] rounded-2xl px-4 py-2.5 text-sm leading-relaxed ${
+        className="max-w-[80%] rounded-2xl px-4 py-2.5 text-sm leading-relaxed"
+        style={
           isBot
-            ? "bg-brand-gray/80 text-text-light rounded-tl-sm"
-            : "bg-brand-gold/80 text-white rounded-tr-sm"
-        }`}
+            ? {
+                backgroundColor: "#2A2A2A",
+                color: "#F5F5F5",
+                borderTopLeftRadius: "4px",
+              }
+            : {
+                backgroundColor: "rgba(232,117,26,0.85)",
+                color: "#FFFFFF",
+                borderTopRightRadius: "4px",
+              }
+        }
       >
         <div
-          className="whitespace-pre-line [&_strong]:font-semibold [&_strong]:text-brand-gold"
+          className="whitespace-pre-line"
+          style={{ wordBreak: "break-word" }}
           dangerouslySetInnerHTML={{
             __html: message.text
-              .replace(/\*\*(.*?)\*\*/g, "<strong>$1</strong>")
+              .replace(
+                /\*\*(.*?)\*\*/g,
+                '<strong style="font-weight:600;color:#E8751A">$1</strong>'
+              )
               .replace(/\n/g, "<br />"),
           }}
         />
@@ -37,15 +53,21 @@ export default function ChatMessage({ message }: Props) {
             href={message.link.url}
             target={message.link.url.startsWith("http") ? "_blank" : undefined}
             rel={message.link.url.startsWith("http") ? "noopener noreferrer" : undefined}
-            className="inline-block mt-2 text-brand-gold hover:text-brand-gold-light font-semibold text-xs underline underline-offset-2 transition-colors"
+            className="inline-block mt-2 font-semibold text-xs underline underline-offset-2 transition-colors"
+            style={{ color: "#E8751A" }}
+            onMouseEnter={(e) => (e.currentTarget.style.color = "#F59E4A")}
+            onMouseLeave={(e) => (e.currentTarget.style.color = "#E8751A")}
           >
             {message.link.label} →
           </a>
         )}
       </div>
       {!isBot && (
-        <div className="flex-shrink-0 w-7 h-7 rounded-full bg-brand-gold/20 flex items-center justify-center mt-1">
-          <User className="w-4 h-4 text-brand-gold" />
+        <div
+          className="flex-shrink-0 w-7 h-7 rounded-full flex items-center justify-center mt-1"
+          style={{ backgroundColor: "rgba(232,117,26,0.2)" }}
+        >
+          <User className="w-4 h-4" style={{ color: "#E8751A" }} />
         </div>
       )}
     </div>
