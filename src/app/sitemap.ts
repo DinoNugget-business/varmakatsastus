@@ -1,17 +1,15 @@
 import type { MetadataRoute } from "next";
 
-const BASE_URL = "https://varmakatsastus.fi";
+const BASE_URL = "https://thermohuolto.fi";
 
 const pages = [
   "",
-  "/katsastukseen",
-  "/hinnasto",
-  "/yrityksille",
-  "/pikahuolto",
-  "/varaosat",
-  "/toihin",
-  "/yhteystiedot",
-  "/palaute",
+  "/yritys",
+  "/palvelut",
+  "/tuotteet",
+  "/referenssit",
+  "/uutisia",
+  "/yhteydenotto",
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {

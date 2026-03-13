@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<!--[if IE 6]>
+<html id="ie6" lang="fi" prefix="og: http://ogp.me/ns#">
+<![endif]-->
+<!--[if IE 7]>
+<html id="ie7" lang="fi" prefix="og: http://ogp.me/ns#">
+<![endif]-->
+<!--[if IE 8]>
+<html id="ie8" lang="fi" prefix="og: http://ogp.me/ns#">
+<![endif]-->
+<!--[if !(IE 6) | !(IE 7) | !(IE 8)  ]><!-->
+<html lang="fi" prefix="og: http://ogp.me/ns#">
+<!--<![endif]-->
+<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<head>
+<meta charset="UTF-8" />
+
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" href="http://www.thermohuolto.fi/wp-content/themes/Thermohuolto_2013/css/reset.css">
+<link rel="stylesheet" href="http://www.thermohuolto.fi/wp-content/themes/Thermohuolto_2013/style.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="http://www.thermohuolto.fi/wp-content/themes/Thermohuolto_2013/css/layout.css">
+
+<script type="text/javascript" src="http://www.thermohuolto.fi/wp-content/themes/Thermohuolto_2013/js/jquery-1.8.2.js"></script>
+<script type="text/javascript" src="http://www.thermohuolto.fi/wp-content/themes/Thermohuolto_2013/js/navijs.js"></script>
+<script type="text/javascript" src="http://www.thermohuolto.fi/wp-content/themes/Thermohuolto_2013/js/ticker.js"></script>
+
+
+
+<link rel="stylesheet" href="http://www.thermohuolto.fi/wp-content/themes/Thermohuolto_2013/css/bootstrap.css">
+<link rel="stylesheet" href="http://www.thermohuolto.fi/wp-content/themes/Thermohuolto_2013/css/navi.css">
+<link rel="stylesheet" href="http://www.thermohuolto.fi/wp-content/themes/Thermohuolto_2013/css/slider.css">
+
+<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700' rel='stylesheet' type='text/css'>
+
+
+<link rel="shortcut icon" href="http://www.thermohuolto.fi/wp-content/themes/Thermohuolto_2013/favicon.png" />
+
+	<link rel='archives' title='helmikuu 2024' href='http://www.thermohuolto.fi/2024/02/' />
+	<link rel='archives' title='huhtikuu 2021' href='http://www.thermohuolto.fi/2021/04/' />
+	<link rel='archives' title='maaliskuu 2021' href='http://www.thermohuolto.fi/2021/03/' />
+	<link rel='archives' title='lokakuu 2020' href='http://www.thermohuolto.fi/2020/10/' />
+	<link rel='archives' title='huhtikuu 2016' href='http://www.thermohuolto.fi/2016/04/' />
+	<link rel='archives' title='helmikuu 2016' href='http://www.thermohuolto.fi/2016/02/' />
+	<link rel='archives' title='marraskuu 2015' href='http://www.thermohuolto.fi/2015/11/' />
+	<link rel='archives' title='syyskuu 2015' href='http://www.thermohuolto.fi/2015/09/' />
+	<link rel='archives' title='toukokuu 2015' href='http://www.thermohuolto.fi/2015/05/' />
+	<link rel='archives' title='helmikuu 2014' href='http://www.thermohuolto.fi/2014/02/' />
+	<link rel='archives' title='tammikuu 2014' href='http://www.thermohuolto.fi/2014/01/' />
+	<link rel='archives' title='joulukuu 2013' href='http://www.thermohuolto.fi/2013/12/' />
+
+
+<!-- This site is optimized with the Yoast SEO plugin v9.7 - https://yoast.com/wordpress/plugins/seo/ -->
+<title>Sivua ei löytynyt: - Thermohuolto</title>
+<meta name="robots" content="noindex,follow"/>
+<meta property="og:locale" content="fi_FI" />
+<meta property="og:type" content="object" />
+<meta property="og:title" content="Sivua ei löytynyt: - Thermohuolto" />
+<meta property="og:site_name" content="Thermohuolto" />
+<!-- / Yoast SEO plugin. -->
+
+<link rel='dns-prefetch' href='//s.w.org' />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11.2.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11.2.0\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/www.thermohuolto.fi\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.1.19"}};
+			!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode;p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0);e=i.toDataURL();return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(!p||!p.fillText)return!1;switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])?!1:!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([55358,56760,9792,65039],[55358,56760,8203,9792,65039])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(n=t.source||{}).concatemoji?c(n.concatemoji):n.wpemoji&&n.twemoji&&(c(n.twemoji),c(n.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='wp-block-library-css'  href='http://www.thermohuolto.fi/wp-includes/css/dist/block-library/style.min.css?ver=5.1.19' type='text/css' media='all' />
+<link rel='stylesheet' id='A5-framework-css'  href='http://www.thermohuolto.fi/?A5_file=wp_css&#038;ver=0.99%20beta' type='text/css' media='all' />
+<link rel='stylesheet' id='contact-form-7-css'  href='http://www.thermohuolto.fi/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.1.1' type='text/css' media='all' />
+<script type='text/javascript' src='http://www.thermohuolto.fi/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+<script type='text/javascript' src='http://www.thermohuolto.fi/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<link rel='https://api.w.org/' href='http://www.thermohuolto.fi/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.thermohuolto.fi/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://www.thermohuolto.fi/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 5.1.19" />
+		 <style type="text/css" media="screen">
+			.mcm_social {overflow: hidden;}
+			.mcm_social li {float: right; margin-right: 5px; list-style: none;}
+			.mcm_social li a {text-indent: 9999em; display: block; background-image: url("http://localhost:8080/thermohuolto/wp-content/plugins/my-company-menu/images/socialsprite.png?ver='.rand(1, 1000).'"); background-repeat: no-repeat; width: 16px; height: 16px;}
+			.mcm_social li.mcm_gplus a:hover {background-position: 0px -16px !important;}
+			.mcm_social li.mcm_facebook a:hover {background-position: -16px -16px !important;}
+			.mcm_social li.mcm_twitter a:hover {background-position: -48px -16px !important;}
+			.mcm_social li.mcm_linkedin a:hover {background-position: -32px -16px !important;}
+			.mcm_social li.mcm_youtube a:hover {background-position: -80px -16px !important;}
+			.mcm_social li.mcm_skype a:hover {background-position: -112px -16px !important;}
+			.mcm_social li.mcm_vimeo a:hover {background-position: -64px -16px !important;}
+			.mcm_social li.mcm_rss a:hover {background-position: -96px -16px !important;}
+			.mcm_social li.mcm_stumble a:hover {background-position: -128px -16px !important;}
+		</style>
+	<!-- styles for Simple Google Map -->
+<style type='text/css'>
+#SGM {width:100%; height:300px;}
+#SGM .infoWindow {line-height:13px; font-size:10px;}
+#SGM input {margin:4px 4px 0 0; font-size:10px;}
+#SGM input.text {border:solid 1px #ccc; background-color:#fff; padding:2px;}
+</style>
+<!-- end styles for Simple Google Map -->
+<style type="text/css">.broken_link, a.broken_link {
+	text-decoration: line-through;
+}</style>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-26970462-7', 'thermohuolto.fi');
+  ga('send', 'pageview');
+
+</script>
+
+
+</head>
+<body class="contentpagebody">
+<div id="wrap">
+	<header>
+		<div class="container maintop">
+			<div class="row">
+				
+				<div id="blogname" class="col-md-4">	
+					<h1>
+					<a href="http://www.thermohuolto.fi/" title="Thermohuolto - Autojen kylmäkoneita, lisälämmittimiä sekä ilmastointilaitteita kuten: Webasto, Thermo King, Lumikko, Mercede-Benz, Finnotzo, Evobus">
+					<img src="http://www.thermohuolto.fi/wp-content/uploads/2019/03/thermohuolto_logo.png" alt="Thermohuolto" />
+					</a>
+					</h1>
+				</div>
+				
+				<div id="naviarea" class="col-md-8">
+					<nav id="headernav">
+						<div class="menu-paavalikko-container"><ul id="menu-paavalikko" class="menu"><li id="menu-item-212" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-212"><a href="http://www.thermohuolto.fi">Etusivu</a></li>
+<li id="menu-item-10" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10"><a href="http://www.thermohuolto.fi/yritys/">Yritys</a></li>
+<li id="menu-item-47" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-47"><a href="http://www.thermohuolto.fi/palvelut/">Palvelut</a></li>
+<li id="menu-item-14" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-14"><a href="http://www.thermohuolto.fi/kategoriat/tuotteet/">Tuotteet</a></li>
+<li id="menu-item-13" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-13"><a href="http://www.thermohuolto.fi/kategoriat/referenssit/">Referenssit</a></li>
+<li id="menu-item-140" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-140"><a href="http://www.thermohuolto.fi/kategoriat/uutisia/">Uutisia</a></li>
+<li id="menu-item-11" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11"><a href="http://www.thermohuolto.fi/yhteydenotto/">Yhteydenotto</a></li>
+</ul></div>						
+					</nav>
+					
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</header>
+	
+	<div class="clearfix"></div>
+
+
+	<div class="container">
+		<div class="sixteen columns alpha omega">
+			<h2>Hakemaasi sivua ei löydy!</h2>
+			<p>Sivu on joko poistettu tai kirjoitit osoitteen väärin.</p>
+	
+		
+		</div>	
+	</div>
+	
+	
+	
+	
+</div><!-- EOF:WRAP -->
+<footer>
+	
+	<div class="container">
+		<div class="row">
+			<div class="col-md-9">
+			<a href="http://www.thermohuolto.fi/" title="Thermohuolto - Autojen kylmäkoneita, lisälämmittimiä sekä ilmastointilaitteita kuten: Webasto, Thermo King, Lumikko, Mercede-Benz, Finnotzo, Evobus">
+			<img src="http://www.thermohuolto.fi/wp-content/uploads/2019/03/white_logo_smaller.png" alt="Thermohuolto" />
+			</a>
+			
+			
+			
+			</div>
+			<div class="col-md-2">
+				
+			</DIV>
+			<div class="col-md-1" id="footer-social-icons">
+			<a class="social-icon" target="_blank" href="https://www.facebook.com/pages/Turun-Thermohuolto-Oy/281478665336310?fref=ts" title="Löydät meidät myös Facebookista"><img src="http://www.thermohuolto.fi/wp-content/uploads/2019/02/facebook_circle_294710.png" alt="Thermohuolto" /></a>
+			</div>
+	
+			
+		</div>
+		<div class="row footercontact">
+			<div class="col-md-10">
+				<p id="footer_contact">
+				Luolakalliontie 5, 21420 LIETO | Puhelin: 0207 980 280 | P&auml;ivystys: 0400 947 244 | <a href="mailto:turun.thermohuolto@thermohuolto.fi" title="turun.thermohuolto@thermohuolto.fi">turun.thermohuolto@thermohuolto.fi</a>				</p>
+			</div>
+			
+		</div>
+	</div>
+	
+</footer>
+
+<script type='text/javascript'>
+/* <![CDATA[ */
+var wpcf7 = {"apiSettings":{"root":"http:\/\/www.thermohuolto.fi\/wp-json\/contact-form-7\/v1","namespace":"contact-form-7\/v1"},"cached":"1"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://www.thermohuolto.fi/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=5.1.1'></script>
+<script type='text/javascript' src='http://www.thermohuolto.fi/wp-includes/js/wp-embed.min.js?ver=5.1.19'></script>
+
+</body>
+</html>

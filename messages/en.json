@@ -1,285 +1,211 @@
 {
   "metadata": {
-    "title": "Varmakatsastus — Vehicle Inspection Herttoniemi, Helsinki",
-    "description": "Varma Autokatsastus Oy — vehicle inspection, tire services, spare parts, car wash, and car repair under one roof. Mekaanikonkatu 23, Helsinki."
+    "title": "Turun Thermohuolto Oy — Refrigeration, Heating & Air Conditioning",
+    "description": "Installation, repair and maintenance of vehicle refrigeration units, auxiliary heaters and air conditioning systems. Lieto, Finland."
   },
   "common": {
-    "bookTime": "Book appointment",
-    "callUs": "Call us",
-    "phone": "040 4153017",
-    "address": "Mekaanikonkatu 23, 00880 Helsinki",
-    "email": "asiakaspalvelu@varmakatsastus.fi",
-    "weekdays": "Mon-Fri 8-18",
-    "saturday": "Sat 9-15",
-    "sunday": "Sun closed",
-    "inspectionFrom": "Inspection from 39\u00A0€",
-    "allServices": "All services under one roof",
+    "phone": "0207 980 280",
+    "emergency": "0400 947 244",
+    "email": "turun.thermohuolto@thermohuolto.fi",
+    "address": "Luolakalliontie 5, 21420 LIETO",
     "readMore": "Read more",
     "send": "Send",
     "name": "Name",
     "emailField": "Email",
     "phoneField": "Phone",
     "message": "Message",
-    "company": "Company",
+    "businessId": "Business ID",
+    "streetAddress": "Street address",
+    "postalCodeCity": "Postal code and city",
     "thankYou": "Thank you for your message!",
-    "thankYouDesc": "We will get back to you as soon as possible."
+    "thankYouDesc": "We will get back to you as soon as possible.",
+    "learnMore": "Learn more",
+    "contactUs": "Contact us",
+    "callUs": "Call us",
+    "emergencyService": "24/7 Emergency service"
   },
   "nav": {
     "home": "Home",
-    "inspection": "Inspection",
-    "pricing": "Pricing",
-    "corporate": "Corporate",
-    "quickRepair": "Quick Repair",
-    "spareParts": "Spare Parts",
-    "careers": "Careers",
-    "contact": "Contact",
-    "feedback": "Feedback"
+    "company": "Company",
+    "services": "Services",
+    "products": "Products",
+    "references": "References",
+    "news": "News",
+    "contact": "Contact"
   },
   "home": {
-    "heroTitle": "Varmakatsastus Herttoniemi",
-    "heroSubtitle": "Only in Finland! All vehicle services under one roof.",
-    "heroPrice": "Vehicle inspection from 39\u00A0€",
-    "heroCta": "Book now",
+    "heroTitle": "Experts in Refrigeration, Heating & Air Conditioning",
+    "heroSubtitle": "Installation, repair and maintenance — over 20 years of experience. Located in Lieto, Tuulissuo.",
+    "heroCta": "Contact us",
     "servicesTitle": "Our Services",
-    "servicesSubtitle": "Inspection, tire services, spare parts, car wash, car repair, tire hotel, and cafe — all under one roof.",
-    "testimonialsTitle": "Customer Reviews",
-    "certificationsTitle": "Certifications",
-    "infoOpenTitle": "Opening Hours",
-    "infoPriceTitle": "Inspection from",
-    "infoPriceValue": "39\u00A0€",
-    "infoPriceNote": "incl. VAT 25.5%",
-    "infoLocationTitle": "Location",
-    "offersTitle": "Most Popular Packages",
-    "offersSubtitle": "Choose the package that suits you and book your time.",
-    "offerBasicName": "Inspection",
-    "offerBasicItem1": "Periodic inspection",
-    "offerBasicItem2": "Without emission measurement",
-    "offerBasicFrom": "from",
-    "offerWashName": "Inspection + Hand Wash",
-    "offerWashItem1": "Periodic inspection",
-    "offerWashItem2": "Hand wash",
-    "offerWashBadge": "Most Popular",
-    "offerPremiumName": "Inspection + Full Wash",
-    "offerPremiumItem1": "Periodic inspection",
-    "offerPremiumItem2": "Hand wash",
-    "offerPremiumItem3": "Interior cleaning",
-    "offerPromoCode": "Code",
-    "offerBookNow": "Book now"
+    "servicesSubtitle": "A comprehensive range of vehicle air conditioning, refrigeration unit and heater services.",
+    "brandsTitle": "Authorized Service Partner",
+    "brandsSubtitle": "We represent and service leading refrigeration, heater and air conditioning brands.",
+    "trustTitle": "Why Thermohuolto?",
+    "trustYears": "20+",
+    "trustYearsLabel": "years of experience",
+    "trustStaff": "5",
+    "trustStaffLabel": "professionals",
+    "trustEmergency": "24/7",
+    "trustEmergencyLabel": "emergency service",
+    "trustAtp": "ATP",
+    "trustAtpLabel": "inspections",
+    "ctaTitle": "Need help with a refrigeration unit, heater or air conditioning system?",
+    "ctaSubtitle": "Get in touch — we help quickly and professionally.",
+    "ctaCta": "Call now"
+  },
+  "company": {
+    "title": "Company",
+    "subtitle": "Turun Thermohuolto Oy — reliable service since 2004.",
+    "historyTitle": "History",
+    "historyP1": "We started operations on March 1, 2004 in the Oriketo district of Turku. Our specialty is vehicle air conditioning systems, refrigeration units and auxiliary heaters.",
+    "historyP2": "Today we operate from our facilities in Tuulissuo, Lieto, completed in autumn 2010.",
+    "historyP3": "On March 1, 2024, we celebrated our 20th anniversary. Warm thanks to all our customers for their trust and loyalty, and to our partners for their cooperation!",
+    "missionTitle": "Our Mission",
+    "missionP1": "Turun Thermohuolto Oy is a legally responsible refrigeration company specializing in the installation, repair and maintenance of vehicle refrigeration units. We also serve as a distribution point for refrigeration equipment.",
+    "missionP2": "As authorized by the authorities, we perform testing and calibration activities for transport containers of perishable goods. We serve in all matters relating to the safe transport of frozen and fresh goods.",
+    "qualityTitle": "Quality & Development",
+    "qualityP1": "Customer needs and service are important development areas for us. We maintain competence to international testing and calibration laboratory standards.",
+    "qualityP2": "Quality objectives are set in cooperation with staff and their achievement is continuously monitored. Continuous improvement is a key part of our management system.",
+    "staffTitle": "Our Team",
+    "staffP1": "Our staff is committed to following operational guidelines and maintaining their professional skills. Continuous training and identifying development needs is everyone's responsibility.",
+    "milestonesTitle": "Milestones",
+    "milestone1": "Operations begin in Oriketo, Turku",
+    "milestone1Year": "2004",
+    "milestone2": "Move to new facilities in Tuulissuo, Lieto",
+    "milestone2Year": "2010",
+    "milestone3": "20th anniversary",
+    "milestone3Year": "2024"
   },
   "services": {
-    "inspection": {
-      "title": "Vehicle Inspection",
-      "description": "Periodic, modification, and registration inspections — professionally and efficiently."
+    "title": "Services",
+    "subtitle": "A comprehensive range of vehicle refrigeration units, auxiliary heaters and air conditioning systems from all major brands.",
+    "refrigeration": {
+      "title": "Refrigeration Units",
+      "description": "Installation, maintenance and repair of all branded refrigeration units — quickly and professionally. Brands we represent: Thermo King, Lumikko, Carrier, Frigoblock, Hultsteins and Mitsubishi."
     },
-    "tires": {
-      "title": "Tire Services",
-      "description": "Tire changes, balancing, and tire sales — all tire services in one place."
+    "heating": {
+      "title": "Auxiliary Heaters",
+      "description": "Sales, installation, maintenance and repair of Webasto and Eberspächer auxiliary heaters. Autumn maintenance services and preventive upkeep."
     },
-    "repair": {
-      "title": "Car Repair",
-      "description": "VA Autohuolto offers quick service, oil changes, and minor repairs."
+    "ac": {
+      "title": "Air Conditioning",
+      "description": "Installation, maintenance and repair of AC systems. Authorized service for MB, Setra, EvoBus, Finnotzo, Sutrak and Konvekta. Now also stocking R-1234YF refrigerant."
     },
-    "carwash": {
-      "title": "Car Wash",
-      "description": "Keep your car clean — car wash services available alongside your inspection."
+    "atp": {
+      "title": "ATP Seasonal Inspections",
+      "description": "The Finnish Food Authority has authorized us to perform ATP seasonal inspections of food transport containers. We verify the structural classification eligibility of transport vehicles six years and older."
     },
-    "tirehotel": {
-      "title": "Tire Hotel",
-      "description": "Store your tires with us — safely and conveniently between seasonal changes."
+    "boatsMotorhomes": {
+      "title": "Boats & Motorhomes",
+      "description": "Installation, repair and maintenance of heaters for boats and motorhomes. Authorized Webasto and Eberspächer dealer. All sizes of motor and sailing boats."
     },
-    "parts": {
-      "title": "Spare Parts",
-      "description": "Varma-Osat sells spare parts for all car brands at competitive prices."
+    "tractors": {
+      "title": "Tractors & Equipment",
+      "description": "Installation, maintenance and repair of heaters and air conditioning systems for tractors and work machines."
     },
-    "cafe": {
-      "title": "Cafe",
-      "description": "Enjoy a cup of coffee while you wait — our cafe serves inspection customers."
+    "electrical": {
+      "title": "Vehicle Electrical Work",
+      "description": "Automotive electrical work including waste compactors and tailgates. Versatile vehicle electrical expertise."
     }
   },
-  "testimonials": {
-    "1": {
-      "quote": "Fast and friendly service! Inspection was done in half an hour.",
-      "author": "Matti T."
+  "products": {
+    "title": "Products",
+    "subtitle": "We represent and sell leading refrigeration, heater and air conditioning brands.",
+    "refrigerationTitle": "Refrigeration Units",
+    "heatingTitle": "Heaters & Air Conditioning",
+    "otherTitle": "Other",
+    "usedEquipmentTitle": "Used Equipment & Spare Parts",
+    "usedEquipmentDesc": "We occasionally have used refrigeration units and spare parts available. Ask about availability!",
+    "pipeRepairTitle": "Aluminum Pipe Repair",
+    "pipeRepairDesc": "Air conditioning pipe repair using the VULCAN Lockring method. Repair of rear evaporator pipes in vans and minibuses without removing pipes from the chassis. A fast, durable and cost-effective alternative to pipe replacement.",
+    "visitWebsite": "Visit website"
+  },
+  "references": {
+    "title": "References",
+    "subtitle": "We serve a diverse range of clients across different sectors.",
+    "boats": {
+      "title": "Boats & Motorhomes",
+      "description": "Installation, repair and maintenance of heaters for boats and motorhomes."
     },
-    "2": {
-      "quote": "All services under one roof, really convenient. Highly recommend!",
-      "author": "Anna K."
+    "refrigerationUnits": {
+      "title": "Refrigeration Units",
+      "description": "Installation, maintenance and repair of all four branded units — quickly and professionally."
     },
-    "3": {
-      "quote": "Fair prices and professional service. I'll be back.",
-      "author": "Jukka P."
+    "bioRefrigeration": {
+      "title": "Bio Refrigeration Units",
+      "description": "Sales and service of Lumikko brand bio refrigeration units."
     },
-    "4": {
-      "quote": "Great location in Herttoniemi, easy to reach by car. Nice cafe to wait in.",
-      "author": "Maria L."
+    "tractors": {
+      "title": "Tractors & Equipment",
+      "description": "Installation, maintenance and repair of heaters and air conditioning systems for tractors and work machines."
     },
-    "5": {
-      "quote": "Tire change and inspection in one visit — saved me time and effort.",
-      "author": "Petri S."
-    },
-    "6": {
-      "quote": "Customer service was excellent, everything was explained clearly.",
-      "author": "Laura H."
+    "vehicles": {
+      "title": "Cars, Vans & Trucks",
+      "description": "Installation, maintenance and repair of heaters and air conditioning systems for cars, vans and trucks."
     }
   },
-  "inspection": {
-    "title": "Vehicle Inspection",
-    "subtitle": "Information about vehicle inspection — when, how, and what happens.",
-    "whenTitle": "When should your car be inspected?",
-    "whenP1": "The first inspection for passenger and delivery vehicles must be carried out no later than the day four years have passed from the date of first registration.",
-    "whenP2": "After that, inspections are performed every two years until ten years have passed from the registration date. Cars ten years and older are inspected annually.",
-    "whenP3": "Motorhome inspection schedules follow the same rules as passenger cars. Caravans with a total mass of 750 kg or less do not require inspection.",
-    "whenP4": "You can check your inspection date easily through Trafi's online service or from your vehicle's registration certificate.",
-    "whatTitle": "What happens during the inspection?",
-    "whatP1": "You can be present during the inspection or wait in the office. You can also drop off your car in the morning and pick it up in the evening.",
-    "checksTitle": "During the inspection, the following are checked:",
-    "check1": "Vehicle condition",
-    "check2": "Information registered in the registry",
-    "check3": "Traffic safety of the vehicle",
-    "check4": "Exhaust emissions",
-    "checksExtra": "Additionally, payment of vehicle-related taxes and fees is monitored during the inspection.",
-    "failTitle": "What if the car fails inspection?",
-    "failP1": "Based on a defect found during inspection, the car may be ordered for a re-inspection. The re-inspection must be completed within one month of the periodic inspection.",
-    "failP2": "For minor defects, only a repair recommendation may be issued, meaning the car does not need to be re-approved.",
-    "failP3": "A vehicle may not be used in traffic if it has not been inspected or if it has been placed under a driving ban during inspection.",
-    "deregisteredTitle": "If the car has been deregistered?",
-    "deregisteredP1": "The car can still be inspected as long as it has traffic insurance and an appointment booked. The vehicle must have attached license plates or a transfer permit.",
-    "cta": "Book inspection"
-  },
-  "pricing": {
-    "title": "Pricing",
-    "subtitle": "Inspection service prices — all prices include VAT 25.5%.",
-    "periodicTitle": "Periodic Inspection",
-    "periodic": {
-      "row1": "Periodic inspection weekdays, without emission measurement",
-      "row2": "Periodic inspection package 1 (inspection, petrol, OBD)",
-      "row3": "Periodic inspection package 2 (inspection, diesel measurement)",
-      "row4": "Periodic inspection Saturdays, without emission measurement",
-      "row5": "Periodic inspection package Saturdays (incl. statutory measurements)",
-      "row6": "Periodic inspection Saturdays (Drive-In)",
-      "row7": "Periodic inspection electric vehicle, weekdays",
-      "row8": "Periodic inspection electric vehicle, Saturdays"
-    },
-    "additionalTitle": "Additional Services",
-    "additional": {
-      "row1": "Gas leak measurement (for gas-powered vehicles)",
-      "row2": "Emission measurement/OBD (pre-booked)",
-      "row3": "Emission measurement/OBD (not pre-booked)",
-      "row4": "Re-inspection, weekdays",
-      "row5": "Re-inspection, Saturdays",
-      "row6": "Re-inspection fee with emission measurement",
-      "row7": "Condition inspection (incl. emissions and fault code reading)",
-      "row8": "Supervision inspection (without emission measurement)",
-      "row9": "Motorhome periodic inspection"
-    },
-    "registrationTitle": "Registration Inspection",
-    "registration": {
-      "row1": "Registration inspection — type-approved, EEA countries, without condition check",
-      "row2": "Registration inspection — type-approved, EEA countries, with condition check",
-      "row3": "Registration inspection — outside EEA (e.g., USA, Japan)"
-    },
-    "modificationTitle": "Modification Inspection",
-    "modification": {
-      "row1": "Modification inspection (small change)",
-      "row2": "Modification inspection (medium change)",
-      "row3": "Modification inspection (large change)"
-    },
-    "note1": "Prices include VAT 25.5%.",
-    "note2": "Inspection fees also include the Trafi supervision fee of 3.60\u00A0€ (incl. VAT 25.5\u00A0%).",
-    "note3": "Accepted payment methods: debit card, Visa Electron, Visa, Mastercard, and cash.",
-    "cta": "Book inspection"
+  "news": {
+    "title": "News",
+    "subtitle": "Latest from Thermohuolto.",
+    "articles": {
+      "thermohuolto-20v": {
+        "title": "Turun Thermohuolto Celebrates 20 Years",
+        "excerpt": "Turun Thermohuolto Oy celebrated its 20th anniversary on March 1, 2024. Warm thanks to all customers for their trust and loyalty!"
+      },
+      "veneiden-lammitinasennukset": {
+        "title": "Boat Heater Installations and Maintenance Before the Season",
+        "excerpt": "The upcoming boating season is on the horizon! We offer heater installations and maintenance for all sizes of motor and sailing boats."
+      },
+      "ilmastointihuolto-korjaus": {
+        "title": "Air Conditioning Maintenance & Repair",
+        "excerpt": "Summer is coming and so is the need for AC. Expert leak detection and repairs from us. Now also stocking R-1234YF refrigerant."
+      },
+      "lisalammittimien-syyshuollot": {
+        "title": "Autumn Heater Maintenance",
+        "excerpt": "Autumn has truly arrived, so now is the right time to check your auxiliary heater's function."
+      },
+      "el-kori-elli-60v": {
+        "title": "EL-Kori Oy's 60th Anniversary Tour",
+        "excerpt": "The first stop of the tour was held at our location in Lieto. Partners included EL-Kori Oy, Veho Oy, Lumikko Technologies Oy and Cargotec Oy."
+      },
+      "auto-veneilmastoinnit": {
+        "title": "Vehicle & Boat Air Conditioning",
+        "excerpt": "Remember to consider your vehicle's AC maintenance needs as spring arrives — before the rush."
+      },
+      "eberi-lampopaivat": {
+        "title": "Eberspächer Heating Days",
+        "excerpt": "The importer's representative showcases new products in the heating equipment range."
+      },
+      "alumiinisten-putkien-korjaus": {
+        "title": "Aluminum Air Conditioning Pipe Repair",
+        "excerpt": "New service: AC pipe repair using the VULCAN Lockring method without removing pipes from the vehicle."
+      },
+      "konvekta-yhteistyo": {
+        "title": "Konvekta AC Maintenance Partnership",
+        "excerpt": "Partnership agreement with MuiCon Oy for bus air conditioning maintenance and repairs."
+      },
+      "uutta-huoltokalustoa": {
+        "title": "New Service Vehicle",
+        "excerpt": "New Mercedes-Benz Sprinter 313 CDI service vehicle in operation. Getting ready for an active season."
+      }
+    }
   },
   "contact": {
     "title": "Contact",
-    "subtitle": "Get in touch — we serve on weekdays and Saturdays.",
-    "phoneTitle": "Phone Numbers",
-    "mainPhone": "Inspection",
-    "servicePhone": "Car Repair",
-    "partsPhone": "Spare Parts",
-    "emailTitle": "Email Addresses",
-    "mainEmail": "Inspection",
-    "serviceEmail": "Car Repair",
-    "partsEmail": "Spare Parts",
-    "addressTitle": "Address",
-    "holidays": "Closed on public holidays."
-  },
-  "corporate": {
-    "title": "For Businesses",
-    "subtitle": "Tailored inspection and repair services for companies.",
-    "servicesTitle": "Business Services",
-    "servicesP1": "We collaborate with auto repair shops, taxi and transport companies, and tailor inspection and repair services to each client's needs.",
-    "servicesP2": "For businesses, we offer the opportunity to define service needs and compose suitable packages.",
-    "flexTitle": "Flexible Pricing and Schedules",
-    "flexP1": "We are prepared to adjust our pricing and hours to meet business requirements.",
-    "contactTitle": "Get in Touch",
-    "cta": "Book for your company"
-  },
-  "quickRepair": {
-    "title": "Quick Repair — VA Autohuolto",
-    "subtitle": "Quick repair services for all vehicles.",
-    "pricesTitle": "Pricing",
-    "row1": "Basic repairs",
-    "row2": "Electrical work",
-    "row3": "Equipment installation",
-    "row4": "Welding work",
-    "row5": "Seasonal tire change",
-    "row6": "Wheel work and balancing",
-    "row7": "Seasonal tire storage / season",
-    "row8": "Fault code reading",
-    "note1": "All prices include VAT 25.5%.",
-    "note2": "Accepted payment: Visa, Mastercard, Visa Electron, and cash.",
-    "contactTitle": "Get in Touch"
-  },
-  "spareParts": {
-    "title": "Spare Parts — Varma-Osat",
-    "subtitle": "Affordable spare parts with fast delivery.",
-    "cat1Title": "Car Parts",
-    "cat1Desc": "Spare parts for all car brands at competitive prices.",
-    "cat2Title": "Workshop Supplies",
-    "cat2Desc": "Workshop supplies and chemicals for professional use.",
-    "cat3Title": "Tires & Accessories",
-    "cat3Desc": "Tires and tire accessories for all car brands.",
-    "deliveryTitle": "Fast Delivery",
-    "deliveryP1": "Order before 3 PM, pick up the next day. Same-day delivery also available.",
-    "savingsTitle": "Up to 30% Lower Prices",
-    "savingsP1": "We offer spare parts up to 30% cheaper than competitors — with fast delivery.",
-    "contactTitle": "Get in Touch"
-  },
-  "careers": {
-    "title": "Careers",
-    "subtitle": "We are looking for skilled and motivated professionals to join our team.",
-    "intro": "Varma Autokatsastus Oy is constantly looking for skilled personnel for its inspection stations. We are especially looking for inspectors and mechanics.",
-    "apply": "If you are interested in working with us, send your application using the form below or via email.",
-    "formTitle": "Submit Application",
-    "orEmail": "Or send by email:"
-  },
-  "feedback": {
-    "title": "Feedback",
-    "subtitle": "Tell us about your experience — your feedback helps us improve.",
-    "formTitle": "Send Feedback"
+    "subtitle": "Don't hesitate to get in touch — we're happy to help!",
+    "staffTitle": "Our Team",
+    "formTitle": "Send a Message",
+    "locationTitle": "Location",
+    "emergencyLabel": "Emergency",
+    "managingDirector": "Managing Director",
+    "atpInspector": "ATP Seasonal Inspections",
+    "mechanic": "Refrigeration Mechanic"
   },
   "footer": {
-    "openingHours": "Opening Hours",
+    "contactTitle": "Contact Information",
     "quickLinks": "Quick Links",
-    "certifications": "Certifications",
-    "copyright": "© 2025 Varma Autokatsastus Oy | Business ID: 3490695-1"
-  },
-  "chatbot": {
-    "title": "Customer Service",
-    "placeholder": "Type your question...",
-    "welcome": "Hi! How can I help? Choose a topic below or type your question.",
-    "fallback": "Sorry, I couldn't find an answer to your question. You can call us at 040 4153017 or choose a topic below.",
-    "bookingSuggestion": "Would you like to book an inspection?",
-    "openLabel": "Open chat",
-    "closeLabel": "Close chat"
-  },
-  "infoStrip": {
-    "bookingTitle": "Book Online",
-    "bookingCta": "Book now"
-  },
-  "ctaBanner": {
-    "title": "Book your inspection now",
-    "subtitle": "Periodic inspection from 39\u00A0€ — fast and reliable service in Herttoniemi.",
-    "cta": "Book online"
+    "copyright": "© {year} Turun Thermohuolto Oy. All rights reserved.",
+    "emergencyLabel": "24/7 Emergency Service"
   }
 }

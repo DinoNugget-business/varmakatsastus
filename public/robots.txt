@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://varmakatsastus.fi/sitemap.xml
+Sitemap: https://thermohuolto.fi/sitemap.xml

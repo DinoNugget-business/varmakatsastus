@@ -1,285 +1,211 @@
 {
   "metadata": {
-    "title": "Varmakatsastus — Autokatsastus Herttoniemi, Helsinki",
-    "description": "Varma Autokatsastus Oy — katsastus, rengaspalvelut, varaosat, autopesu ja autohuolto saman katon alla. Mekaanikonkatu 23, Helsinki."
+    "title": "Turun Thermohuolto Oy — Kylmäkoneet, lämmittimet ja ilmastointi",
+    "description": "Autojen kylmäkoneiden, lisälämmittimien ja ilmastointilaitteiden asennus, korjaus ja huolto. Lieto."
   },
   "common": {
-    "bookTime": "Varaa aika",
-    "callUs": "Soita meille",
-    "phone": "040 4153017",
-    "address": "Mekaanikonkatu 23, 00880 Helsinki",
-    "email": "asiakaspalvelu@varmakatsastus.fi",
-    "weekdays": "Ark. 8-18",
-    "saturday": "La 9-15",
-    "sunday": "Su suljettu",
-    "inspectionFrom": "Katsastus alk. 39\u00A0€",
-    "allServices": "Kaikki palvelut saman katon alla",
+    "phone": "0207 980 280",
+    "emergency": "0400 947 244",
+    "email": "turun.thermohuolto@thermohuolto.fi",
+    "address": "Luolakalliontie 5, 21420 LIETO",
     "readMore": "Lue lisää",
     "send": "Lähetä",
     "name": "Nimi",
     "emailField": "Sähköposti",
     "phoneField": "Puhelin",
     "message": "Viesti",
-    "company": "Yritys",
+    "businessId": "Y-tunnus",
+    "streetAddress": "Katuosoite",
+    "postalCodeCity": "Postinumero ja -toimipaikka",
     "thankYou": "Kiitos viestistäsi!",
-    "thankYouDesc": "Otamme sinuun yhteyttä mahdollisimman pian."
+    "thankYouDesc": "Otamme sinuun yhteyttä mahdollisimman pian.",
+    "learnMore": "Lue lisää",
+    "contactUs": "Ota yhteyttä",
+    "callUs": "Soita meille",
+    "emergencyService": "Päivystys 24/7"
   },
   "nav": {
     "home": "Etusivu",
-    "inspection": "Katsastukseen",
-    "pricing": "Hinnasto",
-    "corporate": "Yrityksille",
-    "quickRepair": "Pikahuolto",
-    "spareParts": "Varaosat",
-    "careers": "Töihin",
-    "contact": "Yhteystiedot",
-    "feedback": "Palaute"
+    "company": "Yritys",
+    "services": "Palvelut",
+    "products": "Tuotteet",
+    "references": "Referenssit",
+    "news": "Uutisia",
+    "contact": "Yhteydenotto"
   },
   "home": {
-    "heroTitle": "Varmakatsastus Herttoniemi",
-    "heroSubtitle": "Ainoana Suomessa! Kaikki auton oheispalvelut saman katon alla.",
-    "heroPrice": "Määräaikaiskatsastus alkaen 39\u00A0€",
-    "heroCta": "Varaa aika nyt",
+    "heroTitle": "Kylmälaitteiden, lämmittimien ja ilmastoinnin asiantuntija",
+    "heroSubtitle": "Asennus, korjaus ja huolto — yli 20 vuoden kokemuksella. Palvelemme Liedon Tuulissuolla.",
+    "heroCta": "Ota yhteyttä",
     "servicesTitle": "Palvelumme",
-    "servicesSubtitle": "Katsastus, rengaspalvelut, varaosat, autopesu, autohuolto, rengashotelli ja kahvila — kaikki saman katon alla.",
-    "testimonialsTitle": "Asiakkaiden kokemuksia",
-    "certificationsTitle": "Sertifikaatit",
-    "infoOpenTitle": "Aukioloajat",
-    "infoPriceTitle": "Katsastus alkaen",
-    "infoPriceValue": "39\u00A0€",
-    "infoPriceNote": "sis. ALV 25,5 %",
-    "infoLocationTitle": "Sijainti",
-    "offersTitle": "Suosituimmat paketit",
-    "offersSubtitle": "Valitse sinulle sopivin paketti ja varaa aika.",
-    "offerBasicName": "Katsastus",
-    "offerBasicItem1": "Määräaikaiskatsastus",
-    "offerBasicItem2": "Ilman pakokaasumittausta",
-    "offerBasicFrom": "alkaen",
-    "offerWashName": "Katsastus + Käsinpesu",
-    "offerWashItem1": "Määräaikaiskatsastus",
-    "offerWashItem2": "Käsinpesu",
-    "offerWashBadge": "Suosituin",
-    "offerPremiumName": "Katsastus + Täyspesu",
-    "offerPremiumItem1": "Määräaikaiskatsastus",
-    "offerPremiumItem2": "Käsinpesu",
-    "offerPremiumItem3": "Sisäpuhdistus",
-    "offerPromoCode": "Koodi",
-    "offerBookNow": "Varaa aika"
+    "servicesSubtitle": "Kattava valikoima ajoneuvojen ilmastointiin, kylmäkoneisiin ja lämmittimiin liittyviä palveluita.",
+    "brandsTitle": "Valtuutettu huoltokumppani",
+    "brandsSubtitle": "Edustamme ja huollamme johtavia kylmäkone-, lämmitin- ja ilmastointimerkkejä.",
+    "trustTitle": "Miksi Thermohuolto?",
+    "trustYears": "20+",
+    "trustYearsLabel": "vuotta kokemusta",
+    "trustStaff": "5",
+    "trustStaffLabel": "ammattilaista",
+    "trustEmergency": "24/7",
+    "trustEmergencyLabel": "päivystys",
+    "trustAtp": "ATP",
+    "trustAtpLabel": "tarkastukset",
+    "ctaTitle": "Tarvitsetko apua kylmäkoneen, lämmittimen tai ilmastoinnin kanssa?",
+    "ctaSubtitle": "Ota yhteyttä — autamme nopeasti ja ammattitaidolla.",
+    "ctaCta": "Soita nyt"
+  },
+  "company": {
+    "title": "Yritys",
+    "subtitle": "Turun Thermohuolto Oy — luotettavaa palvelua vuodesta 2004.",
+    "historyTitle": "Historia",
+    "historyP1": "Olemme aloittaneet toimintamme 1.3.2004 Turun Orikedolla. Erikoisalaamme ovat autojen ilmastointilaitteet, kylmäkoneet ja lisälämmittimet.",
+    "historyP2": "Nykyään toimimme syksyllä 2010 valmistuneissa toimitiloissa Liedon Tuulissuolla.",
+    "historyP3": "1.3.2024 juhlistimme 20-vuotista toimintaamme. Lämmin kiitos kaikille asiakkuudesta ja luottamuksesta palveluitamme kohtaan sekä yhteistyöstä kanssamme!",
+    "missionTitle": "Toiminta-ajatus",
+    "missionP1": "Turun Thermohuolto Oy on pääasiallisesti ajoneuvoissa käytettävien kylmäkoneiden asennukseen, korjaukseen ja huoltoon erikoistunut oikeudellisesti vastuussa oleva kylmäalan yritys, joka toimii myös kylmälaitteiden jälleenmyyntipisteenä.",
+    "missionP2": "Suoritamme viranomaisen valtuuttamana testaus- ja kalibrointitoimintaa helposti pilaantuvan tavaran kuljetustiloihin. Palvelemme kaikessa pakasteita ja tuoretavaran turvallisen kuljetuksen asioissa.",
+    "qualityTitle": "Laatu ja kehitys",
+    "qualityP1": "Asiakastarpeet ja -palvelu ovat meille tärkeät kehittämisalueet. Ylläpidämme kansainvälisten standardien mukaista testaus- ja kalibrointilaboratorion pätevyyttä.",
+    "qualityP2": "Laatutavoitteet asetetaan yhteistyössä henkilöstön kanssa ja niiden toteutumista seurataan jatkuvasti. Jatkuva parantaminen on toimintajärjestelmämme keskeinen osa.",
+    "staffTitle": "Henkilöstö",
+    "staffP1": "Henkilöstömme sitoutuu noudattamaan toimintaohjeita ja ylläpitämään ammattitaitoaan. Jatkuva kouluttautuminen ja kehitystarpeiden tunnistaminen on kaikkien vastuulla.",
+    "milestonesTitle": "Virstanpylväät",
+    "milestone1": "Toiminnan aloitus Turun Orikedolla",
+    "milestone1Year": "2004",
+    "milestone2": "Muutto uusiin toimitiloihin Liedon Tuulissuolle",
+    "milestone2Year": "2010",
+    "milestone3": "20-vuotisjuhla",
+    "milestone3Year": "2024"
   },
   "services": {
-    "inspection": {
-      "title": "Katsastus",
-      "description": "Määräaikais-, muutos- ja rekisteröintikatsastukset ammattitaidolla ja nopeasti."
+    "title": "Palvelut",
+    "subtitle": "Kattava valikoima eri merkkisiä autojen kylmäkoneita, lisälämmittimiä sekä ilmastointilaitteita.",
+    "refrigeration": {
+      "title": "Kylmäkoneet",
+      "description": "Kaikkien merkki-kylmäkoneiden asennus, huolto ja korjaus nopeasti ja ammattitaidolla. Edustamamme merkit: Thermo King, Lumikko, Carrier, Frigoblock, Hultsteins ja Mitsubishi."
     },
-    "tires": {
-      "title": "Rengaspalvelut",
-      "description": "Renkaanvaihto, tasapainotus ja rengasmyynti — kaikki rengaspalvelut yhdestä paikasta."
+    "heating": {
+      "title": "Lisälämmittimet",
+      "description": "Webasto- ja Eberspächer-lisälämmittimien myynti, asennus, huolto ja korjaus. Lisälämmittimien syyshuollot ja ennakoiva kunnossapito."
     },
-    "repair": {
-      "title": "Autohuolto",
-      "description": "VA Autohuolto tarjoaa pikahuoltopalvelut, öljynvaihdot ja pienet korjaukset."
+    "ac": {
+      "title": "Ilmastointi",
+      "description": "Ilmastointilaitteiden asennus, huolto ja korjaus. MB, Setra, EvoBus, Finnotzo, Sutrak ja Konvekta -merkkien valtuutettu huolto. Myös uusi kylmäaine R-1234YF."
     },
-    "carwash": {
-      "title": "Autopesu",
-      "description": "Pidä autosi puhtaana — autopesupalvelumme saatavilla katsastuksen yhteydessä."
+    "atp": {
+      "title": "ATP-kausitarkastukset",
+      "description": "Ruokavirasto on valtuuttanut meidät suorittamaan ATP-elintarvikekuljetusvälineiden kausitarkastuksia. Tarkistamme kuuden vuoden ikäisten kuljetusajoneuvojen rakenteellisen luokituksen kelpoisuuden."
     },
-    "tirehotel": {
-      "title": "Rengashotelli",
-      "description": "Säilytä renkaat meillä — turvallisesti ja kätevästi kausivaihtojen välillä."
+    "boatsMotorhomes": {
+      "title": "Veneet ja asuntoautot",
+      "description": "Veneiden ja asuntoautojen lämmittimien asennukset, korjaukset ja huollot. Webasto- ja Eberspächer-valtuutettu jälleenmyyjä. Kaikenkokoiset moottori- ja purjeveneet."
     },
-    "parts": {
-      "title": "Varaosat",
-      "description": "Varma-Osat myy varaosia kaikkiin automerkkeihin kilpailukykyiseen hintaan."
+    "tractors": {
+      "title": "Traktorit ja työkoneet",
+      "description": "Traktoreiden ja työkoneiden lämmittimien sekä ilmastointilaitteiden asennus, huolto ja korjaus."
     },
-    "cafe": {
-      "title": "Kahvila",
-      "description": "Nauti kupillinen kahvia odottaessasi — kahvilamme palvelee katsastusasiakkaita."
+    "electrical": {
+      "title": "Autosähkötyöt",
+      "description": "Autosähkötyöt mukaan lukien jätepuristimet ja nostolaidat. Monipuolista sähköalan osaamista ajoneuvoihin."
     }
   },
-  "testimonials": {
-    "1": {
-      "quote": "Nopea ja ystävällinen palvelu! Katsastus hoitui puolessa tunnissa.",
-      "author": "Matti T."
+  "products": {
+    "title": "Tuotteet",
+    "subtitle": "Edustamme ja myymme johtavia kylmäkone-, lämmitin- ja ilmastointimerkkejä.",
+    "refrigerationTitle": "Kylmäkoneet",
+    "heatingTitle": "Lämmittimet ja ilmastointi",
+    "otherTitle": "Muut",
+    "usedEquipmentTitle": "Käytetyt laitteet ja varaosat",
+    "usedEquipmentDesc": "Meillä on ajoittain tarjolla käytettyjä kylmäkoneita ja varaosia. Kysy saatavuutta!",
+    "pipeRepairTitle": "Alumiiniputkien korjaus",
+    "pipeRepairDesc": "Ilmastointiputkien korjaus VULCAN Lockring -menetelmällä. Paketti- ja pikkubussien takapenkkien höyrystimen putkien korjaus ilman putkien irrotusta alustasta. Nopea, kestävä ja kustannustehokas vaihtoehto putkien vaihdolle.",
+    "visitWebsite": "Vieraile sivustolla"
+  },
+  "references": {
+    "title": "Referenssit",
+    "subtitle": "Palvelemme monipuolisesti eri alojen asiakkaita.",
+    "boats": {
+      "title": "Veneet ja asuntoautot",
+      "description": "Veneiden ja asuntoautojen lämmittimien asennukset, korjaukset ja huollot."
     },
-    "2": {
-      "quote": "Kaikki palvelut saman katon alla, todella kätevää. Suosittelen!",
-      "author": "Anna K."
+    "refrigerationUnits": {
+      "title": "Kylmäkoneet",
+      "description": "Kaikkien neljän merkin asennukset, huollot ja korjaukset nopeasti ja ammattitaidolla."
     },
-    "3": {
-      "quote": "Hinnat kohdillaan ja palvelu ammattimaista. Tulen uudelleen.",
-      "author": "Jukka P."
+    "bioRefrigeration": {
+      "title": "Bio-kylmäkoneet",
+      "description": "Lumikko-merkkisten bio-kylmäkoneiden myynti ja huolto."
     },
-    "4": {
-      "quote": "Hyvä sijainti Herttoniemessä, helppo tulla autolla. Kahvilassa sai odotella mukavasti.",
-      "author": "Maria L."
+    "tractors": {
+      "title": "Traktorit ja työkoneet",
+      "description": "Traktoreiden ja työkoneiden lämmittimien sekä ilmastointilaitteiden asennus, huolto ja korjaus."
     },
-    "5": {
-      "quote": "Rengasvaihto ja katsastus samalla käynnillä — säästin aikaa ja vaivaa.",
-      "author": "Petri S."
-    },
-    "6": {
-      "quote": "Asiakaspalvelu pelasi hyvin, selitettiin kaikki selkeästi.",
-      "author": "Laura H."
+    "vehicles": {
+      "title": "Henkilö-, paketti- ja kuorma-autot",
+      "description": "Henkilö-, paketti- ja kuorma-autojen lämmittimien ja ilmastointilaitteiden asennus, huolto ja korjaus."
     }
   },
-  "inspection": {
-    "title": "Katsastukseen",
-    "subtitle": "Tietoa auton katsastuksesta — milloin, miten ja mitä tapahtuu.",
-    "whenTitle": "Milloin auto pitää katsastaa?",
-    "whenP1": "Henkilö- ja pakettiautojen ensimmäinen katsastus on suoritettava viimeistään sinä päivänä, kun käyttöönottopäivästä on kulunut neljä vuotta.",
-    "whenP2": "Sen jälkeen katsastus tehdään kahden vuoden välein siihen asti, kunnes käyttöönottopäivästä on kulunut kymmenen vuotta. Kymmenvuotiaat ja sitä vanhemmat autot katsastetaan vuoden välein.",
-    "whenP3": "Matkailuautojen katsastusaika noudattaa samaa linjaa kuin henkilöautoilla. Matkailuvaunua, jonka kokonaismassa on 750 kg tai vähemmän, ei tarvitse katsastaa lainkaan.",
-    "whenP4": "Katsastuspäivän voit selvittää helposti Trafin sähköisestä palvelusta tai ajoneuvosi rekisteröintitodistuksesta.",
-    "whatTitle": "Mitä katsastuksessa tapahtuu?",
-    "whatP1": "Voit olla katsastuksessa itse mukana tai jäädä odottamaan toimiston puolelle. Voit myös jättää auton aamulla katsastusasemalle ja hakea sen illalla.",
-    "checksTitle": "Katsastuksen yhteydessä tarkastetaan:",
-    "check1": "Auton kunto",
-    "check2": "Rekisteriin merkityt tiedot",
-    "check3": "Auton liikenneturvallisuus",
-    "check4": "Auton pakokaasupäästöt",
-    "checksExtra": "Lisäksi katsastuksen yhteydessä valvotaan autoon kohdistuvien verojen ja maksujen suorittamista.",
-    "failTitle": "Jos auto ei mene katsastuksesta läpi?",
-    "failP1": "Katsastuksessa havaitun vian perusteella auto voidaan määrätä jälkitarkastukseen. Jälkitarkastus on tehtävä kuukauden kuluessa määräaikaistarkastuksesta.",
-    "failP2": "Lievemmistä vioista voidaan määrätä pelkkä korjauskehotus, jolloin autoa ei tarvitse hyväksyttää uudelleen.",
-    "failP3": "Autoa ei saa käyttää liikenteessä, jos sitä ei ole katsastettu tai auto on katsastuksessa määrätty ajokieltoon.",
-    "deregisteredTitle": "Jos auto on poistettu liikennekäytöstä?",
-    "deregisteredP1": "Auto voidaan silti katsastaa, kunhan sillä on liikennevakuutus ja aika varattuna. Autossa tulee olla kiinnitetyt rekisterikilvet tai siirtolupa ja siirtomerkit.",
-    "cta": "Varaa katsastusaika"
-  },
-  "pricing": {
-    "title": "Hinnasto",
-    "subtitle": "Katsastuspalveluiden hinnat — kaikki hinnat sisältävät ALV:n 25,5 %.",
-    "periodicTitle": "Määräaikaiskatsastus",
-    "periodic": {
-      "row1": "Määräaikaiskatsastus arkisin, ilman pakokaasumittausta",
-      "row2": "Määräaikaiskatsastuspaketti 1 (katsastus, bensa, OBD)",
-      "row3": "Määräaikaiskatsastuspaketti 2 (katsastus, dieselmittaus)",
-      "row4": "Määräaikaiskatsastus lauantaisin, ilman pakokaasumittausta",
-      "row5": "Määräaikaiskatsastuspaketti lauantaisin (sis. lakisääteiset mittaukset)",
-      "row6": "Määräaikaiskatsastus lauantaisin (Drive-In)",
-      "row7": "Määräaikaiskatsastus sähköauto, arkisin",
-      "row8": "Määräaikaiskatsastus sähköauto, lauantaisin"
-    },
-    "additionalTitle": "Lisäpalvelut",
-    "additional": {
-      "row1": "Kaasuvuotomittaus (kaasuautoille)",
-      "row2": "Päästömittaukset/OBD (varattu etukäteen)",
-      "row3": "Päästömittaukset/OBD (ei varattu etukäteen)",
-      "row4": "Jälkitarkastus, arkisin",
-      "row5": "Jälkitarkastus, lauantaisin",
-      "row6": "Jälkitarkastusmaksu päästömittauksella",
-      "row7": "Kuntotarkastus (sis. päästömittaukset ja vikamuistiluku)",
-      "row8": "Valvontakatsastus (ilman pakokaasumittausta)",
-      "row9": "Matkailuauton määräaikaiskatsastus"
-    },
-    "registrationTitle": "Rekisteröintikatsastus",
-    "registration": {
-      "row1": "Rekisteröintikatsastus — tyyppihyväksytyt, ETA-maat, ilman kuntotarkastusta",
-      "row2": "Rekisteröintikatsastus — tyyppihyväksytyt, ETA-maat, kuntotarkastettavat",
-      "row3": "Rekisteröintikatsastus — ETA-maiden ulkopuolelta (esim. USA, Japani)"
-    },
-    "modificationTitle": "Muutoskatsastus",
-    "modification": {
-      "row1": "Muutoskatsastus (pieni muutos)",
-      "row2": "Muutoskatsastus (keskikokoinen muutos)",
-      "row3": "Muutoskatsastus (iso muutos)"
-    },
-    "note1": "Hinnat sisältävät ALV:n 25,5 %.",
-    "note2": "Katsastusmaksut sisältävät lisäksi Trafin valvontamaksun 3,60\u00A0€ (sis. ALV 25,5\u00A0%).",
-    "note3": "Maksuvälineenä käy pankkikortti, Visa Electron, Visa, Mastercard ja käteinen.",
-    "cta": "Varaa katsastusaika"
+  "news": {
+    "title": "Uutisia",
+    "subtitle": "Ajankohtaista Thermohuollolta.",
+    "articles": {
+      "thermohuolto-20v": {
+        "title": "Turun Thermohuolto 20 vuotta",
+        "excerpt": "Turun Thermohuolto Oy juhli 20-vuotista toimintaansa 1.3.2024. Lämmin kiitos kaikille asiakkuudesta ja luottamuksesta palveluitamme kohtaan!"
+      },
+      "veneiden-lammitinasennukset": {
+        "title": "Veneiden lämmitinasennukset ja huollot ennen kauden alkua",
+        "excerpt": "Tuleva veneilykausi siintää jo horisontissa! Tarjoamme lämmitinasennuksia ja -huoltoja kaikenkokoisiin moottori- ja purjeveneisiin."
+      },
+      "ilmastointihuolto-korjaus": {
+        "title": "Ilmastointihuolto/korjaus",
+        "excerpt": "Kesä tulevi ja ilmastointitarve myös. Meiltä ilmastointien vuodonetsinnät ja korjaukset vankalla kokemuksella. Nyt meiltä myös kylmäaine R-1234YF."
+      },
+      "lisalammittimien-syyshuollot": {
+        "title": "Lisälämmittimien syyshuollot",
+        "excerpt": "Syksy on toden teolla saapunut, joten nyt on oikea aika tarkastaa lisälämmittimen toiminta."
+      },
+      "el-kori-elli-60v": {
+        "title": "EL-Kori Oy:n Elli 60v. kiertue",
+        "excerpt": "Kiertueen ensimmäinen etappi pidettiin meillä Liedossa. Mukana EL-Kori Oy, Veho Oy, Lumikko Technologies Oy ja Cargotec Oy."
+      },
+      "auto-veneilmastoinnit": {
+        "title": "Auto- ja veneilmastoinnit",
+        "excerpt": "Huomioithan autosi ilmastoinnin huolto- ja korjaustarpeen kevään koittaessa ennen ruuhkaa."
+      },
+      "eberi-lampopaivat": {
+        "title": "Eberi lämpöpäivät",
+        "excerpt": "Maahantuojan edustaja esittelee uutuustuotteita lämpölaitteiden saralta."
+      },
+      "alumiinisten-putkien-korjaus": {
+        "title": "Alumiinisten ilmastointiputkien korjaus",
+        "excerpt": "Uusi palvelu: ilmastointiputkien korjaus VULCAN Lockring -menetelmällä ilman putkien irrotusta."
+      },
+      "konvekta-yhteistyo": {
+        "title": "Yhteistyösopimus Konvekta-ilmastointilaitteiden huolloista",
+        "excerpt": "Yhteistyösopimus MuiCon Oy:n kanssa linja-autojen ilmastointilaitteiden huolloista ja korjauksista."
+      },
+      "uutta-huoltokalustoa": {
+        "title": "Uutta huoltokalustoa",
+        "excerpt": "Uusi Mercedes-Benz Sprinter 313 CDI huoltoauto käyttöön. Valmistaudumme aktiiviseen kauteen."
+      }
+    }
   },
   "contact": {
-    "title": "Yhteystiedot",
-    "subtitle": "Ota yhteyttä — palvelemme arkisin ja lauantaisin.",
-    "phoneTitle": "Puhelinnumerot",
-    "mainPhone": "Katsastus",
-    "servicePhone": "Autohuolto",
-    "partsPhone": "Varaosat",
-    "emailTitle": "Sähköpostit",
-    "mainEmail": "Katsastus",
-    "serviceEmail": "Autohuolto",
-    "partsEmail": "Varaosat",
-    "addressTitle": "Osoite",
-    "holidays": "Pyhäpäivinä suljettu."
-  },
-  "corporate": {
-    "title": "Yrityksille",
-    "subtitle": "Räätälöidyt katsastus- ja huoltopalvelut yrityksille.",
-    "servicesTitle": "Yrityspalvelut",
-    "servicesP1": "Teemme yhteistyötä autokorjaamoiden, taksi- ja kuljetusyritysten kanssa ja räätälöimme katsastus- ja korjauspalvelut jokaisen asiakkaan tarpeiden mukaan.",
-    "servicesP2": "Yrityksille tarjoamme mahdollisuuden määritellä palvelutarpeet ja koostaa niistä sopivat paketit.",
-    "flexTitle": "Joustavat hinnat ja aikataulut",
-    "flexP1": "Olemme valmiita tarvittaessa joustamaan hinnoistamme ja aukioloistamme yritysten tarpeisiin.",
-    "contactTitle": "Ota yhteyttä",
-    "cta": "Varaa aika yritykselle"
-  },
-  "quickRepair": {
-    "title": "Pikahuolto — VA Autohuolto",
-    "subtitle": "Pikahuoltopalvelut kaikille autoille.",
-    "pricesTitle": "Hinnasto",
-    "row1": "Peruskorjaus",
-    "row2": "Sähkötyöt",
-    "row3": "Laitteiden asennus",
-    "row4": "Hitsaustyöt",
-    "row5": "Kausirenkaanvaihto",
-    "row6": "Pyörätyöt ja tasapainotus",
-    "row7": "Kausirenkaiden säilytys / kausi",
-    "row8": "Vikamuistiluku",
-    "note1": "Kaikki hinnat sisältävät ALV:n 25,5 %.",
-    "note2": "Maksuvälineenä käy Visa, Mastercard, Visa Electron ja käteinen.",
-    "contactTitle": "Ota yhteyttä"
-  },
-  "spareParts": {
-    "title": "Varaosat — Varma-Osat",
-    "subtitle": "Edulliset varaosat nopealla toimituksella.",
-    "cat1Title": "Auton varaosat",
-    "cat1Desc": "Varaosia kaikkiin automerkkeihin kilpailukykyiseen hintaan.",
-    "cat2Title": "Korjaamotarvikkeet",
-    "cat2Desc": "Korjaamotarvikkeet ja kemikaalit ammattilaiskäyttöön.",
-    "cat3Title": "Renkaat ja tarvikkeet",
-    "cat3Desc": "Renkaat ja rengastarvikkeet kaikkiin automerkkeihin.",
-    "deliveryTitle": "Nopea toimitus",
-    "deliveryP1": "Tilaa ennen klo 15, nouda seuraavana päivänä. Saman päivän toimitukset myös mahdollisia.",
-    "savingsTitle": "Jopa 30 % edullisemmat hinnat",
-    "savingsP1": "Tarjoamme varaosat jopa 30 % edullisemmin kuin kilpailijat — nopealla toimituksella.",
-    "contactTitle": "Ota yhteyttä"
-  },
-  "careers": {
-    "title": "Töihin meille",
-    "subtitle": "Haemme osaavia ja motivoituneita tekijöitä tiimiimme.",
-    "intro": "Varma Autokatsastus Oy etsii jatkuvasti ammattitaitoista henkilökuntaa katsastusasemilleen. Haemme erityisesti katsastajia ja mekaniikkoja.",
-    "apply": "Jos olet kiinnostunut työskentelemään kanssamme, lähetä meille hakemuksesi alla olevalla lomakkeella tai sähköpostitse.",
-    "formTitle": "Lähetä hakemus",
-    "orEmail": "Tai lähetä sähköpostilla:"
-  },
-  "feedback": {
-    "title": "Palaute",
-    "subtitle": "Kerro meille kokemuksestasi — palautteesi auttaa meitä kehittymään.",
-    "formTitle": "Lähetä palautetta"
+    "title": "Yhteydenotto",
+    "subtitle": "Ota rohkeasti yhteyttä — autamme mielellämme!",
+    "staffTitle": "Henkilöstö",
+    "formTitle": "Lähetä viesti",
+    "locationTitle": "Sijainti",
+    "emergencyLabel": "Päivystys",
+    "managingDirector": "Toimitusjohtaja",
+    "atpInspector": "ATP-kausitarkastukset",
+    "mechanic": "Kylmäkonemekaanikko"
   },
   "footer": {
-    "openingHours": "Aukioloajat",
+    "contactTitle": "Yhteystiedot",
     "quickLinks": "Pikalinkit",
-    "certifications": "Sertifikaatit",
-    "copyright": "© 2025 Varma Autokatsastus Oy | Y-tunnus: 3490695-1"
-  },
-  "chatbot": {
-    "title": "Asiakaspalvelu",
-    "placeholder": "Kirjoita kysymyksesi...",
-    "welcome": "Hei! Miten voin auttaa? Valitse aihe alta tai kirjoita kysymyksesi.",
-    "fallback": "Valitettavasti en löytänyt vastausta kysymykseesi. Voit soittaa meille numeroon 040 4153017 tai valita aiheen alta.",
-    "bookingSuggestion": "Haluatko varata katsastusajan?",
-    "openLabel": "Avaa chat",
-    "closeLabel": "Sulje chat"
-  },
-  "infoStrip": {
-    "bookingTitle": "Online ajanvaraus",
-    "bookingCta": "Varaa aika"
-  },
-  "ctaBanner": {
-    "title": "Varaa katsastusaika nyt",
-    "subtitle": "Määräaikaiskatsastus alkaen 39\u00A0€ — nopea ja luotettava palvelu Herttoniemessä.",
-    "cta": "Varaa aika verkossa"
+    "copyright": "© {year} Turun Thermohuolto Oy. Kaikki oikeudet pidätetään.",
+    "emergencyLabel": "Päivystys 24/7"
   }
 }
