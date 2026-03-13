@@ -36,8 +36,11 @@ export default function MobileMenu({ isOpen, onClose }: Props) {
 
   return (
     <div className="fixed inset-0 z-40 lg:hidden">
-      <div className="absolute inset-0 bg-black/50" onClick={onClose} />
-      <nav className="absolute top-0 right-0 w-72 h-full bg-brand-dark shadow-xl flex flex-col">
+      <div
+        className="absolute inset-0 bg-black/50 animate-[fadeIn_0.2s_ease]"
+        onClick={onClose}
+      />
+      <nav className="absolute top-0 right-0 w-72 h-full bg-brand-dark shadow-xl flex flex-col animate-[slideInRight_0.3s_ease-out]">
         <div className="flex items-center justify-between p-4 border-b border-brand-border">
           <span className="text-text-light font-display font-semibold text-lg">Menu</span>
           <button
@@ -51,12 +54,16 @@ export default function MobileMenu({ isOpen, onClose }: Props) {
           </button>
         </div>
         <ul className="flex-1 py-4">
-          {NAV_KEYS.map(({ key, href }) => (
-            <li key={key}>
+          {NAV_KEYS.map(({ key, href }, i) => (
+            <li
+              key={key}
+              className="mobile-nav-item"
+              style={{ animationDelay: `${100 + i * 60}ms` }}
+            >
               <Link
                 href={href}
                 onClick={onClose}
-                className="block px-6 py-3 text-text-light hover:bg-brand-surface transition-colors font-medium"
+                className="block px-6 py-3 text-text-light hover:bg-brand-surface hover:text-brand-accent transition-colors font-medium"
               >
                 {t(key)}
               </Link>

@@ -1,6 +1,9 @@
+"use client";
+
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import SectionHeading from "@/components/ui/SectionHeading";
+import ScrollReveal from "@/components/ui/ScrollReveal";
 
 const SERVICE_ITEMS = [
   { key: "refrigeration", icon: "M20 17.58A5 5 0 0018 8h-1.26A8 8 0 104 16.25M8 16l-2 2m4-4l-4 4m6-2l-2 2" },
@@ -17,16 +20,18 @@ export default function ServicesOverview() {
   return (
     <section className="py-16 sm:py-20 bg-bg-light">
       <div className="max-w-6xl mx-auto px-4">
-        <SectionHeading
-          title={t("home.servicesTitle")}
-          subtitle={t("home.servicesSubtitle")}
-        />
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <ScrollReveal>
+          <SectionHeading
+            title={t("home.servicesTitle")}
+            subtitle={t("home.servicesSubtitle")}
+          />
+        </ScrollReveal>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 stagger-children">
           {SERVICE_ITEMS.map(({ key, icon }) => (
-            <Link
-              key={key}
+            <ScrollReveal key={key}>
+              <Link
               href="/palvelut"
-              className="group light-card rounded-xl p-6 hover:-translate-y-1"
+              className="group block light-card rounded-xl p-6"
             >
               <div className="w-12 h-12 rounded-lg bg-brand-primary/10 flex items-center justify-center mb-4 group-hover:bg-brand-accent/10 transition-colors">
                 <svg
@@ -48,7 +53,8 @@ export default function ServicesOverview() {
               <p className="text-sm text-text-muted leading-relaxed line-clamp-3">
                 {t(`services.${key}.description`)}
               </p>
-            </Link>
+              </Link>
+            </ScrollReveal>
           ))}
         </div>
       </div>

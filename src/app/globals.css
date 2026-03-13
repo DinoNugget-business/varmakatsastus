@@ -99,6 +99,54 @@ body.menu-open {
   100% { background-position: 200% center; }
 }
 
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes floatShape {
+  0%   { transform: translateY(0px) rotate(0deg); }
+  33%  { transform: translateY(-30px) rotate(120deg); }
+  66%  { transform: translateY(20px) rotate(240deg); }
+  100% { transform: translateY(0px) rotate(360deg); }
+}
+
+.hero-shape         { animation: floatShape 25s linear infinite; }
+.hero-shape-reverse { animation: floatShape 20s linear infinite reverse; }
+.hero-shape-slow    { animation: floatShape 15s linear infinite; }
+
+/* ============================
+   HERO LOAD SEQUENCE
+   ============================ */
+
+.hero-heading  { animation: fadeInUp 0.7s cubic-bezier(0.22, 1, 0.36, 1) 200ms both; }
+.hero-subtext  { animation: fadeInUp 0.7s cubic-bezier(0.22, 1, 0.36, 1) 350ms both; }
+.hero-ctas     { animation: fadeInUp 0.7s cubic-bezier(0.22, 1, 0.36, 1) 500ms both; }
+.hero-scroll   { animation: fadeInUp 0.7s cubic-bezier(0.22, 1, 0.36, 1) 700ms both; }
+
+/* ============================
+   BOUNCE SCROLL INDICATOR
+   ============================ */
+
+@keyframes bounceDown {
+  0%, 100% { transform: translateX(-50%) translateY(0); }
+  50%      { transform: translateX(-50%) translateY(10px); }
+}
+
+.scroll-indicator {
+  animation: bounceDown 2s ease-in-out infinite;
+  transition: opacity 0.4s ease;
+}
+
+.scroll-indicator.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
 /* ============================
    UTILITY ANIMATION CLASSES
    ============================ */
@@ -149,6 +197,31 @@ body.menu-open {
   animation: shimmer 1.5s ease-in-out;
 }
 
+/* ============================
+   BUTTON SWEEP HOVER
+   ============================ */
+
+.btn-sweep {
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.btn-sweep::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.15);
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+  z-index: -1;
+}
+
+.btn-sweep:hover::before {
+  transform: scaleX(1);
+}
+
 .glass-card {
   background: linear-gradient(
     135deg,
@@ -179,10 +252,11 @@ body.menu-open {
 }
 
 .light-card:hover {
-  border-color: rgba(27, 58, 92, 0.25);
+  border-color: rgba(232, 117, 26, 0.3);
   box-shadow:
-    0 8px 30px rgba(0, 0, 0, 0.06),
-    0 0 0 1px rgba(27, 58, 92, 0.08);
+    0 20px 48px rgba(0, 0, 0, 0.08),
+    0 0 0 1px rgba(232, 117, 26, 0.12);
+  transform: translateY(-6px);
 }
 
 .dark-card {
@@ -194,13 +268,37 @@ body.menu-open {
 .dark-card:hover {
   border-color: rgba(232, 117, 26, 0.4);
   box-shadow:
-    0 8px 30px rgba(0, 0, 0, 0.3),
-    0 0 0 1px rgba(232, 117, 26, 0.15);
-  transform: translateY(-2px);
+    0 20px 48px rgba(0, 0, 0, 0.3),
+    0 0 0 1px rgba(232, 117, 26, 0.2);
+  transform: translateY(-6px);
 }
 
 .section-divider {
   position: relative;
+}
+
+/* ============================
+   NAV LINK UNDERLINE HOVER
+   ============================ */
+
+.nav-link {
+  position: relative;
+  padding-bottom: 4px;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--color-brand-accent);
+  transition: width 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.nav-link:hover::after {
+  width: 100%;
 }
 
 .section-divider::before {
@@ -222,4 +320,12 @@ body.menu-open {
 
 .group:hover .icon-hover-lift {
   transform: scale(1.15) rotate(-5deg);
+}
+
+/* ============================
+   MOBILE NAV STAGGER
+   ============================ */
+
+.mobile-nav-item {
+  animation: fadeInUp 0.4s cubic-bezier(0.22, 1, 0.36, 1) both;
 }

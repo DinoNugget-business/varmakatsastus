@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
@@ -21,11 +21,22 @@ const NAV_KEYS = [
 export default function Header() {
   const t = useTranslations("nav");
   const [menuOpen, setMenuOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 60);
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
 
   return (
     <>
       {/* Top bar with phone + emergency */}
-      <div className="bg-brand-darker text-text-muted-dark text-xs py-1.5">
+      <div
+        className={`bg-brand-darker text-text-muted-dark text-xs transition-all duration-300 overflow-hidden ${
+          scrolled ? "max-h-0 py-0" : "max-h-12 py-2"
+        }`}
+      >
         <div className="max-w-6xl mx-auto px-4 flex items-center justify-between">
           <a href={CONTACT.phoneHref} className="hover:text-text-light transition-colors">
             {CONTACT.phone}
@@ -40,27 +51,37 @@ export default function Header() {
       </div>
 
       {/* Main nav */}
-      <header className="sticky top-0 z-50 bg-brand-dark border-b border-brand-border shadow-lg">
-        <div className="max-w-6xl mx-auto px-4 flex items-center justify-between h-16">
+      <header
+        className={`sticky top-0 z-50 border-b transition-all duration-300 ${
+          scrolled
+            ? "bg-brand-dark/90 backdrop-blur-xl border-brand-border/50 shadow-md"
+            : "bg-brand-dark border-brand-border shadow-lg"
+        }`}
+      >
+        <div
+          className={`max-w-6xl mx-auto px-4 flex items-center justify-between transition-all duration-300 ${
+            scrolled ? "h-16" : "h-20"
+          }`}
+        >
           <Link href="/" className="flex items-center gap-3 shrink-0">
             <Image
-              src="/images/logos/thermohuolto-logo.png"
+              src="/images/logos/thermohuolto-logo-white.png"
               alt="Thermohuolto"
-              width={160}
-              height={40}
-              className="h-9 w-auto"
+              width={180}
+              height={45}
+              className={`w-auto transition-all duration-300 ${scrolled ? "h-9" : "h-11"}`}
               priority
             />
           </Link>
 
           {/* Desktop nav */}
-          <nav className="hidden lg:flex items-center gap-1">
+          <nav className="hidden lg:flex items-center gap-2">
             {NAV_KEYS.map(({ key, href }) => (
               <Link
                 key={key}
                 href={href}
-                className="px-3 py-2 text-sm font-medium text-text-muted-dark hover:text-text-light
-                  transition-colors rounded hover:bg-brand-surface"
+                className="nav-link px-4 py-2 text-[0.9rem] font-medium text-text-muted-dark hover:text-text-light
+                  transition-colors"
               >
                 {t(key)}
               </Link>

@@ -14,12 +14,19 @@ const SLIDES = [
 export default function Hero() {
   const t = useTranslations("home");
   const [current, setCurrent] = useState(0);
+  const [scrollHidden, setScrollHidden] = useState(false);
 
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrent((prev) => (prev + 1) % SLIDES.length);
     }, 5000);
     return () => clearInterval(timer);
+  }, []);
+
+  useEffect(() => {
+    const onScroll = () => setScrollHidden(window.scrollY > 80);
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
   return (
@@ -42,21 +49,28 @@ export default function Hero() {
       {/* Dark overlay */}
       <div className="absolute inset-0 bg-gradient-to-r from-brand-darker/90 via-brand-dark/70 to-brand-dark/50" />
 
+      {/* Floating shapes — ambient motion */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none" aria-hidden="true">
+        <div className="hero-shape absolute w-[600px] h-[600px] rounded-full bg-brand-accent opacity-[0.06] -top-[200px] -right-[100px]" />
+        <div className="hero-shape-reverse absolute w-[400px] h-[400px] rounded-full bg-brand-primary-light opacity-[0.05] -bottom-[150px] -left-[80px]" />
+        <div className="hero-shape-slow absolute w-[200px] h-[200px] rounded-full bg-brand-accent opacity-[0.04] top-[40%] left-[30%]" />
+      </div>
+
       {/* Content */}
       <div className="relative z-10 h-full flex items-center">
         <div className="max-w-6xl mx-auto px-4 w-full">
           <div className="max-w-xl">
-            <h1 className="font-display font-bold text-3xl sm:text-4xl lg:text-5xl text-text-light leading-tight mb-4">
+            <h1 className="hero-heading font-display font-bold text-3xl sm:text-4xl lg:text-5xl text-text-light leading-tight mb-4">
               {t("heroTitle")}
             </h1>
-            <p className="text-text-muted-dark text-base sm:text-lg mb-8 leading-relaxed">
+            <p className="hero-subtext text-text-muted-dark text-base sm:text-lg mb-8 leading-relaxed">
               {t("heroSubtitle")}
             </p>
-            <div className="flex flex-wrap gap-4">
+            <div className="hero-ctas flex flex-wrap gap-4">
               <a
                 href={CONTACT.phoneHref}
-                className="inline-flex items-center gap-2 px-6 py-3 rounded-lg font-semibold text-sm
-                  bg-brand-accent text-white hover:bg-brand-accent-dark btn-shimmer
+                className="btn-sweep inline-flex items-center gap-2 px-6 py-3 rounded-lg font-semibold text-sm
+                  bg-brand-accent text-white hover:bg-brand-accent-dark
                   shadow-md hover:shadow-lg transition-all duration-300 hover:-translate-y-0.5"
               >
                 <svg width="18" height="18" fill="none" stroke="currentColor" strokeWidth="2">
@@ -77,8 +91,20 @@ export default function Hero() {
         </div>
       </div>
 
+      {/* Bounce scroll indicator */}
+      <div
+        className={`scroll-indicator absolute bottom-6 left-1/2 -translate-x-1/2 z-10 text-text-muted-dark opacity-60 ${
+          scrollHidden ? "hidden" : ""
+        }`}
+        aria-hidden="true"
+      >
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+          <path d="M12 5v14M5 12l7 7 7-7" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
+        </svg>
+      </div>
+
       {/* Slide indicators */}
-      <div className="absolute bottom-6 left-1/2 -translate-x-1/2 z-10 flex gap-2">
+      <div className="hero-scroll absolute bottom-14 left-1/2 -translate-x-1/2 z-10 flex gap-2">
         {SLIDES.map((_, i) => (
           <button
             key={i}
