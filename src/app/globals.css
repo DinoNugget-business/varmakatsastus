@@ -120,6 +120,99 @@ body.menu-open {
 .hero-shape-slow    { animation: floatShape 15s linear infinite; }
 
 /* ============================
+   GRADIENT MESH — Hero bg
+   ============================ */
+
+@keyframes meshFloat {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
+.hero-mesh {
+  background: linear-gradient(
+    135deg,
+    var(--color-brand-darker),
+    var(--color-brand-dark),
+    var(--color-brand-primary),
+    var(--color-brand-darker)
+  );
+  background-size: 300% 300%;
+  animation: meshFloat 14s ease infinite;
+}
+
+/* ============================
+   BRAND TICKER SCROLL
+   ============================ */
+
+@keyframes tickerScroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+.ticker-track {
+  animation: tickerScroll 30s linear infinite;
+}
+
+.ticker-track:hover {
+  animation-play-state: paused;
+}
+
+.ticker-track-reverse {
+  animation: tickerScroll 35s linear infinite reverse;
+}
+
+.ticker-track-reverse:hover {
+  animation-play-state: paused;
+}
+
+/* ============================
+   HOW IT WORKS — Line draw
+   ============================ */
+
+@keyframes drawLine {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+.process-line-fill {
+  width: 0;
+  transition: width 1.5s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.is-visible .process-line-fill {
+  width: 100%;
+}
+
+/* ============================
+   EMERGENCY PULSE
+   ============================ */
+
+@keyframes emergencyPulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(232, 117, 26, 0.4); }
+  50% { box-shadow: 0 0 0 8px rgba(232, 117, 26, 0); }
+}
+
+.emergency-pulse {
+  animation: emergencyPulse 2s ease-in-out infinite;
+}
+
+/* ============================
+   CTA GRADIENT SHIFT
+   ============================ */
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.cta-gradient {
+  background: linear-gradient(135deg, var(--color-brand-primary), var(--color-brand-primary-dark), var(--color-brand-primary));
+  background-size: 200% 200%;
+  animation: gradientShift 8s ease infinite;
+}
+
+/* ============================
    HERO LOAD SEQUENCE
    ============================ */
 
@@ -254,9 +347,9 @@ body.menu-open {
 .light-card:hover {
   border-color: rgba(232, 117, 26, 0.3);
   box-shadow:
-    0 20px 48px rgba(0, 0, 0, 0.08),
+    0 12px 32px rgba(0, 0, 0, 0.08),
     0 0 0 1px rgba(232, 117, 26, 0.12);
-  transform: translateY(-6px);
+  transform: translateY(-3px);
 }
 
 .dark-card {
@@ -268,9 +361,9 @@ body.menu-open {
 .dark-card:hover {
   border-color: rgba(232, 117, 26, 0.4);
   box-shadow:
-    0 20px 48px rgba(0, 0, 0, 0.3),
+    0 12px 32px rgba(0, 0, 0, 0.3),
     0 0 0 1px rgba(232, 117, 26, 0.2);
-  transform: translateY(-6px);
+  transform: translateY(-3px);
 }
 
 .section-divider {
@@ -328,4 +421,36 @@ body.menu-open {
 
 .mobile-nav-item {
   animation: fadeInUp 0.4s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+/* ============================
+   INNER PAGE LOAD SEQUENCE
+   ============================ */
+
+.page-heading { animation: fadeInUp 0.6s cubic-bezier(0.22, 1, 0.36, 1) 200ms both; }
+.page-subtitle { animation: fadeInUp 0.6s cubic-bezier(0.22, 1, 0.36, 1) 350ms both; }
+.page-accent   { animation: fadeInUp 0.6s cubic-bezier(0.22, 1, 0.36, 1) 450ms both; }
+
+/* ============================
+   PREFERS REDUCED MOTION
+   ============================ */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  .animate-on-scroll {
+    opacity: 1;
+    transform: none;
+  }
+
+  .ticker-track,
+  .ticker-track-reverse {
+    animation: none;
+  }
 }

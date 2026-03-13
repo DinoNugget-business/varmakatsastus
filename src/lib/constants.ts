@@ -100,4 +100,29 @@ export const SERVICES = [
   "electrical",
 ] as const;
 
+export const SERVICE_ICONS = {
+  refrigeration: "snowflake",
+  heating: "flame",
+  ac: "wind",
+  atp: "clipboard-check",
+  boatsMotorhomes: "ship",
+  tractors: "tractor",
+  electrical: "zap",
+} as const;
+
+export const HOW_IT_WORKS_STEPS = [
+  { key: "contact", icon: "phone", number: "01" },
+  { key: "diagnose", icon: "clipboard-check", number: "02" },
+  { key: "service", icon: "wrench", number: "03" },
+  { key: "done", icon: "truck", number: "04" },
+] as const;
+
+export const TRUST_STATS = [
+  { key: "years", icon: "calendar" },
+  { key: "staff", icon: "users" },
+  { key: "emergency", icon: "clock" },
+  { key: "atp", icon: "shield" },
+  { key: "brands", icon: "award" },
+] as const;
+
 export const WEBSITE_URL = "https://thermohuolto.fi";

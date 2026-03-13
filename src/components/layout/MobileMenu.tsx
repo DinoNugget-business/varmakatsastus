@@ -3,6 +3,8 @@
 import { useEffect } from "react";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
+import { CONTACT } from "@/lib/constants";
+import Icon from "@/components/ui/Icon";
 import LanguageSwitcher from "./LanguageSwitcher";
 
 const NAV_KEYS = [
@@ -10,7 +12,6 @@ const NAV_KEYS = [
   { key: "company", href: "/yritys" },
   { key: "services", href: "/palvelut" },
   { key: "products", href: "/tuotteet" },
-  { key: "references", href: "/referenssit" },
   { key: "news", href: "/uutisia" },
   { key: "contact", href: "/yhteydenotto" },
 ] as const;
@@ -70,7 +71,20 @@ export default function MobileMenu({ isOpen, onClose }: Props) {
             </li>
           ))}
         </ul>
-        <div className="p-4 border-t border-brand-border">
+        {/* Emergency + language */}
+        <div className="p-4 border-t border-brand-border space-y-4">
+          <a
+            href={CONTACT.emergencyHref}
+            className="flex items-center gap-3 px-2 py-3 rounded-lg bg-brand-accent/10 text-brand-accent font-semibold text-sm"
+          >
+            <span className="emergency-pulse w-8 h-8 rounded-full bg-brand-accent/20 flex items-center justify-center shrink-0">
+              <Icon name="phone" size={16} />
+            </span>
+            <span>
+              <span className="block text-xs text-text-muted-dark font-normal">24/7</span>
+              {CONTACT.emergency}
+            </span>
+          </a>
           <LanguageSwitcher />
         </div>
       </nav>

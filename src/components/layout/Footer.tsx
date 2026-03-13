@@ -4,9 +4,10 @@ import { Link } from "@/i18n/navigation";
 import { CONTACT } from "@/lib/constants";
 
 const QUICK_LINKS = [
+  { key: "company", href: "/yritys" },
   { key: "services", href: "/palvelut" },
   { key: "products", href: "/tuotteet" },
-  { key: "references", href: "/referenssit" },
+  { key: "news", href: "/uutisia" },
   { key: "contact", href: "/yhteydenotto" },
 ] as const;
 
@@ -99,8 +100,11 @@ export default function Footer() {
         </div>
 
         {/* Bottom bar */}
-        <div className="mt-12 pt-6 border-t border-brand-border text-center text-xs text-text-muted-dark">
-          {t("footer.copyright", { year: String(year) })}
+        <div className="mt-12 pt-6 border-t border-brand-border text-center text-xs text-text-muted-dark space-y-2">
+          <p className="text-brand-accent/80 font-medium">
+            {t("footer.certifications")}
+          </p>
+          <p>{t("footer.copyright", { year: String(year) })}</p>
         </div>
       </div>
     </footer>

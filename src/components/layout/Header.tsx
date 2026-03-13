@@ -13,7 +13,6 @@ const NAV_KEYS = [
   { key: "company", href: "/yritys" },
   { key: "services", href: "/palvelut" },
   { key: "products", href: "/tuotteet" },
-  { key: "references", href: "/referenssit" },
   { key: "news", href: "/uutisia" },
   { key: "contact", href: "/yhteydenotto" },
 ] as const;

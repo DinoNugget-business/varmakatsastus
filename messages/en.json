@@ -22,7 +22,9 @@
     "learnMore": "Learn more",
     "contactUs": "Contact us",
     "callUs": "Call us",
-    "emergencyService": "24/7 Emergency service"
+    "emergencyService": "24/7 Emergency service",
+    "getQuote": "Get a quote",
+    "directions": "Get directions"
   },
   "nav": {
     "home": "Home",
@@ -34,25 +36,50 @@
     "contact": "Contact"
   },
   "home": {
-    "heroTitle": "Experts in Refrigeration, Heating & Air Conditioning",
-    "heroSubtitle": "Installation, repair and maintenance — over 20 years of experience. Located in Lieto, Tuulissuo.",
-    "heroCta": "Contact us",
+    "heroBadge": "Government-authorized inspection facility",
+    "heroTitle": "Your cold chain works — all-brand service from one place",
+    "heroSubtitle": "Government-authorized refrigeration specialist in Lieto, Finland. Installation, maintenance and repair — fast, including 24/7 emergency service.",
+    "heroCta": "Call us — we answer immediately",
+    "statYears": "20+",
+    "statYearsLabel": "years",
+    "statStaff": "5",
+    "statStaffLabel": "professionals",
+    "statAtp": "ATP",
+    "statAtpLabel": "authorized",
+    "statEmergency": "24/7",
+    "statEmergencyLabel": "emergency",
+    "emergencyBannerText": "24/7 Emergency service — Call now:",
     "servicesTitle": "Our Services",
-    "servicesSubtitle": "A comprehensive range of vehicle air conditioning, refrigeration unit and heater services.",
+    "servicesSubtitle": "Transport fleet refrigeration, heaters and air conditioning — all brands, one trusted partner.",
+    "howTitle": "How We Work",
+    "howSubtitle": "A fast, clear process from problem to solution.",
+    "howcontactTitle": "Contact Us",
+    "howcontactDesc": "Call or send a message — tell us your needs and situation.",
+    "howdiagnoseTitle": "We Assess",
+    "howdiagnoseDesc": "We diagnose the problem and schedule the work.",
+    "howserviceTitle": "Expert Service",
+    "howserviceDesc": "Our experienced mechanics handle the job efficiently.",
+    "howdoneTitle": "Back on the Road",
+    "howdoneDesc": "Your fleet is operational again — safely and in compliance.",
+    "trustTitle": "Why Thermohuolto?",
+    "trustYearsValue": "20+",
+    "trustYearsLabel": "years of experience",
+    "trustStaffValue": "5",
+    "trustStaffLabel": "professionals",
+    "trustEmergencyValue": "24/7",
+    "trustEmergencyLabel": "emergency service",
+    "trustAtpValue": "ATP",
+    "trustAtpLabel": "inspections",
+    "trustBrandsValue": "13+",
+    "trustBrandsLabel": "brands served",
     "brandsTitle": "Authorized Service Partner",
     "brandsSubtitle": "We represent and service leading refrigeration, heater and air conditioning brands.",
-    "trustTitle": "Why Thermohuolto?",
-    "trustYears": "20+",
-    "trustYearsLabel": "years of experience",
-    "trustStaff": "5",
-    "trustStaffLabel": "professionals",
-    "trustEmergency": "24/7",
-    "trustEmergencyLabel": "emergency service",
-    "trustAtp": "ATP",
-    "trustAtpLabel": "inspections",
+    "brandsRefrigerationLabel": "Refrigeration units",
+    "brandsHeatingLabel": "Heaters and air conditioning",
     "ctaTitle": "Need help with a refrigeration unit, heater or air conditioning system?",
     "ctaSubtitle": "Get in touch — we help quickly and professionally.",
-    "ctaCta": "Call now"
+    "ctaCta": "Call now",
+    "ctaEmail": "Send a quote request"
   },
   "company": {
     "title": "Company",
@@ -82,23 +109,23 @@
     "subtitle": "A comprehensive range of vehicle refrigeration units, auxiliary heaters and air conditioning systems from all major brands.",
     "refrigeration": {
       "title": "Refrigeration Units",
-      "description": "Installation, maintenance and repair of all branded refrigeration units — quickly and professionally. Brands we represent: Thermo King, Lumikko, Carrier, Frigoblock, Hultsteins and Mitsubishi."
+      "description": "Your cold chain unbroken — maintenance and repair for all branded refrigeration units. Authorized Thermo King, Lumikko, Carrier, Frigoblock, Hultsteins and Mitsubishi service point."
     },
     "heating": {
       "title": "Auxiliary Heaters",
-      "description": "Sales, installation, maintenance and repair of Webasto and Eberspächer auxiliary heaters. Autumn maintenance services and preventive upkeep."
+      "description": "Sales, installation, maintenance and repair of Webasto and Eberspächer auxiliary heaters. Preventive autumn maintenance keeps your heater reliable all winter."
     },
     "ac": {
       "title": "Air Conditioning",
-      "description": "Installation, maintenance and repair of AC systems. Authorized service for MB, Setra, EvoBus, Finnotzo, Sutrak and Konvekta. Now also stocking R-1234YF refrigerant."
+      "description": "Installation, maintenance and repair of AC systems. Authorized service for MB, Setra, EvoBus, Finnotzo, Sutrak and Konvekta. Also stocking R-1234YF refrigerant."
     },
     "atp": {
       "title": "ATP Seasonal Inspections",
-      "description": "The Finnish Food Authority has authorized us to perform ATP seasonal inspections of food transport containers. We verify the structural classification eligibility of transport vehicles six years and older."
+      "description": "ATP inspections without the wait — government-authorized inspection facility. Ensure your transport fleet meets regulatory compliance."
     },
     "boatsMotorhomes": {
       "title": "Boats & Motorhomes",
-      "description": "Installation, repair and maintenance of heaters for boats and motorhomes. Authorized Webasto and Eberspächer dealer. All sizes of motor and sailing boats."
+      "description": "Installation, repair and maintenance of heaters for boats and motorhomes. Authorized Webasto and Eberspächer dealer."
     },
     "tractors": {
       "title": "Tractors & Equipment",
@@ -119,7 +146,8 @@
     "usedEquipmentDesc": "We occasionally have used refrigeration units and spare parts available. Ask about availability!",
     "pipeRepairTitle": "Aluminum Pipe Repair",
     "pipeRepairDesc": "Air conditioning pipe repair using the VULCAN Lockring method. Repair of rear evaporator pipes in vans and minibuses without removing pipes from the chassis. A fast, durable and cost-effective alternative to pipe replacement.",
-    "visitWebsite": "Visit website"
+    "visitWebsite": "Visit website",
+    "askAvailability": "Ask about availability"
   },
   "references": {
     "title": "References",
@@ -206,6 +234,7 @@
     "contactTitle": "Contact Information",
     "quickLinks": "Quick Links",
     "copyright": "© {year} Turun Thermohuolto Oy. All rights reserved.",
-    "emergencyLabel": "24/7 Emergency Service"
+    "emergencyLabel": "24/7 Emergency Service",
+    "certifications": "Finnish Food Authority authorized ATP inspection facility"
   }
 }

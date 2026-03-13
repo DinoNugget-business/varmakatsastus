@@ -22,7 +22,9 @@
     "learnMore": "Lue lisää",
     "contactUs": "Ota yhteyttä",
     "callUs": "Soita meille",
-    "emergencyService": "Päivystys 24/7"
+    "emergencyService": "Päivystys 24/7",
+    "getQuote": "Pyydä tarjous",
+    "directions": "Ajo-ohjeet"
   },
   "nav": {
     "home": "Etusivu",
@@ -34,25 +36,50 @@
     "contact": "Yhteydenotto"
   },
   "home": {
-    "heroTitle": "Kylmälaitteiden, lämmittimien ja ilmastoinnin asiantuntija",
-    "heroSubtitle": "Asennus, korjaus ja huolto — yli 20 vuoden kokemuksella. Palvelemme Liedon Tuulissuolla.",
-    "heroCta": "Ota yhteyttä",
+    "heroBadge": "Viranomaisvaltuutettu tarkastuslaitos",
+    "heroTitle": "Kylmäketjusi toimii — kaikkien merkkien huolto yhdestä paikasta",
+    "heroSubtitle": "Viranomaisvaltuutettu kylmätekniikan erikoisliike Liedossa. Asennus, huolto ja korjaus nopeasti — myös päivystyksenä 24/7.",
+    "heroCta": "Soita — vastaamme heti",
+    "statYears": "20+",
+    "statYearsLabel": "vuotta",
+    "statStaff": "5",
+    "statStaffLabel": "ammattilaista",
+    "statAtp": "ATP",
+    "statAtpLabel": "valtuutettu",
+    "statEmergency": "24/7",
+    "statEmergencyLabel": "päivystys",
+    "emergencyBannerText": "Päivystys 24/7 — Soita heti:",
     "servicesTitle": "Palvelumme",
-    "servicesSubtitle": "Kattava valikoima ajoneuvojen ilmastointiin, kylmäkoneisiin ja lämmittimiin liittyviä palveluita.",
+    "servicesSubtitle": "Kuljetuskaluston kylmäkoneet, lämmittimet ja ilmastointi — kaikki merkit, yksi luotettava kumppani.",
+    "howTitle": "Näin toimimme",
+    "howSubtitle": "Nopea ja selkeä prosessi ongelman ratkaisuun.",
+    "howcontactTitle": "Ota yhteyttä",
+    "howcontactDesc": "Soita tai lähetä viesti — kerro tarpeesi ja tilanteesi.",
+    "howdiagnoseTitle": "Selvitämme tilanteen",
+    "howdiagnoseDesc": "Diagnosoimme ongelman ja sovimme aikataulun.",
+    "howserviceTitle": "Ammattitaitoinen huolto",
+    "howserviceDesc": "Kokeneet mekaanikomme hoitavat työn tehokkaasti.",
+    "howdoneTitle": "Takaisin tielle",
+    "howdoneDesc": "Kalustosi on taas käytössä — turvallisesti ja säädösten mukaisesti.",
+    "trustTitle": "Miksi Thermohuolto?",
+    "trustYearsValue": "20+",
+    "trustYearsLabel": "vuotta kokemusta",
+    "trustStaffValue": "5",
+    "trustStaffLabel": "ammattilaista",
+    "trustEmergencyValue": "24/7",
+    "trustEmergencyLabel": "päivystys",
+    "trustAtpValue": "ATP",
+    "trustAtpLabel": "tarkastukset",
+    "trustBrandsValue": "13+",
+    "trustBrandsLabel": "merkkiä",
     "brandsTitle": "Valtuutettu huoltokumppani",
     "brandsSubtitle": "Edustamme ja huollamme johtavia kylmäkone-, lämmitin- ja ilmastointimerkkejä.",
-    "trustTitle": "Miksi Thermohuolto?",
-    "trustYears": "20+",
-    "trustYearsLabel": "vuotta kokemusta",
-    "trustStaff": "5",
-    "trustStaffLabel": "ammattilaista",
-    "trustEmergency": "24/7",
-    "trustEmergencyLabel": "päivystys",
-    "trustAtp": "ATP",
-    "trustAtpLabel": "tarkastukset",
+    "brandsRefrigerationLabel": "Kylmäkoneet",
+    "brandsHeatingLabel": "Lämmittimet ja ilmastointi",
     "ctaTitle": "Tarvitsetko apua kylmäkoneen, lämmittimen tai ilmastoinnin kanssa?",
     "ctaSubtitle": "Ota yhteyttä — autamme nopeasti ja ammattitaidolla.",
-    "ctaCta": "Soita nyt"
+    "ctaCta": "Soita nyt",
+    "ctaEmail": "Lähetä tarjouspyyntö"
   },
   "company": {
     "title": "Yritys",
@@ -82,23 +109,23 @@
     "subtitle": "Kattava valikoima eri merkkisiä autojen kylmäkoneita, lisälämmittimiä sekä ilmastointilaitteita.",
     "refrigeration": {
       "title": "Kylmäkoneet",
-      "description": "Kaikkien merkki-kylmäkoneiden asennus, huolto ja korjaus nopeasti ja ammattitaidolla. Edustamamme merkit: Thermo King, Lumikko, Carrier, Frigoblock, Hultsteins ja Mitsubishi."
+      "description": "Kylmäketjusi katkeamatta — kaikkien merkkien kylmäkoneiden huolto ja korjaus. Valtuutettu Thermo King, Lumikko, Carrier, Frigoblock, Hultsteins ja Mitsubishi -huoltopiste."
     },
     "heating": {
       "title": "Lisälämmittimet",
-      "description": "Webasto- ja Eberspächer-lisälämmittimien myynti, asennus, huolto ja korjaus. Lisälämmittimien syyshuollot ja ennakoiva kunnossapito."
+      "description": "Webasto- ja Eberspächer-lisälämmittimien myynti, asennus, huolto ja korjaus. Ennakoiva syyshuolto pitää lämmittimen luotettavana koko talven."
     },
     "ac": {
       "title": "Ilmastointi",
-      "description": "Ilmastointilaitteiden asennus, huolto ja korjaus. MB, Setra, EvoBus, Finnotzo, Sutrak ja Konvekta -merkkien valtuutettu huolto. Myös uusi kylmäaine R-1234YF."
+      "description": "Ilmastointilaitteiden asennus, huolto ja korjaus. MB, Setra, EvoBus, Finnotzo, Sutrak ja Konvekta -merkkien valtuutettu huolto. Myös kylmäaine R-1234YF."
     },
     "atp": {
       "title": "ATP-kausitarkastukset",
-      "description": "Ruokavirasto on valtuuttanut meidät suorittamaan ATP-elintarvikekuljetusvälineiden kausitarkastuksia. Tarkistamme kuuden vuoden ikäisten kuljetusajoneuvojen rakenteellisen luokituksen kelpoisuuden."
+      "description": "ATP-tarkastukset ilman jonottamista — Ruokaviraston valtuuttama tarkastuslaitos. Varmista kuljetuskalustosi säädösten mukaisuus."
     },
     "boatsMotorhomes": {
       "title": "Veneet ja asuntoautot",
-      "description": "Veneiden ja asuntoautojen lämmittimien asennukset, korjaukset ja huollot. Webasto- ja Eberspächer-valtuutettu jälleenmyyjä. Kaikenkokoiset moottori- ja purjeveneet."
+      "description": "Veneiden ja asuntoautojen lämmittimien asennukset, korjaukset ja huollot. Webasto- ja Eberspächer-valtuutettu jälleenmyyjä."
     },
     "tractors": {
       "title": "Traktorit ja työkoneet",
@@ -119,7 +146,8 @@
     "usedEquipmentDesc": "Meillä on ajoittain tarjolla käytettyjä kylmäkoneita ja varaosia. Kysy saatavuutta!",
     "pipeRepairTitle": "Alumiiniputkien korjaus",
     "pipeRepairDesc": "Ilmastointiputkien korjaus VULCAN Lockring -menetelmällä. Paketti- ja pikkubussien takapenkkien höyrystimen putkien korjaus ilman putkien irrotusta alustasta. Nopea, kestävä ja kustannustehokas vaihtoehto putkien vaihdolle.",
-    "visitWebsite": "Vieraile sivustolla"
+    "visitWebsite": "Vieraile sivustolla",
+    "askAvailability": "Kysy saatavuutta"
   },
   "references": {
     "title": "Referenssit",
@@ -206,6 +234,7 @@
     "contactTitle": "Yhteystiedot",
     "quickLinks": "Pikalinkit",
     "copyright": "© {year} Turun Thermohuolto Oy. Kaikki oikeudet pidätetään.",
-    "emergencyLabel": "Päivystys 24/7"
+    "emergencyLabel": "Päivystys 24/7",
+    "certifications": "Ruokaviraston valtuuttama ATP-tarkastuslaitos"
   }
 }
